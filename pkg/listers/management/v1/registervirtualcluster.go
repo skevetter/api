@@ -3,7 +3,7 @@
 package v1
 
 import (
-	v1 "github.com/loft-sh/api/v4/pkg/apis/management/v1"
+	v1 "github.com/skevetter/api/pkg/apis/management/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/listers"
 	"k8s.io/client-go/tools/cache"

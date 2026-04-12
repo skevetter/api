@@ -3,8 +3,8 @@ package kube
 import (
 	"fmt"
 
-	agentloftclient "github.com/loft-sh/agentapi/v4/pkg/clientset/versioned"
-	loftclient "github.com/loft-sh/api/v4/pkg/clientset/versioned"
+	agentloftclient "github.com/skevetter/agentapi/pkg/clientset/versioned"
+	loftclient "github.com/skevetter/api/pkg/clientset/versioned"
 
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"

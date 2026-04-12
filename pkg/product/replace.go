@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/loft-sh/admin-apis/pkg/licenseapi"
+	"github.com/skevetter/admin-apis/pkg/licenseapi"
 )
 
 // Replace replaces the product name in the given usage string
@@ -36,13 +36,13 @@ func Replace(content string) string {
 
 		content = strings.Replace(content, "loft", "devpod pro", -1)
 		content = strings.Replace(content, "Loft", "DevPod.Pro", -1)
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		content = strings.Replace(content, "loft.sh", "vcluster.pro", -1)
 		content = strings.Replace(content, "loft.host", "vcluster.host", -1)
 
 		content = strings.Replace(content, "loft", "vcluster platform", -1)
 		content = strings.Replace(content, "Loft", "vCluster Platform", -1)
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	return content
@@ -73,14 +73,14 @@ func Replace(content string) string {
 func ReplaceWithHeader(use, content string) string {
 	maxChar := 56
 
-	productName := licenseapi.Loft
+	productName := licenseapi.Devsy
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		productName = "devpod pro"
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		productName = "vcluster platform"
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	paddingSize := (maxChar - 2 - len(productName) - len(use)) / 2

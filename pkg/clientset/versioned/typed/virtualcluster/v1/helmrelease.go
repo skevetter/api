@@ -5,8 +5,8 @@ package v1
 import (
 	"context"
 
-	v1 "github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1"
-	scheme "github.com/loft-sh/api/v4/pkg/clientset/versioned/scheme"
+	v1 "github.com/skevetter/api/pkg/apis/virtualcluster/v1"
+	scheme "github.com/skevetter/api/pkg/clientset/versioned/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

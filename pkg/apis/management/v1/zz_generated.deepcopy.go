@@ -6,12 +6,12 @@
 package v1
 
 import (
-	licenseapi "github.com/loft-sh/admin-apis/pkg/licenseapi"
-	clusterv1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1"
-	loftstoragev1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1"
-	auditv1 "github.com/loft-sh/api/v4/pkg/apis/audit/v1"
-	storagev1 "github.com/loft-sh/api/v4/pkg/apis/storage/v1"
-	uiv1 "github.com/loft-sh/api/v4/pkg/apis/ui/v1"
+	licenseapi "github.com/skevetter/admin-apis/pkg/licenseapi"
+	clusterv1 "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1"
+	loftstoragev1 "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1"
+	auditv1 "github.com/skevetter/api/pkg/apis/audit/v1"
+	storagev1 "github.com/skevetter/api/pkg/apis/storage/v1"
+	uiv1 "github.com/skevetter/api/pkg/apis/ui/v1"
 	corev1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

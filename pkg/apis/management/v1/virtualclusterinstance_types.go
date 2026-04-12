@@ -1,17 +1,17 @@
 package v1
 
 import (
-	clusterv1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1"
-	agentstoragev1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1"
-	storagev1 "github.com/loft-sh/api/v4/pkg/apis/storage/v1"
+	clusterv1 "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1"
+	agentstoragev1 "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1"
+	storagev1 "github.com/skevetter/api/pkg/apis/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // +genclient
 // +genclient:noStatus
-// +genclient:method=GetKubeConfig,verb=create,subresource=kubeconfig,input=github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig
-// +genclient:method=GetAccessKey,verb=get,subresource=accesskey,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterAccessKey
-// +genclient:method=GetExternalDatabase,verb=create,subresource=externaldatabase,input=github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabase,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabase
+// +genclient:method=GetKubeConfig,verb=create,subresource=kubeconfig,input=github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig,result=github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig
+// +genclient:method=GetAccessKey,verb=get,subresource=accesskey,result=github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterAccessKey
+// +genclient:method=GetExternalDatabase,verb=create,subresource=externaldatabase,input=github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabase,result=github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabase
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // VirtualClusterInstance holds the VirtualClusterInstance information
