@@ -3,16 +3,16 @@ package v1
 import (
 	clusterv1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1"
 	agentstoragev1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1"
-	storagev1 "github.com/loft-sh/api/v4/pkg/apis/storage/v1"
+	storagev1 "github.com/skevetter/api/pkg/apis/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // +genclient
 // +genclient:noStatus
-// +genclient:method=Up,verb=create,subresource=up,input=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceUp,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceUp
-// +genclient:method=Stop,verb=create,subresource=stop,input=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStop,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStop
-// +genclient:method=Troubleshoot,verb=get,subresource=troubleshoot,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot
-// +genclient:method=Cancel,verb=create,subresource=cancel,input=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceCancel,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceCancel
+// +genclient:method=Up,verb=create,subresource=up,input=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceUp,result=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceUp
+// +genclient:method=Stop,verb=create,subresource=stop,input=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStop,result=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStop
+// +genclient:method=Troubleshoot,verb=get,subresource=troubleshoot,result=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot
+// +genclient:method=Cancel,verb=create,subresource=cancel,input=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceCancel,result=github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceCancel
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // DevPodWorkspaceInstance holds the DevPodWorkspaceInstance information

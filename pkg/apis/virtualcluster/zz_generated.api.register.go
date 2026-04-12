@@ -7,8 +7,8 @@ import (
 	"fmt"
 
 	clusterv1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1"
-	"github.com/loft-sh/api/v4/pkg/managerfactory"
-	"github.com/loft-sh/apiserver/pkg/builders"
+	"github.com/skevetter/api/pkg/managerfactory"
+	"github.com/skevetter/apiserver/pkg/builders"
 	"k8s.io/apimachinery/pkg/apis/meta/internalversion"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

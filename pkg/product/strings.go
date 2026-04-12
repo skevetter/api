@@ -1,7 +1,7 @@
 package product
 
 import (
-	"github.com/loft-sh/admin-apis/pkg/licenseapi"
+	"github.com/skevetter/admin-apis/pkg/licenseapi"
 )
 
 // LoginCmd returns the login command for the product
