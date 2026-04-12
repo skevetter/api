@@ -120,8 +120,8 @@ type ClusterRoleTemplateStatus struct{}
 
 // ClusterRoleTemplateList contains a list of ClusterRoleTemplate objects
 type ClusterRoleTemplateList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metav1.TypeMeta `                      json:",inline"`
+	metav1.ListMeta `                      json:"metadata,omitempty"`
 	Items           []ClusterRoleTemplate `json:"items"`
 }
 

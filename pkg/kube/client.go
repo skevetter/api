@@ -5,7 +5,6 @@ import (
 
 	agentdevsyclient "github.com/skevetter/agentapi/pkg/clientset/versioned"
 	devsyclient "github.com/skevetter/api/pkg/clientset/versioned"
-
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 )

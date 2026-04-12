@@ -24,7 +24,8 @@ func loadProductVar() {
 	} else if productEnv == string(licenseapi.Devsy) {
 		productName = string(licenseapi.Devsy)
 	} else if productEnv != "" {
-		klog.TODO().Error(fmt.Errorf("unrecognized product %s", productEnv), "error parsing product", "product", productEnv)
+		klog.TODO().
+			Error(fmt.Errorf("unrecognized product %s", productEnv), "error parsing product", "product", productEnv)
 	}
 }
 

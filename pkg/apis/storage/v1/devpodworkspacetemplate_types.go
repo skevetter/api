@@ -241,8 +241,8 @@ type DevPodWorkspaceTemplateStatus struct{}
 
 // DevPodWorkspaceTemplateList contains a list of DevPodWorkspaceTemplate
 type DevPodWorkspaceTemplateList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metav1.TypeMeta `                          json:",inline"`
+	metav1.ListMeta `                          json:"metadata,omitempty"`
 	Items           []DevPodWorkspaceTemplate `json:"items"`
 }
 

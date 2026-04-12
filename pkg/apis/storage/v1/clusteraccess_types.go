@@ -113,8 +113,8 @@ type ClusterAccessStatus struct{}
 
 // ClusterAccessList contains a list of ClusterAccess objects
 type ClusterAccessList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metav1.TypeMeta `                json:",inline"`
+	metav1.ListMeta `                json:"metadata,omitempty"`
 	Items           []ClusterAccess `json:"items"`
 }
 
