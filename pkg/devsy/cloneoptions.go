@@ -1,4 +1,4 @@
-package devpod
+package devsy
 
 type CloneOptions struct {
 	// Repository is the repository to clone

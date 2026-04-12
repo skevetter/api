@@ -6,7 +6,7 @@
 // 	protoc        v5.29.1
 // source: runner.proto
 
-package devpod
+package devsy
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

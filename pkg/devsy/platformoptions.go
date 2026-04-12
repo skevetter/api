@@ -1,4 +1,4 @@
-package devpod
+package devsy
 
 import (
 	storagev1 "github.com/skevetter/api/pkg/apis/storage/v1"
