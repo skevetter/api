@@ -235,7 +235,7 @@ var (
 	NewLicenseTokenREST = func(getter generic.RESTOptionsGetter) rest.Storage {
 		return NewLicenseTokenRESTFunc(Factory)
 	}
-	NewLicenseTokenRESTFunc      NewRESTFunc
+	NewLicenseTokenRESTFunc       NewRESTFunc
 	ManagementDevsyUpgradeStorage = builders.NewApiResourceWithStorage( // Resource status endpoint
 		InternalDevsyUpgrade,
 		func() runtime.Object { return &DevsyUpgrade{} },     // Register versioned resource
@@ -245,7 +245,7 @@ var (
 	NewDevsyUpgradeREST = func(getter generic.RESTOptionsGetter) rest.Storage {
 		return NewDevsyUpgradeRESTFunc(Factory)
 	}
-	NewDevsyUpgradeRESTFunc      NewRESTFunc
+	NewDevsyUpgradeRESTFunc     NewRESTFunc
 	ManagementOIDCClientStorage = builders.NewApiResourceWithStorage( // Resource status endpoint
 		InternalOIDCClient,
 		func() runtime.Object { return &OIDCClient{} },     // Register versioned resource
@@ -413,7 +413,7 @@ var (
 	NewTeamREST = func(getter generic.RESTOptionsGetter) rest.Storage {
 		return NewTeamRESTFunc(Factory)
 	}
-	NewTeamRESTFunc                                NewRESTFunc
+	NewTeamRESTFunc                             NewRESTFunc
 	ManagementTranslateDevsyResourceNameStorage = builders.NewApiResourceWithStorage( // Resource status endpoint
 		InternalTranslateDevsyResourceName,
 		func() runtime.Object { return &TranslateDevsyResourceName{} },     // Register versioned resource
@@ -424,7 +424,7 @@ var (
 		return NewTranslateDevsyResourceNameRESTFunc(Factory)
 	}
 	NewTranslateDevsyResourceNameRESTFunc NewRESTFunc
-	ManagementUserStorage                    = builders.NewApiResourceWithStorage( // Resource status endpoint
+	ManagementUserStorage                 = builders.NewApiResourceWithStorage( // Resource status endpoint
 		InternalUser,
 		func() runtime.Object { return &User{} },     // Register versioned resource
 		func() runtime.Object { return &UserList{} }, // Register versioned resource list
@@ -1153,7 +1153,7 @@ var (
 	NewTeamClustersREST = func(getter generic.RESTOptionsGetter) rest.Storage {
 		return NewTeamClustersRESTFunc(Factory)
 	}
-	NewTeamClustersRESTFunc               NewRESTFunc
+	NewTeamClustersRESTFunc            NewRESTFunc
 	InternalTranslateDevsyResourceName = builders.NewInternalResource(
 		"translatedevsyresourcenames",
 		"TranslateDevsyResourceName",
@@ -1601,7 +1601,7 @@ type AuthenticationOIDC struct {
 	CAFile                 string   `json:"caFile,omitempty"`
 	InsecureCA             bool     `json:"insecureCa,omitempty"`
 	PreferredUsernameClaim string   `json:"preferredUsername,omitempty"`
-	DevsyUsernameClaim      string   `json:"devsyUsernameClaim,omitempty"`
+	DevsyUsernameClaim     string   `json:"devsyUsernameClaim,omitempty"`
 	UsernameClaim          string   `json:"usernameClaim,omitempty"`
 	EmailClaim             string   `json:"emailClaim,omitempty"`
 	UsernamePrefix         string   `json:"usernamePrefix,omitempty"`
@@ -1703,7 +1703,7 @@ type ClusterAccessKey struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 	AccessKey         string `json:"accessKey,omitempty"`
-	DevsyHost          string `json:"devsyHost,omitempty"`
+	DevsyHost         string `json:"devsyHost,omitempty"`
 	Insecure          bool   `json:"insecure,omitempty"`
 	CaCert            string `json:"caCert,omitempty"`
 }
@@ -1737,9 +1737,9 @@ type ClusterAgentConfigCommon struct {
 	Audit                  *AgentAuditConfig  `json:"audit,omitempty"`
 	DefaultImageRegistry   string             `json:"defaultImageRegistry,omitempty"`
 	TokenCaCert            []byte             `json:"tokenCaCert,omitempty"`
-	DevsyHost               string             `json:"devsyHost,omitempty"`
+	DevsyHost              string             `json:"devsyHost,omitempty"`
 	ProjectNamespacePrefix string             `json:"projectNamespacePrefix,omitempty"`
-	DevsyInstanceID         string             `json:"devsyInstanceID,omitempty"`
+	DevsyInstanceID        string             `json:"devsyInstanceID,omitempty"`
 	AnalyticsSpec          AgentAnalyticsSpec `json:"analyticsSpec"`
 }
 
@@ -1852,7 +1852,7 @@ type ConfigStatus struct {
 	OIDC                   *OIDC                           `json:"oidc,omitempty"`
 	Apps                   *Apps                           `json:"apps,omitempty"`
 	Audit                  *Audit                          `json:"audit,omitempty"`
-	DevsyHost               string                          `json:"devsyHost,omitempty"`
+	DevsyHost              string                          `json:"devsyHost,omitempty"`
 	ProjectNamespacePrefix *string                         `json:"projectNamespacePrefix,omitempty"`
 	DevPodSubDomain        string                          `json:"devPodSubDomain,omitempty"`
 	UISettings             *uiv1.UISettingsConfig          `json:"uiSettings,omitempty"`
@@ -2761,8 +2761,8 @@ type TranslateDevsyResourceName struct {
 }
 
 type TranslateDevsyResourceNameSpec struct {
-	Name         string `json:"name"`
-	Namespace    string `json:"namespace"`
+	Name      string `json:"name"`
+	Namespace string `json:"namespace"`
 	DevsyName string `json:"devsyName"`
 }
 

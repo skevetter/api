@@ -73,8 +73,7 @@ type TeamSpec struct {
 	Access []Access `json:"access,omitempty"`
 }
 
-type TeamStatus struct {
-}
+type TeamStatus struct{}
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 

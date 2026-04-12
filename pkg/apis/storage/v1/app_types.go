@@ -230,8 +230,7 @@ type HelmConfiguration struct {
 }
 
 // AppStatus holds the status
-type AppStatus struct {
-}
+type AppStatus struct{}
 
 // RecommendedApp describes where an app can be displayed as recommended app
 type RecommendedApp string

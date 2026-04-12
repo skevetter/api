@@ -107,8 +107,7 @@ type ClusterRoleRef struct {
 }
 
 // ClusterAccessStatus holds the status of a user access
-type ClusterAccessStatus struct {
-}
+type ClusterAccessStatus struct{}
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 

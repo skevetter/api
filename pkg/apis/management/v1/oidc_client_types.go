@@ -36,5 +36,4 @@ type OIDCClientSpec struct {
 }
 
 // OIDCClientStatus holds the status
-type OIDCClientStatus struct {
-}
+type OIDCClientStatus struct{}

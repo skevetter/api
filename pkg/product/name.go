@@ -10,8 +10,10 @@ import (
 )
 
 // Product is the global variable to be set at build time
-var productName string = string(licenseapi.Devsy)
-var once sync.Once
+var (
+	productName string = string(licenseapi.Devsy)
+	once        sync.Once
+)
 
 func loadProductVar() {
 	productEnv := os.Getenv("PRODUCT")

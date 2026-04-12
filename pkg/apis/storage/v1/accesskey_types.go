@@ -206,9 +206,9 @@ type AccessKeyScopeRoleName string
 
 const (
 	AccessKeyScopeRoleAgent       AccessKeyScopeRoleName = "agent"
-	AccessKeyScopeRoleDevsy    AccessKeyScopeRoleName = "devsy"
+	AccessKeyScopeRoleDevsy       AccessKeyScopeRoleName = "devsy"
 	AccessKeyScopeRoleNetworkPeer AccessKeyScopeRoleName = "network-peer"
-	AccessKeyScopeRoleDevsyCLI     AccessKeyScopeRoleName = "devsy-cli"
+	AccessKeyScopeRoleDevsyCLI    AccessKeyScopeRoleName = "devsy-cli"
 	AccessKeyScopeRoleRunner      AccessKeyScopeRoleName = "runner"
 )
 

@@ -235,8 +235,7 @@ type DevPodWorkspaceTemplateVersion struct {
 }
 
 // DevPodWorkspaceTemplateStatus holds the status
-type DevPodWorkspaceTemplateStatus struct {
-}
+type DevPodWorkspaceTemplateStatus struct{}
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 

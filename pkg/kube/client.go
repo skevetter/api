@@ -33,7 +33,7 @@ func NewForConfig(c *rest.Config) (Interface, error) {
 	}
 
 	return &client{
-		Interface:       kubeClient,
+		Interface:        kubeClient,
 		devsyClient:      devsyClient,
 		agentDevsyClient: agentDevsyClient,
 	}, nil

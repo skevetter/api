@@ -114,8 +114,7 @@ type ClusterRoleTemplateTemplate struct {
 }
 
 // ClusterRoleTemplateStatus holds the status of a user access
-type ClusterRoleTemplateStatus struct {
-}
+type ClusterRoleTemplateStatus struct{}
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
