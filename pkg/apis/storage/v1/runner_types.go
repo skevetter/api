@@ -72,7 +72,7 @@ type RunnerSpec struct {
 	// +optional
 	Endpoint string `json:"endpoint,omitempty"`
 
-	// If ClusterRef is defined, Loft will schedule the runner on the given
+	// If ClusterRef is defined, Devsy will schedule the runner on the given
 	// cluster.
 	// +optional
 	ClusterRef *RunnerClusterRef `json:"clusterRef,omitempty"`

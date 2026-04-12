@@ -12,23 +12,23 @@ var (
 	}
 
 	// DevPodWorkspaceIDLabel holds the actual workspace id of the devpod workspace
-	DevPodWorkspaceIDLabel = "loft.sh/workspace-id"
+	DevPodWorkspaceIDLabel = "devsy.sh/workspace-id"
 
 	// DevPodWorkspaceUIDLabel holds the actual workspace uid of the devpod workspace
-	DevPodWorkspaceUIDLabel = "loft.sh/workspace-uid"
+	DevPodWorkspaceUIDLabel = "devsy.sh/workspace-uid"
 
 	// DevPodKubernetesProviderWorkspaceUIDLabel holds the actual workspace uid of the devpod workspace on resources
 	// created by the DevPod Kubernetes provider.
 	DevPodKubernetesProviderWorkspaceUIDLabel = "devpod.sh/workspace-uid"
 
 	// DevPodWorkspacePictureAnnotation holds the workspace picture url of the devpod workspace
-	DevPodWorkspacePictureAnnotation = "loft.sh/workspace-picture"
+	DevPodWorkspacePictureAnnotation = "devsy.sh/workspace-picture"
 
 	// DevPodWorkspaceSourceAnnotation holds the workspace source of the devpod workspace
-	DevPodWorkspaceSourceAnnotation = "loft.sh/workspace-source"
+	DevPodWorkspaceSourceAnnotation = "devsy.sh/workspace-source"
 
 	// DevPodWorkspaceRunnerNetworkPeerAnnotation holds the workspace runner network peer name of the devpod workspace
-	DevPodWorkspaceRunnerEndpointAnnotation = "loft.sh/runner-endpoint"
+	DevPodWorkspaceRunnerEndpointAnnotation = "devsy.sh/runner-endpoint"
 )
 
 var (
@@ -132,7 +132,7 @@ type PresetRef struct {
 
 	// Version holds the preset version to use. Version is expected to
 	// be in semantic versioning format. Alternatively, you can also exchange
-	// major, minor or patch with an 'x' to tell Loft to automatically select
+	// major, minor or patch with an 'x' to tell Devsy to automatically select
 	// the latest major, minor or patch version.
 	// +optional
 	Version string `json:"version,omitempty"`

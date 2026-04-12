@@ -71,8 +71,8 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 		&LicenseRequest{},
 		&LicenseToken{},
 		&LicenseTokenList{},
-		&LoftUpgrade{},
-		&LoftUpgradeList{},
+		&DevsyUpgrade{},
+		&DevsyUpgradeList{},
 		&OIDCClient{},
 		&OIDCClientList{},
 		&OwnedAccessKey{},
@@ -119,8 +119,8 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 		&TeamList{},
 		&TeamAccessKeys{},
 		&TeamClusters{},
-		&TranslateVClusterResourceName{},
-		&TranslateVClusterResourceNameList{},
+		&TranslateDevsyResourceName{},
+		&TranslateDevsyResourceNameList{},
 		&User{},
 		&UserList{},
 		&UserAccessKeys{},
@@ -140,7 +140,7 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 }
 
 var (
-	ApiVersion = builders.NewApiVersion("management.loft.sh", "v1").WithResources(
+	ApiVersion = builders.NewApiVersion("management.devsy.sh", "v1").WithResources(
 		management.ManagementAgentAuditEventStorage,
 		management.ManagementAnnouncementStorage,
 		management.ManagementAppStorage,
@@ -261,7 +261,7 @@ var (
 			nil,
 			management.NewLicenseRequestREST),
 		management.ManagementLicenseTokenStorage,
-		management.ManagementLoftUpgradeStorage,
+		management.ManagementDevsyUpgradeStorage,
 		management.ManagementOIDCClientStorage,
 		management.ManagementOwnedAccessKeyStorage,
 		management.ManagementProjectStorage,
@@ -358,7 +358,7 @@ var (
 			func() runtime.Object { return &TeamClusters{} }, // Register versioned resource
 			nil,
 			management.NewTeamClustersREST),
-		management.ManagementTranslateVClusterResourceNameStorage,
+		management.ManagementTranslateDevsyResourceNameStorage,
 		management.ManagementUserStorage,
 		builders.NewApiResourceWithStorage(
 			management.InternalUserAccessKeysREST,
@@ -739,10 +739,10 @@ type LicenseTokenList struct {
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
-type LoftUpgradeList struct {
+type DevsyUpgradeList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []LoftUpgrade `json:"items"`
+	Items           []DevsyUpgrade `json:"items"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -987,10 +987,10 @@ type TeamClustersList struct {
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
-type TranslateVClusterResourceNameList struct {
+type TranslateDevsyResourceNameList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []TranslateVClusterResourceName `json:"items"`
+	Items           []TranslateDevsyResourceName `json:"items"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

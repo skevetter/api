@@ -52,7 +52,7 @@ type VirtualClusterInstanceStatus struct {
 	CanUpdate bool `json:"canUpdate,omitempty"`
 
 	// Online specifies if there is at least one network peer available
-	// for an agentless vCluster.
+	// for an agentless devsy.
 	// +optional
 	Online bool `json:"online,omitempty"`
 }

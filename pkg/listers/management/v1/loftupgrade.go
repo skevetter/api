@@ -9,24 +9,24 @@ import (
 	"k8s.io/client-go/tools/cache"
 )
 
-// LoftUpgradeLister helps list LoftUpgrades.
+// DevsyUpgradeLister helps list DevsyUpgrades.
 // All objects returned here must be treated as read-only.
-type LoftUpgradeLister interface {
-	// List lists all LoftUpgrades in the indexer.
+type DevsyUpgradeLister interface {
+	// List lists all DevsyUpgrades in the indexer.
 	// Objects returned here must be treated as read-only.
-	List(selector labels.Selector) (ret []*v1.LoftUpgrade, err error)
-	// Get retrieves the LoftUpgrade from the index for a given name.
+	List(selector labels.Selector) (ret []*v1.DevsyUpgrade, err error)
+	// Get retrieves the DevsyUpgrade from the index for a given name.
 	// Objects returned here must be treated as read-only.
-	Get(name string) (*v1.LoftUpgrade, error)
-	LoftUpgradeListerExpansion
+	Get(name string) (*v1.DevsyUpgrade, error)
+	DevsyUpgradeListerExpansion
 }
 
-// loftUpgradeLister implements the LoftUpgradeLister interface.
-type loftUpgradeLister struct {
-	listers.ResourceIndexer[*v1.LoftUpgrade]
+// devsyUpgradeLister implements the DevsyUpgradeLister interface.
+type devsyUpgradeLister struct {
+	listers.ResourceIndexer[*v1.DevsyUpgrade]
 }
 
-// NewLoftUpgradeLister returns a new LoftUpgradeLister.
-func NewLoftUpgradeLister(indexer cache.Indexer) LoftUpgradeLister {
-	return &loftUpgradeLister{listers.New[*v1.LoftUpgrade](indexer, v1.Resource("loftupgrade"))}
+// NewDevsyUpgradeLister returns a new DevsyUpgradeLister.
+func NewDevsyUpgradeLister(indexer cache.Indexer) DevsyUpgradeLister {
+	return &devsyUpgradeLister{listers.New[*v1.DevsyUpgrade](indexer, v1.Resource("devsyupgrade"))}
 }

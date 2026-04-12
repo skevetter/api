@@ -32,7 +32,7 @@ func GetAllApiBuilders() []*builders.APIGroupBuilder {
 
 func GetManagementAPIBuilder() *builders.APIGroupBuilder {
 	return builders.NewApiGroupBuilder(
-		"management.loft.sh",
+		"management.devsy.sh",
 		"github.com/skevetter/api/pkg/apis/management").
 		WithUnVersionedApi(management.ApiVersion).
 		WithVersionedApis(
@@ -57,7 +57,7 @@ func GetManagementAPIBuilder() *builders.APIGroupBuilder {
 			"IngressAuthToken",
 			"License",
 			"LicenseToken",
-			"LoftUpgrade",
+			"DevsyUpgrade",
 			"OIDCClient",
 			"OwnedAccessKey",
 			"Project",
@@ -71,14 +71,14 @@ func GetManagementAPIBuilder() *builders.APIGroupBuilder {
 			"SubjectAccessReview",
 			"Task",
 			"Team",
-			"TranslateVClusterResourceName",
+			"TranslateDevsyResourceName",
 			"User",
 			"VirtualClusterTemplate",
 		)
 }
 func GetVirtualclusterAPIBuilder() *builders.APIGroupBuilder {
 	return builders.NewApiGroupBuilder(
-		"virtualcluster.loft.sh",
+		"virtualcluster.devsy.sh",
 		"github.com/skevetter/api/pkg/apis/virtualcluster").
 		WithUnVersionedApi(virtualcluster.ApiVersion).
 		WithVersionedApis(

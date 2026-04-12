@@ -9,24 +9,24 @@ import (
 	"k8s.io/client-go/tools/cache"
 )
 
-// TranslateVClusterResourceNameLister helps list TranslateVClusterResourceNames.
+// TranslateDevsyResourceNameLister helps list TranslateDevsyResourceNames.
 // All objects returned here must be treated as read-only.
-type TranslateVClusterResourceNameLister interface {
-	// List lists all TranslateVClusterResourceNames in the indexer.
+type TranslateDevsyResourceNameLister interface {
+	// List lists all TranslateDevsyResourceNames in the indexer.
 	// Objects returned here must be treated as read-only.
-	List(selector labels.Selector) (ret []*v1.TranslateVClusterResourceName, err error)
-	// Get retrieves the TranslateVClusterResourceName from the index for a given name.
+	List(selector labels.Selector) (ret []*v1.TranslateDevsyResourceName, err error)
+	// Get retrieves the TranslateDevsyResourceName from the index for a given name.
 	// Objects returned here must be treated as read-only.
-	Get(name string) (*v1.TranslateVClusterResourceName, error)
-	TranslateVClusterResourceNameListerExpansion
+	Get(name string) (*v1.TranslateDevsyResourceName, error)
+	TranslateDevsyResourceNameListerExpansion
 }
 
-// translateVClusterResourceNameLister implements the TranslateVClusterResourceNameLister interface.
-type translateVClusterResourceNameLister struct {
-	listers.ResourceIndexer[*v1.TranslateVClusterResourceName]
+// translateDevsyResourceNameLister implements the TranslateDevsyResourceNameLister interface.
+type translateDevsyResourceNameLister struct {
+	listers.ResourceIndexer[*v1.TranslateDevsyResourceName]
 }
 
-// NewTranslateVClusterResourceNameLister returns a new TranslateVClusterResourceNameLister.
-func NewTranslateVClusterResourceNameLister(indexer cache.Indexer) TranslateVClusterResourceNameLister {
-	return &translateVClusterResourceNameLister{listers.New[*v1.TranslateVClusterResourceName](indexer, v1.Resource("translatevclusterresourcename"))}
+// NewTranslateDevsyResourceNameLister returns a new TranslateDevsyResourceNameLister.
+func NewTranslateDevsyResourceNameLister(indexer cache.Indexer) TranslateDevsyResourceNameLister {
+	return &translateDevsyResourceNameLister{listers.New[*v1.TranslateDevsyResourceName](indexer, v1.Resource("translatedevsyresourcename"))}
 }

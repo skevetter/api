@@ -46,8 +46,8 @@ type Interface interface {
 	Licenses() LicenseInformer
 	// LicenseTokens returns a LicenseTokenInformer.
 	LicenseTokens() LicenseTokenInformer
-	// LoftUpgrades returns a LoftUpgradeInformer.
-	LoftUpgrades() LoftUpgradeInformer
+	// DevsyUpgrades returns a DevsyUpgradeInformer.
+	DevsyUpgrades() DevsyUpgradeInformer
 	// OIDCClients returns a OIDCClientInformer.
 	OIDCClients() OIDCClientInformer
 	// OwnedAccessKeys returns a OwnedAccessKeyInformer.
@@ -80,8 +80,8 @@ type Interface interface {
 	Tasks() TaskInformer
 	// Teams returns a TeamInformer.
 	Teams() TeamInformer
-	// TranslateVClusterResourceNames returns a TranslateVClusterResourceNameInformer.
-	TranslateVClusterResourceNames() TranslateVClusterResourceNameInformer
+	// TranslateDevsyResourceNames returns a TranslateDevsyResourceNameInformer.
+	TranslateDevsyResourceNames() TranslateDevsyResourceNameInformer
 	// Users returns a UserInformer.
 	Users() UserInformer
 	// VirtualClusterInstances returns a VirtualClusterInstanceInformer.
@@ -196,9 +196,9 @@ func (v *version) LicenseTokens() LicenseTokenInformer {
 	return &licenseTokenInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
 }
 
-// LoftUpgrades returns a LoftUpgradeInformer.
-func (v *version) LoftUpgrades() LoftUpgradeInformer {
-	return &loftUpgradeInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
+// DevsyUpgrades returns a DevsyUpgradeInformer.
+func (v *version) DevsyUpgrades() DevsyUpgradeInformer {
+	return &devsyUpgradeInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
 }
 
 // OIDCClients returns a OIDCClientInformer.
@@ -281,9 +281,9 @@ func (v *version) Teams() TeamInformer {
 	return &teamInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
 }
 
-// TranslateVClusterResourceNames returns a TranslateVClusterResourceNameInformer.
-func (v *version) TranslateVClusterResourceNames() TranslateVClusterResourceNameInformer {
-	return &translateVClusterResourceNameInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
+// TranslateDevsyResourceNames returns a TranslateDevsyResourceNameInformer.
+func (v *version) TranslateDevsyResourceNames() TranslateDevsyResourceNameInformer {
+	return &translateDevsyResourceNameInformer{factory: v.factory, tweakListOptions: v.tweakListOptions}
 }
 
 // Users returns a UserInformer.

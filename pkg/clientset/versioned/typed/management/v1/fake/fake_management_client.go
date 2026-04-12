@@ -88,8 +88,8 @@ func (c *FakeManagementV1) LicenseTokens() v1.LicenseTokenInterface {
 	return &FakeLicenseTokens{c}
 }
 
-func (c *FakeManagementV1) LoftUpgrades() v1.LoftUpgradeInterface {
-	return &FakeLoftUpgrades{c}
+func (c *FakeManagementV1) DevsyUpgrades() v1.DevsyUpgradeInterface {
+	return &FakeDevsyUpgrades{c}
 }
 
 func (c *FakeManagementV1) OIDCClients() v1.OIDCClientInterface {
@@ -156,8 +156,8 @@ func (c *FakeManagementV1) Teams() v1.TeamInterface {
 	return &FakeTeams{c}
 }
 
-func (c *FakeManagementV1) TranslateVClusterResourceNames() v1.TranslateVClusterResourceNameInterface {
-	return &FakeTranslateVClusterResourceNames{c}
+func (c *FakeManagementV1) TranslateDevsyResourceNames() v1.TranslateDevsyResourceNameInterface {
+	return &FakeTranslateDevsyResourceNames{c}
 }
 
 func (c *FakeManagementV1) Users() v1.UserInterface {

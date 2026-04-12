@@ -13,31 +13,31 @@ import (
 	testing "k8s.io/client-go/testing"
 )
 
-// FakeLoftUpgrades implements LoftUpgradeInterface
-type FakeLoftUpgrades struct {
+// FakeDevsyUpgrades implements DevsyUpgradeInterface
+type FakeDevsyUpgrades struct {
 	Fake *FakeManagementV1
 }
 
-var loftupgradesResource = v1.SchemeGroupVersion.WithResource("loftupgrades")
+var devsyupgradesResource = v1.SchemeGroupVersion.WithResource("devsyupgrades")
 
-var loftupgradesKind = v1.SchemeGroupVersion.WithKind("LoftUpgrade")
+var devsyupgradesKind = v1.SchemeGroupVersion.WithKind("DevsyUpgrade")
 
-// Get takes name of the loftUpgrade, and returns the corresponding loftUpgrade object, and an error if there is any.
-func (c *FakeLoftUpgrades) Get(ctx context.Context, name string, options metav1.GetOptions) (result *v1.LoftUpgrade, err error) {
-	emptyResult := &v1.LoftUpgrade{}
+// Get takes name of the devsyUpgrade, and returns the corresponding devsyUpgrade object, and an error if there is any.
+func (c *FakeDevsyUpgrades) Get(ctx context.Context, name string, options metav1.GetOptions) (result *v1.DevsyUpgrade, err error) {
+	emptyResult := &v1.DevsyUpgrade{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootGetActionWithOptions(loftupgradesResource, name, options), emptyResult)
+		Invokes(testing.NewRootGetActionWithOptions(devsyupgradesResource, name, options), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
-	return obj.(*v1.LoftUpgrade), err
+	return obj.(*v1.DevsyUpgrade), err
 }
 
-// List takes label and field selectors, and returns the list of LoftUpgrades that match those selectors.
-func (c *FakeLoftUpgrades) List(ctx context.Context, opts metav1.ListOptions) (result *v1.LoftUpgradeList, err error) {
-	emptyResult := &v1.LoftUpgradeList{}
+// List takes label and field selectors, and returns the list of DevsyUpgrades that match those selectors.
+func (c *FakeDevsyUpgrades) List(ctx context.Context, opts metav1.ListOptions) (result *v1.DevsyUpgradeList, err error) {
+	emptyResult := &v1.DevsyUpgradeList{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootListActionWithOptions(loftupgradesResource, loftupgradesKind, opts), emptyResult)
+		Invokes(testing.NewRootListActionWithOptions(devsyupgradesResource, devsyupgradesKind, opts), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
@@ -46,8 +46,8 @@ func (c *FakeLoftUpgrades) List(ctx context.Context, opts metav1.ListOptions) (r
 	if label == nil {
 		label = labels.Everything()
 	}
-	list := &v1.LoftUpgradeList{ListMeta: obj.(*v1.LoftUpgradeList).ListMeta}
-	for _, item := range obj.(*v1.LoftUpgradeList).Items {
+	list := &v1.DevsyUpgradeList{ListMeta: obj.(*v1.DevsyUpgradeList).ListMeta}
+	for _, item := range obj.(*v1.DevsyUpgradeList).Items {
 		if label.Matches(labels.Set(item.Labels)) {
 			list.Items = append(list.Items, item)
 		}
@@ -55,68 +55,68 @@ func (c *FakeLoftUpgrades) List(ctx context.Context, opts metav1.ListOptions) (r
 	return list, err
 }
 
-// Watch returns a watch.Interface that watches the requested loftUpgrades.
-func (c *FakeLoftUpgrades) Watch(ctx context.Context, opts metav1.ListOptions) (watch.Interface, error) {
+// Watch returns a watch.Interface that watches the requested devsyUpgrades.
+func (c *FakeDevsyUpgrades) Watch(ctx context.Context, opts metav1.ListOptions) (watch.Interface, error) {
 	return c.Fake.
-		InvokesWatch(testing.NewRootWatchActionWithOptions(loftupgradesResource, opts))
+		InvokesWatch(testing.NewRootWatchActionWithOptions(devsyupgradesResource, opts))
 }
 
-// Create takes the representation of a loftUpgrade and creates it.  Returns the server's representation of the loftUpgrade, and an error, if there is any.
-func (c *FakeLoftUpgrades) Create(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.CreateOptions) (result *v1.LoftUpgrade, err error) {
-	emptyResult := &v1.LoftUpgrade{}
+// Create takes the representation of a devsyUpgrade and creates it.  Returns the server's representation of the devsyUpgrade, and an error, if there is any.
+func (c *FakeDevsyUpgrades) Create(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.CreateOptions) (result *v1.DevsyUpgrade, err error) {
+	emptyResult := &v1.DevsyUpgrade{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootCreateActionWithOptions(loftupgradesResource, loftUpgrade, opts), emptyResult)
+		Invokes(testing.NewRootCreateActionWithOptions(devsyupgradesResource, devsyUpgrade, opts), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
-	return obj.(*v1.LoftUpgrade), err
+	return obj.(*v1.DevsyUpgrade), err
 }
 
-// Update takes the representation of a loftUpgrade and updates it. Returns the server's representation of the loftUpgrade, and an error, if there is any.
-func (c *FakeLoftUpgrades) Update(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.UpdateOptions) (result *v1.LoftUpgrade, err error) {
-	emptyResult := &v1.LoftUpgrade{}
+// Update takes the representation of a devsyUpgrade and updates it. Returns the server's representation of the devsyUpgrade, and an error, if there is any.
+func (c *FakeDevsyUpgrades) Update(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.UpdateOptions) (result *v1.DevsyUpgrade, err error) {
+	emptyResult := &v1.DevsyUpgrade{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootUpdateActionWithOptions(loftupgradesResource, loftUpgrade, opts), emptyResult)
+		Invokes(testing.NewRootUpdateActionWithOptions(devsyupgradesResource, devsyUpgrade, opts), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
-	return obj.(*v1.LoftUpgrade), err
+	return obj.(*v1.DevsyUpgrade), err
 }
 
 // UpdateStatus was generated because the type contains a Status member.
 // Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
-func (c *FakeLoftUpgrades) UpdateStatus(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.UpdateOptions) (result *v1.LoftUpgrade, err error) {
-	emptyResult := &v1.LoftUpgrade{}
+func (c *FakeDevsyUpgrades) UpdateStatus(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.UpdateOptions) (result *v1.DevsyUpgrade, err error) {
+	emptyResult := &v1.DevsyUpgrade{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootUpdateSubresourceActionWithOptions(loftupgradesResource, "status", loftUpgrade, opts), emptyResult)
+		Invokes(testing.NewRootUpdateSubresourceActionWithOptions(devsyupgradesResource, "status", devsyUpgrade, opts), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
-	return obj.(*v1.LoftUpgrade), err
+	return obj.(*v1.DevsyUpgrade), err
 }
 
-// Delete takes name of the loftUpgrade and deletes it. Returns an error if one occurs.
-func (c *FakeLoftUpgrades) Delete(ctx context.Context, name string, opts metav1.DeleteOptions) error {
+// Delete takes name of the devsyUpgrade and deletes it. Returns an error if one occurs.
+func (c *FakeDevsyUpgrades) Delete(ctx context.Context, name string, opts metav1.DeleteOptions) error {
 	_, err := c.Fake.
-		Invokes(testing.NewRootDeleteActionWithOptions(loftupgradesResource, name, opts), &v1.LoftUpgrade{})
+		Invokes(testing.NewRootDeleteActionWithOptions(devsyupgradesResource, name, opts), &v1.DevsyUpgrade{})
 	return err
 }
 
 // DeleteCollection deletes a collection of objects.
-func (c *FakeLoftUpgrades) DeleteCollection(ctx context.Context, opts metav1.DeleteOptions, listOpts metav1.ListOptions) error {
-	action := testing.NewRootDeleteCollectionActionWithOptions(loftupgradesResource, opts, listOpts)
+func (c *FakeDevsyUpgrades) DeleteCollection(ctx context.Context, opts metav1.DeleteOptions, listOpts metav1.ListOptions) error {
+	action := testing.NewRootDeleteCollectionActionWithOptions(devsyupgradesResource, opts, listOpts)
 
-	_, err := c.Fake.Invokes(action, &v1.LoftUpgradeList{})
+	_, err := c.Fake.Invokes(action, &v1.DevsyUpgradeList{})
 	return err
 }
 
-// Patch applies the patch and returns the patched loftUpgrade.
-func (c *FakeLoftUpgrades) Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.LoftUpgrade, err error) {
-	emptyResult := &v1.LoftUpgrade{}
+// Patch applies the patch and returns the patched devsyUpgrade.
+func (c *FakeDevsyUpgrades) Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.DevsyUpgrade, err error) {
+	emptyResult := &v1.DevsyUpgrade{}
 	obj, err := c.Fake.
-		Invokes(testing.NewRootPatchSubresourceActionWithOptions(loftupgradesResource, name, pt, data, opts, subresources...), emptyResult)
+		Invokes(testing.NewRootPatchSubresourceActionWithOptions(devsyupgradesResource, name, pt, data, opts, subresources...), emptyResult)
 	if obj == nil {
 		return emptyResult, err
 	}
-	return obj.(*v1.LoftUpgrade), err
+	return obj.(*v1.DevsyUpgrade), err
 }

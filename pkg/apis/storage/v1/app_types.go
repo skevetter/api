@@ -110,7 +110,7 @@ type AppConfig struct {
 	// +optional
 	Config clusterv1.HelmReleaseConfig `json:"config,omitempty"`
 
-	// Wait determines if Loft should wait during deploy for the app to become ready
+	// Wait determines if Devsy should wait during deploy for the app to become ready
 	// +optional
 	Wait bool `json:"wait,omitempty"`
 
@@ -189,11 +189,11 @@ type AppParameter struct {
 }
 
 type UserOrTeam struct {
-	// User specifies a Loft user.
+	// User specifies a Devsy user.
 	// +optional
 	User string `json:"user,omitempty"`
 
-	// Team specifies a Loft team.
+	// Team specifies a Devsy team.
 	// +optional
 	Team string `json:"team,omitempty"`
 }

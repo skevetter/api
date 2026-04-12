@@ -82,9 +82,9 @@ type LicenseListerExpansion interface{}
 // LicenseTokenLister.
 type LicenseTokenListerExpansion interface{}
 
-// LoftUpgradeListerExpansion allows custom methods to be added to
-// LoftUpgradeLister.
-type LoftUpgradeListerExpansion interface{}
+// DevsyUpgradeListerExpansion allows custom methods to be added to
+// DevsyUpgradeLister.
+type DevsyUpgradeListerExpansion interface{}
 
 // OIDCClientListerExpansion allows custom methods to be added to
 // OIDCClientLister.
@@ -162,9 +162,9 @@ type TaskListerExpansion interface{}
 // TeamLister.
 type TeamListerExpansion interface{}
 
-// TranslateVClusterResourceNameListerExpansion allows custom methods to be added to
-// TranslateVClusterResourceNameLister.
-type TranslateVClusterResourceNameListerExpansion interface{}
+// TranslateDevsyResourceNameListerExpansion allows custom methods to be added to
+// TranslateDevsyResourceNameLister.
+type TranslateDevsyResourceNameListerExpansion interface{}
 
 // UserListerExpansion allows custom methods to be added to
 // UserLister.

@@ -33,15 +33,15 @@ func Name() licenseapi.ProductName {
 
 // Name returns the name of the product
 func DisplayName() string {
-	loftDisplayName := "Loft"
+	devsyDisplayName := "Devsy"
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		return "DevPod Pro"
 	case licenseapi.DevsyPro:
-		return "vCluster Platform"
+		return "devsy Platform"
 	case licenseapi.Devsy:
 	}
 
-	return loftDisplayName
+	return devsyDisplayName
 }
