@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/skevetter/api/compare/v1.0.0...v1.0.1) (2026-04-12)
+
+
+### Bug Fixes
+
+* reset release version to v1.0.0 for Go module compatibility ([#5](https://github.com/skevetter/api/issues/5)) ([e943c62](https://github.com/skevetter/api/commit/e943c623e0e2b1d3efe6b9f9d9b3be2b624b3c42))
+
 ## [2.0.0](https://github.com/skevetter/api/compare/v1.0.1...v2.0.0) (2026-04-12)
 
 
