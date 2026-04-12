@@ -10,8 +10,10 @@ import (
 )
 
 // Product is the global variable to be set at build time
-var productName string = string(licenseapi.Devsy)
-var once sync.Once
+var (
+	productName string = string(licenseapi.Devsy)
+	once        sync.Once
+)
 
 func loadProductVar() {
 	productEnv := os.Getenv("PRODUCT")
@@ -22,7 +24,8 @@ func loadProductVar() {
 	} else if productEnv == string(licenseapi.Devsy) {
 		productName = string(licenseapi.Devsy)
 	} else if productEnv != "" {
-		klog.TODO().Error(fmt.Errorf("unrecognized product %s", productEnv), "error parsing product", "product", productEnv)
+		klog.TODO().
+			Error(fmt.Errorf("unrecognized product %s", productEnv), "error parsing product", "product", productEnv)
 	}
 }
 

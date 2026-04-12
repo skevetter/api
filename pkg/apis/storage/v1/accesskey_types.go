@@ -206,9 +206,9 @@ type AccessKeyScopeRoleName string
 
 const (
 	AccessKeyScopeRoleAgent       AccessKeyScopeRoleName = "agent"
-	AccessKeyScopeRoleDevsy    AccessKeyScopeRoleName = "devsy"
+	AccessKeyScopeRoleDevsy       AccessKeyScopeRoleName = "devsy"
 	AccessKeyScopeRoleNetworkPeer AccessKeyScopeRoleName = "network-peer"
-	AccessKeyScopeRoleDevsyCLI     AccessKeyScopeRoleName = "devsy-cli"
+	AccessKeyScopeRoleDevsyCLI    AccessKeyScopeRoleName = "devsy-cli"
 	AccessKeyScopeRoleRunner      AccessKeyScopeRoleName = "runner"
 )
 
@@ -441,8 +441,8 @@ type AccessKeyStatus struct {
 
 // AccessKeyList contains a list of AccessKey
 type AccessKeyList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metav1.TypeMeta `            json:",inline"`
+	metav1.ListMeta `            json:"metadata,omitempty"`
 	Items           []AccessKey `json:"items"`
 }
 

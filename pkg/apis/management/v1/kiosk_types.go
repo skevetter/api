@@ -37,5 +37,4 @@ type KioskSpec struct {
 	License License `json:"license,omitempty"`
 }
 
-type KioskStatus struct {
-}
+type KioskStatus struct{}

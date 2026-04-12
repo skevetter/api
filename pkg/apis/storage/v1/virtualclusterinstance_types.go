@@ -436,8 +436,8 @@ const (
 
 // VirtualClusterInstanceList contains a list of VirtualClusterInstance objects
 type VirtualClusterInstanceList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metav1.TypeMeta `                         json:",inline"`
+	metav1.ListMeta `                         json:"metadata,omitempty"`
 	Items           []VirtualClusterInstance `json:"items"`
 }
 

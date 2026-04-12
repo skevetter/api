@@ -5,7 +5,6 @@ import (
 
 	agentdevsyclient "github.com/skevetter/agentapi/pkg/clientset/versioned"
 	devsyclient "github.com/skevetter/api/pkg/clientset/versioned"
-
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 )
@@ -33,7 +32,7 @@ func NewForConfig(c *rest.Config) (Interface, error) {
 	}
 
 	return &client{
-		Interface:       kubeClient,
+		Interface:        kubeClient,
 		devsyClient:      devsyClient,
 		agentDevsyClient: agentDevsyClient,
 	}, nil

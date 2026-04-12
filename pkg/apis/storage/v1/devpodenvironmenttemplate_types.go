@@ -20,8 +20,7 @@ type DevPodEnvironmentTemplate struct {
 }
 
 // DevPodEnvironmentTemplateStatus holds the status
-type DevPodEnvironmentTemplateStatus struct {
-}
+type DevPodEnvironmentTemplateStatus struct{}
 
 func (a *DevPodEnvironmentTemplate) GetVersions() []VersionAccessor {
 	var retVersions []VersionAccessor

@@ -5,14 +5,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-var (
-	SpaceConditions = []agentstoragev1.ConditionType{
-		InstanceScheduled,
-		InstanceTemplateResolved,
-		InstanceSpaceSynced,
-		InstanceSpaceReady,
-	}
-)
+var SpaceConditions = []agentstoragev1.ConditionType{
+	InstanceScheduled,
+	InstanceTemplateResolved,
+	InstanceSpaceSynced,
+	InstanceSpaceReady,
+}
 
 // +genclient
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

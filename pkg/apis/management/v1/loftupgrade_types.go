@@ -32,5 +32,4 @@ type DevsyUpgradeSpec struct {
 	Version string `json:"version,omitempty"`
 }
 
-type DevsyUpgradeStatus struct {
-}
+type DevsyUpgradeStatus struct{}
