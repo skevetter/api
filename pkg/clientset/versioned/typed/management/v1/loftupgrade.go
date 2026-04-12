@@ -13,41 +13,41 @@ import (
 	gentype "k8s.io/client-go/gentype"
 )
 
-// LoftUpgradesGetter has a method to return a LoftUpgradeInterface.
+// DevsyUpgradesGetter has a method to return a DevsyUpgradeInterface.
 // A group's client should implement this interface.
-type LoftUpgradesGetter interface {
-	LoftUpgrades() LoftUpgradeInterface
+type DevsyUpgradesGetter interface {
+	DevsyUpgrades() DevsyUpgradeInterface
 }
 
-// LoftUpgradeInterface has methods to work with LoftUpgrade resources.
-type LoftUpgradeInterface interface {
-	Create(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.CreateOptions) (*v1.LoftUpgrade, error)
-	Update(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.UpdateOptions) (*v1.LoftUpgrade, error)
+// DevsyUpgradeInterface has methods to work with DevsyUpgrade resources.
+type DevsyUpgradeInterface interface {
+	Create(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.CreateOptions) (*v1.DevsyUpgrade, error)
+	Update(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.UpdateOptions) (*v1.DevsyUpgrade, error)
 	// Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
-	UpdateStatus(ctx context.Context, loftUpgrade *v1.LoftUpgrade, opts metav1.UpdateOptions) (*v1.LoftUpgrade, error)
+	UpdateStatus(ctx context.Context, devsyUpgrade *v1.DevsyUpgrade, opts metav1.UpdateOptions) (*v1.DevsyUpgrade, error)
 	Delete(ctx context.Context, name string, opts metav1.DeleteOptions) error
 	DeleteCollection(ctx context.Context, opts metav1.DeleteOptions, listOpts metav1.ListOptions) error
-	Get(ctx context.Context, name string, opts metav1.GetOptions) (*v1.LoftUpgrade, error)
-	List(ctx context.Context, opts metav1.ListOptions) (*v1.LoftUpgradeList, error)
+	Get(ctx context.Context, name string, opts metav1.GetOptions) (*v1.DevsyUpgrade, error)
+	List(ctx context.Context, opts metav1.ListOptions) (*v1.DevsyUpgradeList, error)
 	Watch(ctx context.Context, opts metav1.ListOptions) (watch.Interface, error)
-	Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.LoftUpgrade, err error)
-	LoftUpgradeExpansion
+	Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.DevsyUpgrade, err error)
+	DevsyUpgradeExpansion
 }
 
-// loftUpgrades implements LoftUpgradeInterface
-type loftUpgrades struct {
-	*gentype.ClientWithList[*v1.LoftUpgrade, *v1.LoftUpgradeList]
+// devsyUpgrades implements DevsyUpgradeInterface
+type devsyUpgrades struct {
+	*gentype.ClientWithList[*v1.DevsyUpgrade, *v1.DevsyUpgradeList]
 }
 
-// newLoftUpgrades returns a LoftUpgrades
-func newLoftUpgrades(c *ManagementV1Client) *loftUpgrades {
-	return &loftUpgrades{
-		gentype.NewClientWithList[*v1.LoftUpgrade, *v1.LoftUpgradeList](
-			"loftupgrades",
+// newDevsyUpgrades returns a DevsyUpgrades
+func newDevsyUpgrades(c *ManagementV1Client) *devsyUpgrades {
+	return &devsyUpgrades{
+		gentype.NewClientWithList[*v1.DevsyUpgrade, *v1.DevsyUpgradeList](
+			"devsyupgrades",
 			c.RESTClient(),
 			scheme.ParameterCodec,
 			"",
-			func() *v1.LoftUpgrade { return &v1.LoftUpgrade{} },
-			func() *v1.LoftUpgradeList { return &v1.LoftUpgradeList{} }),
+			func() *v1.DevsyUpgrade { return &v1.DevsyUpgrade{} },
+			func() *v1.DevsyUpgradeList { return &v1.DevsyUpgradeList{} }),
 	}
 }

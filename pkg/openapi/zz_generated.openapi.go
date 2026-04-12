@@ -225,10 +225,10 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenList":                           schema_pkg_apis_management_v1_LicenseTokenList(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenSpec":                           schema_pkg_apis_management_v1_LicenseTokenSpec(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenStatus":                         schema_pkg_apis_management_v1_LicenseTokenStatus(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade":                                schema_pkg_apis_management_v1_LoftUpgrade(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeList":                            schema_pkg_apis_management_v1_LoftUpgradeList(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec":                            schema_pkg_apis_management_v1_LoftUpgradeSpec(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus":                          schema_pkg_apis_management_v1_LoftUpgradeStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgrade":                                schema_pkg_apis_management_v1_DevsyUpgrade(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeList":                            schema_pkg_apis_management_v1_DevsyUpgradeList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeSpec":                            schema_pkg_apis_management_v1_DevsyUpgradeSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeStatus":                          schema_pkg_apis_management_v1_DevsyUpgradeStatus(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.MaintenanceWindow":                          schema_pkg_apis_management_v1_MaintenanceWindow(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.OIDC":                                       schema_pkg_apis_management_v1_OIDC(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.OIDCClient":                                 schema_pkg_apis_management_v1_OIDCClient(ref),
@@ -332,10 +332,10 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"github.com/skevetter/api/pkg/apis/management/v1.TeamList":                                   schema_pkg_apis_management_v1_TeamList(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.TeamSpec":                                   schema_pkg_apis_management_v1_TeamSpec(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.TeamStatus":                                 schema_pkg_apis_management_v1_TeamStatus(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName":              schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameList":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameSpec(ref),
-		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus":        schema_pkg_apis_management_v1_TranslateVClusterResourceNameStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceName":              schema_pkg_apis_management_v1_TranslateDevsyResourceName(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameList":          schema_pkg_apis_management_v1_TranslateDevsyResourceNameList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameSpec":          schema_pkg_apis_management_v1_TranslateDevsyResourceNameSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameStatus":        schema_pkg_apis_management_v1_TranslateDevsyResourceNameStatus(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.User":                                       schema_pkg_apis_management_v1_User(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeys":                             schema_pkg_apis_management_v1_UserAccessKeys(ref),
 		"github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeysList":                         schema_pkg_apis_management_v1_UserAccessKeysList(ref),
@@ -1374,7 +1374,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Analytics(ref common.ReferenceCall
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "Analytics is a struct that represents the analytics server and the requests that should be sent to it. This information is sent to Loft instances when they check in with the license server.",
+				Description: "Analytics is a struct that represents the analytics server and the requests that should be sent to it. This information is sent to Devsy instances when they check in with the license server.",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"endpoint": {
@@ -1410,7 +1410,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Announcement(ref common.ReferenceC
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "Announcement contains an announcement that should be shown within the Loft instance. This information is sent to Loft instances when they check in with the license server.",
+				Description: "Announcement contains an announcement that should be shown within the Devsy instance. This information is sent to Devsy instances when they check in with the license server.",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"name": {
@@ -1508,7 +1508,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Button(ref common.ReferenceCallbac
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "Button is an object that represents a button in the Loft UI that links to some external service for handling operations for licensing for example.",
+				Description: "Button is an object that represents a button in the Devsy UI that links to some external service for handling operations for licensing for example.",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"name": {
@@ -1528,14 +1528,14 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Button(ref common.ReferenceCallbac
 					},
 					"displayText": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DisplayText is the text to display on the button. If display text is unset the button will never be shown in the loft UI.",
+							Description: "DisplayText is the text to display on the button. If display text is unset the button will never be shown in the devsy UI.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"direct": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Direct indicates if the Loft front end should directly hit this endpoint. If false, it means that the Loft front end will be hitting the license server first to generate a one time token for the operation; this also means that there will be a redirect URL in the response to the request for this and that link should be followed by the front end.",
+							Description: "Direct indicates if the Devsy front end should directly hit this endpoint. If false, it means that the Devsy front end will be hitting the license server first to generate a one time token for the operation; this also means that there will be a redirect URL in the response to the request for this and that link should be followed by the front end.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -1556,7 +1556,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Feature(ref common.ReferenceCallba
 				Properties: map[string]spec.Schema{
 					"name": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Loft version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
+							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Devsy version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
@@ -1688,7 +1688,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_InstanceTokenAuth(ref common.Refer
 				Properties: map[string]spec.Schema{
 					"token": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Token is the jwt token identifying the loft instance.",
+							Description: "Token is the jwt token identifying the devsy instance.",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
@@ -1776,12 +1776,12 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "License is a struct representing the license data sent to a Loft instance after checking in with the license server.",
+				Description: "License is a struct representing the license data sent to a Devsy instance after checking in with the license server.",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"instance": {
 						SchemaProps: spec.SchemaProps{
-							Description: "InstanceID contains the instance id of the Loft instance",
+							Description: "InstanceID contains the instance id of the Devsy instance",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -1801,7 +1801,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 					},
 					"domainToken": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DomainToken holds the JWT with the URL that the Loft instance is publicly available on. (via Loft router)",
+							Description: "DomainToken holds the JWT with the URL that the Devsy instance is publicly available on. (via Devsy router)",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
@@ -1809,7 +1809,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 					},
 					"buttons": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Buttons is a slice of license server endpoints (buttons) that the Loft instance may need to hit. Each Button contains the display text and link for the front end to work with.",
+							Description: "Buttons is a slice of license server endpoints (buttons) that the Devsy instance may need to hit. Each Button contains the display text and link for the front end to work with.",
 							Type:        []string{"array"},
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
@@ -2985,7 +2985,7 @@ func schema_apis_loft_cluster_v1_FeatureStatus(ref common.ReferenceCallback) com
 				Properties: map[string]spec.Schema{
 					"name": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Loft version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
+							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Devsy version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
@@ -3827,9 +3827,9 @@ func schema_apis_loft_cluster_v1_SleepModeConfigSpec(ref common.ReferenceCallbac
 							Format:      "",
 						},
 					},
-					"ignoreVClusters": {
+					"ignoreDevsys": {
 						SchemaProps: spec.SchemaProps{
-							Description: "IgnoreVClusters ignores vcluster requests",
+							Description: "IgnoreDevsys ignores devsy requests",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -6099,7 +6099,7 @@ func schema_pkg_apis_management_v1_AuthenticationOIDC(ref common.ReferenceCallba
 					},
 					"loftUsernameClaim": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftUsernameClaim is the JWT field to use as the user's username.",
+							Description: "DevsyUsernameClaim is the JWT field to use as the user's username.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -6776,21 +6776,21 @@ func schema_pkg_apis_management_v1_ClusterAccessKey(ref common.ReferenceCallback
 					},
 					"loftHost": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftHost is the loft host used by the agent",
+							Description: "DevsyHost is the devsy host used by the agent",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"insecure": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Insecure signals if the loft host is insecure",
+							Description: "Insecure signals if the devsy host is insecure",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
 					},
 					"caCert": {
 						SchemaProps: spec.SchemaProps{
-							Description: "CaCert is an optional ca cert to use for the loft host connection",
+							Description: "CaCert is an optional ca cert to use for the devsy host connection",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -7061,7 +7061,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "ClusterAgentConfig holds the loft agent configuration",
+				Description: "ClusterAgentConfig holds the devsy agent configuration",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -7106,14 +7106,14 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 					},
 					"tokenCaCert": {
 						SchemaProps: spec.SchemaProps{
-							Description: "TokenCaCert is the certificate authority the Loft tokens will be signed with",
+							Description: "TokenCaCert is the certificate authority the Devsy tokens will be signed with",
 							Type:        []string{"string"},
 							Format:      "byte",
 						},
 					},
 					"loftHost": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftHost defines the host for the agent's loft instance",
+							Description: "DevsyHost defines the host for the agent's loft instance",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -7127,7 +7127,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 					},
 					"loftInstanceID": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftInstanceID defines the instance id from the loft instance",
+							Description: "DevsyInstanceID defines the instance id from the devsy instance",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -7176,14 +7176,14 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref common.Reference
 					},
 					"tokenCaCert": {
 						SchemaProps: spec.SchemaProps{
-							Description: "TokenCaCert is the certificate authority the Loft tokens will be signed with",
+							Description: "TokenCaCert is the certificate authority the Devsy tokens will be signed with",
 							Type:        []string{"string"},
 							Format:      "byte",
 						},
 					},
 					"loftHost": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftHost defines the host for the agent's loft instance",
+							Description: "DevsyHost defines the host for the agent's loft instance",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -7197,7 +7197,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref common.Reference
 					},
 					"loftInstanceID": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftInstanceID defines the instance id from the loft instance",
+							Description: "DevsyInstanceID defines the instance id from the devsy instance",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -8316,7 +8316,7 @@ func schema_pkg_apis_management_v1_Config(ref common.ReferenceCallback) common.O
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "Config holds the loft configuration",
+				Description: "Config holds the devsy configuration",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -8443,7 +8443,7 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					},
 					"oidc": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DEPRECATED: Configure the OIDC clients using either the OIDC Client UI or a secret. By default, vCluster Platform as an OIDC Provider is enabled but does not function without OIDC clients.",
+							Description: "DEPRECATED: Configure the OIDC clients using either the OIDC Client UI or a secret. By default, devsy Platform as an OIDC Provider is enabled but does not function without OIDC clients.",
 							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.OIDC"),
 						},
 					},
@@ -8461,7 +8461,7 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					},
 					"loftHost": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftHost holds the domain where the loft instance is hosted. This should not include https or http. E.g. loft.my-domain.com",
+							Description: "DevsyHost holds the domain where the devsy instance is hosted. This should not include https or http. E.g. loft.my-domain.com",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -8482,7 +8482,7 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					},
 					"uiSettings": {
 						SchemaProps: spec.SchemaProps{
-							Description: "UISettings holds the settings for modifying the Loft user interface",
+							Description: "UISettings holds the settings for modifying the Devsy user interface",
 							Ref:         ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettingsConfig"),
 						},
 					},
@@ -8494,14 +8494,14 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					},
 					"disableConfigEndpoint": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DisableLoftConfigEndpoint will disable setting config via the UI and config.management.loft.sh endpoint",
+							Description: "DisableDevsyConfigEndpoint will disable setting config via the UI and config.management.devsy.sh endpoint",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
 					},
 					"cloud": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Cloud holds the settings to be used exclusively in vCluster Cloud based environments and deployments.",
+							Description: "Cloud holds the settings to be used exclusively in devsy Cloud based environments and deployments.",
 							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.Cloud"),
 						},
 					},
@@ -10982,7 +10982,7 @@ func schema_pkg_apis_management_v1_FeatureStatus(ref common.ReferenceCallback) c
 				Properties: map[string]spec.Schema{
 					"name": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Loft version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
+							Description: "Name is the name of the feature (FeatureName) This cannot be FeatureName because it needs to be downward compatible e.g. older Devsy version doesn't know a newer feature but it will still be received and still needs to be rendered in the license view",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
@@ -11344,7 +11344,7 @@ func schema_pkg_apis_management_v1_KioskSpec(ref common.ReferenceCallback) commo
 				Properties: map[string]spec.Schema{
 					"helmRelease": {
 						SchemaProps: spec.SchemaProps{
-							Description: "cluster.loft.sh",
+							Description: "cluster.devsy.sh",
 							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease"),
 						},
@@ -11363,14 +11363,14 @@ func schema_pkg_apis_management_v1_KioskSpec(ref common.ReferenceCallback) commo
 					},
 					"storageClusterQuota": {
 						SchemaProps: spec.SchemaProps{
-							Description: "storage.loft.sh",
+							Description: "storage.devsy.sh",
 							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota"),
 						},
 					},
 					"UISettings": {
 						SchemaProps: spec.SchemaProps{
-							Description: "ui.loft.sh",
+							Description: "ui.devsy.sh",
 							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettings"),
 						},
@@ -11822,11 +11822,11 @@ func schema_pkg_apis_management_v1_LicenseTokenStatus(ref common.ReferenceCallba
 	}
 }
 
-func schema_pkg_apis_management_v1_LoftUpgrade(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_DevsyUpgrade(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "LoftUpgrade holds the upgrade information",
+				Description: "DevsyUpgrade holds the upgrade information",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -11852,24 +11852,24 @@ func schema_pkg_apis_management_v1_LoftUpgrade(ref common.ReferenceCallback) com
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec", "github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeSpec", "github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgradeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
-func schema_pkg_apis_management_v1_LoftUpgradeList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_DevsyUpgradeList(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
@@ -11902,7 +11902,7 @@ func schema_pkg_apis_management_v1_LoftUpgradeList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgrade"),
 									},
 								},
 							},
@@ -11913,11 +11913,11 @@ func schema_pkg_apis_management_v1_LoftUpgradeList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevsyUpgrade", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
-func schema_pkg_apis_management_v1_LoftUpgradeSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_DevsyUpgradeSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
@@ -11949,7 +11949,7 @@ func schema_pkg_apis_management_v1_LoftUpgradeSpec(ref common.ReferenceCallback)
 	}
 }
 
-func schema_pkg_apis_management_v1_LoftUpgradeStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_DevsyUpgradeStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
@@ -12459,7 +12459,7 @@ func schema_pkg_apis_management_v1_PredefinedApp(ref common.ReferenceCallback) c
 					},
 					"initialValues": {
 						SchemaProps: spec.SchemaProps{
-							Description: "InitialValues holds the initial values for this app. The values will be prefilled automatically. There are certain placeholders that can be used within the values that are replaced by the loft UI automatically.",
+							Description: "InitialValues holds the initial values for this app. The values will be prefilled automatically. There are certain placeholders that can be used within the values that are replaced by the devsy UI automatically.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -13340,7 +13340,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstance(ref comm
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "ProjectMigrateVirtualClusterInstance holds project vclusterinstance migrate information",
+				Description: "ProjectMigrateVirtualClusterInstance holds project devsyinstance migrate information",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -14380,7 +14380,7 @@ func schema_pkg_apis_management_v1_RegisterVirtualClusterSpec(ref common.Referen
 					},
 					"name": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Name is the virtual cluster instance name. If the name is already taken, the platform will construct a name for the vcluster based on the service uid and this name.",
+							Description: "Name is the virtual cluster instance name. If the name is already taken, the platform will construct a name for the devsy based on the service uid and this name.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -14394,21 +14394,21 @@ func schema_pkg_apis_management_v1_RegisterVirtualClusterSpec(ref common.Referen
 					},
 					"chart": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Chart specifies the vCluster chart.",
+							Description: "Chart specifies the devsy chart.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"version": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Version specifies the vCluster version.",
+							Description: "Version specifies the devsy version.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"values": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Values specifies the vCluster config.",
+							Description: "Values specifies the devsy config.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -14831,7 +14831,7 @@ func schema_pkg_apis_management_v1_RunnerConfig(ref common.ReferenceCallback) co
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "RunnerConfig holds the config the runner retrieves from Loft",
+				Description: "RunnerConfig holds the config the runner retrieves from Devsy",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -14856,7 +14856,7 @@ func schema_pkg_apis_management_v1_RunnerConfig(ref common.ReferenceCallback) co
 					},
 					"tokenCaCert": {
 						SchemaProps: spec.SchemaProps{
-							Description: "TokenCaCert is the certificate authority the Loft tokens will be signed with",
+							Description: "TokenCaCert is the certificate authority the Devsy tokens will be signed with",
 							Type:        []string{"string"},
 							Format:      "byte",
 						},
@@ -15281,7 +15281,7 @@ func schema_pkg_apis_management_v1_SelfStatus(ref common.ReferenceCallback) comm
 					},
 					"instanceID": {
 						SchemaProps: spec.SchemaProps{
-							Description: "InstanceID is the loft instance id",
+							Description: "InstanceID is the devsy instance id",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -17060,7 +17060,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 					},
 					"users": {
 						SchemaProps: spec.SchemaProps{
-							Description: "The loft users that belong to a team",
+							Description: "the devsy users that belong to a team",
 							Type:        []string{"array"},
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
@@ -17147,11 +17147,11 @@ func schema_pkg_apis_management_v1_TeamStatus(ref common.ReferenceCallback) comm
 	}
 }
 
-func schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_TranslateDevsyResourceName(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "TranslateVClusterResourceName holds rename request and response data for given resource",
+				Description: "TranslateDevsyResourceName holds rename request and response data for given resource",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -17177,24 +17177,24 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref common.Refe
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec", "github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameSpec", "github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceNameStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
-func schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_TranslateDevsyResourceNameList(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
@@ -17227,7 +17227,7 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceName"),
 									},
 								},
 							},
@@ -17238,15 +17238,15 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TranslateDevsyResourceName", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
-func schema_pkg_apis_management_v1_TranslateVClusterResourceNameSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_TranslateDevsyResourceNameSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "TranslateVClusterResourceNameSpec holds the specification",
+				Description: "TranslateDevsyResourceNameSpec holds the specification",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"name": {
@@ -17265,26 +17265,26 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceNameSpec(ref common.
 							Format:      "",
 						},
 					},
-					"vclusterName": {
+					"devsyName": {
 						SchemaProps: spec.SchemaProps{
-							Description: "VClusterName is the name of vCluster in which this resource is running",
+							Description: "DevsyName is the name of devsy in which this resource is running",
 							Default:     "",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 				},
-				Required: []string{"name", "namespace", "vclusterName"},
+				Required: []string{"name", "namespace", "devsyName"},
 			},
 		},
 	}
 }
 
-func schema_pkg_apis_management_v1_TranslateVClusterResourceNameStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+func schema_pkg_apis_management_v1_TranslateDevsyResourceNameStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "TranslateVClusterResourceNameStatus holds the status",
+				Description: "TranslateDevsyResourceNameStatus holds the status",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"name": {
@@ -18447,7 +18447,7 @@ func schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseSpec(ref common
 				Properties: map[string]spec.Schema{
 					"connector": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Connector specifies the secret that should be used to connect to an external database server. The connection is used to manage a user and database for the vCluster. A data source endpoint constructed from the created user and database is returned on status. The secret specified by connector should contain the following fields: endpoint - the endpoint where the database server can be accessed user - the database username password - the password for the database username port - the port to be used in conjunction with the endpoint to connect to the databse server. This is commonly 3306",
+							Description: "Connector specifies the secret that should be used to connect to an external database server. The connection is used to manage a user and database for the devsy. A data source endpoint constructed from the created user and database is returned on status. The secret specified by connector should contain the following fields: endpoint - the endpoint where the database server can be accessed user - the database username password - the password for the database username port - the port to be used in conjunction with the endpoint to connect to the databse server. This is commonly 3306",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -18466,7 +18466,7 @@ func schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseStatus(ref comm
 				Properties: map[string]spec.Schema{
 					"dataSource": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DataSource holds a datasource endpoint constructed from the vCluster's designated user and database. The user and database are created from the given connector.",
+							Description: "DataSource holds a datasource endpoint constructed from the devsy's designated user and database. The user and database are created from the given connector.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -19083,7 +19083,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref common.Refer
 					},
 					"online": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Online specifies if there is at least one network peer available for an agentless vCluster.",
+							Description: "Online specifies if there is at least one network peer available for an agentless devsy.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -19732,9 +19732,9 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 							},
 						},
 					},
-					"allowLoftCli": {
+					"allowDevsyCli": {
 						SchemaProps: spec.SchemaProps{
-							Description: "AllowLoftCLI allows certain read-only management requests to make sure loft cli works correctly with this specific access key.\n\nDeprecated: Use the `roles` field instead\n ```yaml\n # Example:\n roles:\n   - role: loftCLI\n ```",
+							Description: "AllowDevsyCLI allows certain read-only management requests to make sure loft cli works correctly with this specific access key.\n\nDeprecated: Use the `roles` field instead\n ```yaml\n # Example:\n roles:\n   - role: devsyCLI\n ```",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -19793,10 +19793,10 @@ func schema_pkg_apis_storage_v1_AccessKeyScopeRole(ref common.ReferenceCallback)
 				Properties: map[string]spec.Schema{
 					"role": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Role is the name of the role to apply to the access key scope.\n\nPossible enum values:\n - `\"agent\"`\n - `\"loft-cli\"`\n - `\"network-peer\"`\n - `\"runner\"`\n - `\"vcluster\"`",
+							Description: "Role is the name of the role to apply to the access key scope.\n\nPossible enum values:\n - `\"agent\"`\n - `\"loft-cli\"`\n - `\"network-peer\"`\n - `\"runner\"`\n - `\"devsy\"`",
 							Type:        []string{"string"},
 							Format:      "",
-							Enum:        []interface{}{"agent", "loft-cli", "network-peer", "runner", "vcluster"},
+							Enum:        []interface{}{"agent", "loft-cli", "network-peer", "runner", "devsy"},
 						},
 					},
 					"projects": {
@@ -20252,7 +20252,7 @@ func schema_pkg_apis_storage_v1_AllowedTemplate(ref common.ReferenceCallback) co
 					},
 					"group": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Group of the template that is allowed. Currently only supports storage.loft.sh",
+							Description: "Group of the template that is allowed. Currently only supports storage.devsy.sh",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -20940,13 +20940,13 @@ func schema_pkg_apis_storage_v1_ArgoIntegrationSpec(ref common.ReferenceCallback
 					},
 					"sso": {
 						SchemaProps: spec.SchemaProps{
-							Description: "SSO defines single-sign-on related values for the ArgoCD Integration. Enabling SSO will allow users to authenticate to ArgoCD via Loft.",
+							Description: "SSO defines single-sign-on related values for the ArgoCD Integration. Enabling SSO will allow users to authenticate to ArgoCD via Devsy.",
 							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoSSOSpec"),
 						},
 					},
 					"project": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Project defines project related values for the ArgoCD Integration. Enabling Project integration will cause Loft to generate and manage an ArgoCD appProject that corresponds to the Loft Project.",
+							Description: "Project defines project related values for the ArgoCD Integration. Enabling Project integration will cause Loft to generate and manage an ArgoCD appProject that corresponds to the Devsy Project.",
 							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpec"),
 						},
 					},
@@ -21056,14 +21056,14 @@ func schema_pkg_apis_storage_v1_ArgoProjectSpec(ref common.ReferenceCallback) co
 				Properties: map[string]spec.Schema{
 					"enabled": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Enabled indicates if the ArgoCD Project Integration is enabled for this project. Enabling this will cause Loft to create an appProject in ArgoCD that is associated with the Loft Project. When Project integration is enabled Loft will override the default assigned role set in the SSO integration spec.",
+							Description: "Enabled indicates if the ArgoCD Project Integration is enabled for this project. Enabling this will cause Loft to create an appProject in ArgoCD that is associated with the Devsy Project. When Project integration is enabled Loft will override the default assigned role set in the SSO integration spec.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
 					},
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Metadata defines additional metadata to attach to the loft created project in ArgoCD.",
+							Description: "Metadata defines additional metadata to attach to the devsy created project in ArgoCD.",
 							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpecMetadata"),
 						},
@@ -21164,21 +21164,21 @@ func schema_pkg_apis_storage_v1_ArgoSSOSpec(ref common.ReferenceCallback) common
 				Properties: map[string]spec.Schema{
 					"enabled": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Enabled indicates if the ArgoCD SSO Integration is enabled for this project. Enabling this will cause Loft to configure SSO authentication via Loft in ArgoCD. If Projects are *not* enabled, all users associated with this Project will be assigned either the 'read-only' (default) role, *or* the roles set under the AssignedRoles field.",
+							Description: "Enabled indicates if the ArgoCD SSO Integration is enabled for this project. Enabling this will cause Loft to configure SSO authentication via Devsy in ArgoCD. If Projects are *not* enabled, all users associated with this Project will be assigned either the 'read-only' (default) role, *or* the roles set under the AssignedRoles field.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
 					},
 					"host": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Host defines the ArgoCD host address that will be used for OIDC authentication between loft and ArgoCD. If not specified OIDC integration will be skipped, but vclusters/spaces will still be synced to ArgoCD.",
+							Description: "Host defines the ArgoCD host address that will be used for OIDC authentication between loft and ArgoCD. If not specified OIDC integration will be skipped, but devsys/spaces will still be synced to ArgoCD.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"assignedRoles": {
 						SchemaProps: spec.SchemaProps{
-							Description: "AssignedRoles is a list of roles to assign for users who authenticate via Loft -- by default this will be the `read-only` role. If any roles are provided this will override the default setting.",
+							Description: "AssignedRoles is a list of roles to assign for users who authenticate via Devsy -- by default this will be the `read-only` role. If any roles are provided this will override the default setting.",
 							Type:        []string{"array"},
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
@@ -24377,7 +24377,7 @@ func schema_pkg_apis_storage_v1_Member(ref common.ReferenceCallback) common.Open
 					},
 					"group": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Group of the member. Currently only supports storage.loft.sh",
+							Description: "Group of the member. Currently only supports storage.devsy.sh",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -25551,7 +25551,7 @@ func schema_pkg_apis_storage_v1_RancherIntegrationSpec(ref common.ReferenceCallb
 					},
 					"syncMembers": {
 						SchemaProps: spec.SchemaProps{
-							Description: "SyncMembers defines settings to sync Rancher project members to the loft project",
+							Description: "SyncMembers defines settings to sync Rancher project members to the devsy project",
 							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SyncMembersSpec"),
 						},
@@ -25572,7 +25572,7 @@ func schema_pkg_apis_storage_v1_RancherProjectRef(ref common.ReferenceCallback) 
 				Properties: map[string]spec.Schema{
 					"cluster": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Cluster defines the Rancher cluster ID Needs to be the same id within Loft",
+							Description: "Cluster defines the Rancher cluster ID Needs to be the same id within Devsy",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -27092,7 +27092,7 @@ func schema_pkg_apis_storage_v1_SyncMembersSpec(ref common.ReferenceCallback) co
 				Properties: map[string]spec.Schema{
 					"enabled": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Enabled indicates whether to sync rancher project members to the loft project.",
+							Description: "Enabled indicates whether to sync rancher project members to the devsy project.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -27605,7 +27605,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 					},
 					"users": {
 						SchemaProps: spec.SchemaProps{
-							Description: "The loft users that belong to a team",
+							Description: "the devsy users that belong to a team",
 							Type:        []string{"array"},
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
@@ -27976,14 +27976,14 @@ func schema_pkg_apis_storage_v1_UserOrTeam(ref common.ReferenceCallback) common.
 				Properties: map[string]spec.Schema{
 					"user": {
 						SchemaProps: spec.SchemaProps{
-							Description: "User specifies a Loft user.",
+							Description: "User specifies a Devsy user.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"team": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Team specifies a Loft team.",
+							Description: "Team specifies a Devsy team.",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -28242,7 +28242,7 @@ func schema_pkg_apis_storage_v1_VaultIntegrationSpec(ref common.ReferenceCallbac
 				Properties: map[string]spec.Schema{
 					"enabled": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Enabled indicates if the Vault Integration is enabled for the project -- this knob only enables the syncing of secrets to or from Vault, but does not setup Kubernetes authentication methods or Kubernetes secrets engines for vclusters.",
+							Description: "Enabled indicates if the Vault Integration is enabled for the project -- this knob only enables the syncing of secrets to or from Vault, but does not setup Kubernetes authentication methods or Kubernetes secrets engines for devsys.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -28318,7 +28318,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterAccessPointIngressSpec(ref common.
 				Properties: map[string]spec.Schema{
 					"enabled": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Enabled defines if the virtual cluster access point (via ingress) is enabled or not; requires the connected cluster to have the `loft.sh/ingress-suffix` annotation set to define the domain name suffix used for the ingress.",
+							Description: "Enabled defines if the virtual cluster access point (via ingress) is enabled or not; requires the connected cluster to have the `devsy.sh/ingress-suffix` annotation set to define the domain name suffix used for the ingress.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
@@ -29501,7 +29501,7 @@ func schema_pkg_apis_ui_v1_UISettings(ref common.ReferenceCallback) common.OpenA
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
-				Description: "UISettings holds the loft ui configuration settings",
+				Description: "UISettings holds the devsy ui configuration settings",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
 					"kind": {
@@ -29552,14 +29552,14 @@ func schema_pkg_apis_ui_v1_UISettingsConfig(ref common.ReferenceCallback) common
 				Properties: map[string]spec.Schema{
 					"loftVersion": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftVersion holds the current loft version",
+							Description: "DevsyVersion holds the current loft version",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"logoURL": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LogoURL is url pointing to the logo to use in the Loft UI. This path must be accessible for clients accessing the Loft UI!",
+							Description: "LogoURL is url pointing to the logo to use in the Devsy UI. This path must be accessible for clients accessing the Devsy UI!",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -29660,14 +29660,14 @@ func schema_pkg_apis_ui_v1_UISettingsSpec(ref common.ReferenceCallback) common.O
 				Properties: map[string]spec.Schema{
 					"loftVersion": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftVersion holds the current loft version",
+							Description: "DevsyVersion holds the current loft version",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"logoURL": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LogoURL is url pointing to the logo to use in the Loft UI. This path must be accessible for clients accessing the Loft UI!",
+							Description: "LogoURL is url pointing to the logo to use in the Devsy UI. This path must be accessible for clients accessing the Devsy UI!",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -29767,21 +29767,21 @@ func schema_pkg_apis_ui_v1_UISettingsSpec(ref common.ReferenceCallback) common.O
 					},
 					"hasHelmRelease": {
 						SchemaProps: spec.SchemaProps{
-							Description: "HasHelmRelease indicates whether the vCluster Platform instance has been installed via Helm",
+							Description: "HasHelmRelease indicates whether the devsy Platform instance has been installed via Helm",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},
 					},
-					"defaultVClusterVersion": {
+					"defaultDevsyVersion": {
 						SchemaProps: spec.SchemaProps{
-							Description: "DefaultVClusterVersion is the default version of vClusters",
+							Description: "DefaultDevsyVersion is the default version of devsys",
 							Type:        []string{"string"},
 							Format:      "",
 						},
 					},
 					"loftHosted": {
 						SchemaProps: spec.SchemaProps{
-							Description: "LoftHosted indicates whether the vCluster Platform instance is hosted and operated by Loft Labs Inc.",
+							Description: "DevsyHosted indicates whether the devsy Platform instance is hosted and operated by Loft Labs Inc.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},

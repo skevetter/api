@@ -16,58 +16,58 @@ import (
 	cache "k8s.io/client-go/tools/cache"
 )
 
-// LoftUpgradeInformer provides access to a shared informer and lister for
-// LoftUpgrades.
-type LoftUpgradeInformer interface {
+// DevsyUpgradeInformer provides access to a shared informer and lister for
+// DevsyUpgrades.
+type DevsyUpgradeInformer interface {
 	Informer() cache.SharedIndexInformer
-	Lister() v1.LoftUpgradeLister
+	Lister() v1.DevsyUpgradeLister
 }
 
-type loftUpgradeInformer struct {
+type devsyUpgradeInformer struct {
 	factory          internalinterfaces.SharedInformerFactory
 	tweakListOptions internalinterfaces.TweakListOptionsFunc
 }
 
-// NewLoftUpgradeInformer constructs a new informer for LoftUpgrade type.
+// NewDevsyUpgradeInformer constructs a new informer for DevsyUpgrade type.
 // Always prefer using an informer factory to get a shared informer instead of getting an independent
 // one. This reduces memory footprint and number of connections to the server.
-func NewLoftUpgradeInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer {
-	return NewFilteredLoftUpgradeInformer(client, resyncPeriod, indexers, nil)
+func NewDevsyUpgradeInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer {
+	return NewFilteredDevsyUpgradeInformer(client, resyncPeriod, indexers, nil)
 }
 
-// NewFilteredLoftUpgradeInformer constructs a new informer for LoftUpgrade type.
+// NewFilteredDevsyUpgradeInformer constructs a new informer for DevsyUpgrade type.
 // Always prefer using an informer factory to get a shared informer instead of getting an independent
 // one. This reduces memory footprint and number of connections to the server.
-func NewFilteredLoftUpgradeInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer {
+func NewFilteredDevsyUpgradeInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer {
 	return cache.NewSharedIndexInformer(
 		&cache.ListWatch{
 			ListFunc: func(options metav1.ListOptions) (runtime.Object, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.ManagementV1().LoftUpgrades().List(context.TODO(), options)
+				return client.ManagementV1().DevsyUpgrades().List(context.TODO(), options)
 			},
 			WatchFunc: func(options metav1.ListOptions) (watch.Interface, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.ManagementV1().LoftUpgrades().Watch(context.TODO(), options)
+				return client.ManagementV1().DevsyUpgrades().Watch(context.TODO(), options)
 			},
 		},
-		&managementv1.LoftUpgrade{},
+		&managementv1.DevsyUpgrade{},
 		resyncPeriod,
 		indexers,
 	)
 }
 
-func (f *loftUpgradeInformer) defaultInformer(client versioned.Interface, resyncPeriod time.Duration) cache.SharedIndexInformer {
-	return NewFilteredLoftUpgradeInformer(client, resyncPeriod, cache.Indexers{cache.NamespaceIndex: cache.MetaNamespaceIndexFunc}, f.tweakListOptions)
+func (f *devsyUpgradeInformer) defaultInformer(client versioned.Interface, resyncPeriod time.Duration) cache.SharedIndexInformer {
+	return NewFilteredDevsyUpgradeInformer(client, resyncPeriod, cache.Indexers{cache.NamespaceIndex: cache.MetaNamespaceIndexFunc}, f.tweakListOptions)
 }
 
-func (f *loftUpgradeInformer) Informer() cache.SharedIndexInformer {
-	return f.factory.InformerFor(&managementv1.LoftUpgrade{}, f.defaultInformer)
+func (f *devsyUpgradeInformer) Informer() cache.SharedIndexInformer {
+	return f.factory.InformerFor(&managementv1.DevsyUpgrade{}, f.defaultInformer)
 }
 
-func (f *loftUpgradeInformer) Lister() v1.LoftUpgradeLister {
-	return v1.NewLoftUpgradeLister(f.Informer().GetIndexer())
+func (f *devsyUpgradeInformer) Lister() v1.DevsyUpgradeLister {
+	return v1.NewDevsyUpgradeLister(f.Informer().GetIndexer())
 }

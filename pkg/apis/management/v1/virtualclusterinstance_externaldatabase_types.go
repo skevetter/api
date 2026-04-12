@@ -16,7 +16,7 @@ type VirtualClusterExternalDatabase struct {
 
 type VirtualClusterExternalDatabaseSpec struct {
 	// Connector specifies the secret that should be used to connect to an external database server. The connection is
-	// used to manage a user and database for the vCluster. A data source endpoint constructed from the created user and
+	// used to manage a user and database for the devsy. A data source endpoint constructed from the created user and
 	// database is returned on status. The secret specified by connector should contain the following fields:
 	// endpoint - the endpoint where the database server can be accessed
 	// user - the database username
@@ -28,7 +28,7 @@ type VirtualClusterExternalDatabaseSpec struct {
 }
 
 type VirtualClusterExternalDatabaseStatus struct {
-	// DataSource holds a datasource endpoint constructed from the vCluster's designated user and database. The user and
+	// DataSource holds a datasource endpoint constructed from the devsy's designated user and database. The user and
 	// database are created from the given connector.
 	DataSource string `json:"dataSource,omitempty"`
 }

@@ -16,58 +16,58 @@ import (
 	cache "k8s.io/client-go/tools/cache"
 )
 
-// TranslateVClusterResourceNameInformer provides access to a shared informer and lister for
-// TranslateVClusterResourceNames.
-type TranslateVClusterResourceNameInformer interface {
+// TranslateDevsyResourceNameInformer provides access to a shared informer and lister for
+// TranslateDevsyResourceNames.
+type TranslateDevsyResourceNameInformer interface {
 	Informer() cache.SharedIndexInformer
-	Lister() v1.TranslateVClusterResourceNameLister
+	Lister() v1.TranslateDevsyResourceNameLister
 }
 
-type translateVClusterResourceNameInformer struct {
+type translateDevsyResourceNameInformer struct {
 	factory          internalinterfaces.SharedInformerFactory
 	tweakListOptions internalinterfaces.TweakListOptionsFunc
 }
 
-// NewTranslateVClusterResourceNameInformer constructs a new informer for TranslateVClusterResourceName type.
+// NewTranslateDevsyResourceNameInformer constructs a new informer for TranslateDevsyResourceName type.
 // Always prefer using an informer factory to get a shared informer instead of getting an independent
 // one. This reduces memory footprint and number of connections to the server.
-func NewTranslateVClusterResourceNameInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer {
-	return NewFilteredTranslateVClusterResourceNameInformer(client, resyncPeriod, indexers, nil)
+func NewTranslateDevsyResourceNameInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer {
+	return NewFilteredTranslateDevsyResourceNameInformer(client, resyncPeriod, indexers, nil)
 }
 
-// NewFilteredTranslateVClusterResourceNameInformer constructs a new informer for TranslateVClusterResourceName type.
+// NewFilteredTranslateDevsyResourceNameInformer constructs a new informer for TranslateDevsyResourceName type.
 // Always prefer using an informer factory to get a shared informer instead of getting an independent
 // one. This reduces memory footprint and number of connections to the server.
-func NewFilteredTranslateVClusterResourceNameInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer {
+func NewFilteredTranslateDevsyResourceNameInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer {
 	return cache.NewSharedIndexInformer(
 		&cache.ListWatch{
 			ListFunc: func(options metav1.ListOptions) (runtime.Object, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.ManagementV1().TranslateVClusterResourceNames().List(context.TODO(), options)
+				return client.ManagementV1().TranslateDevsyResourceNames().List(context.TODO(), options)
 			},
 			WatchFunc: func(options metav1.ListOptions) (watch.Interface, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.ManagementV1().TranslateVClusterResourceNames().Watch(context.TODO(), options)
+				return client.ManagementV1().TranslateDevsyResourceNames().Watch(context.TODO(), options)
 			},
 		},
-		&managementv1.TranslateVClusterResourceName{},
+		&managementv1.TranslateDevsyResourceName{},
 		resyncPeriod,
 		indexers,
 	)
 }
 
-func (f *translateVClusterResourceNameInformer) defaultInformer(client versioned.Interface, resyncPeriod time.Duration) cache.SharedIndexInformer {
-	return NewFilteredTranslateVClusterResourceNameInformer(client, resyncPeriod, cache.Indexers{cache.NamespaceIndex: cache.MetaNamespaceIndexFunc}, f.tweakListOptions)
+func (f *translateDevsyResourceNameInformer) defaultInformer(client versioned.Interface, resyncPeriod time.Duration) cache.SharedIndexInformer {
+	return NewFilteredTranslateDevsyResourceNameInformer(client, resyncPeriod, cache.Indexers{cache.NamespaceIndex: cache.MetaNamespaceIndexFunc}, f.tweakListOptions)
 }
 
-func (f *translateVClusterResourceNameInformer) Informer() cache.SharedIndexInformer {
-	return f.factory.InformerFor(&managementv1.TranslateVClusterResourceName{}, f.defaultInformer)
+func (f *translateDevsyResourceNameInformer) Informer() cache.SharedIndexInformer {
+	return f.factory.InformerFor(&managementv1.TranslateDevsyResourceName{}, f.defaultInformer)
 }
 
-func (f *translateVClusterResourceNameInformer) Lister() v1.TranslateVClusterResourceNameLister {
-	return v1.NewTranslateVClusterResourceNameLister(f.Informer().GetIndexer())
+func (f *translateDevsyResourceNameInformer) Lister() v1.TranslateDevsyResourceNameLister {
+	return v1.NewTranslateDevsyResourceNameLister(f.Informer().GetIndexer())
 }

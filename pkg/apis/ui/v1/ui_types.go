@@ -5,14 +5,14 @@ import metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 type ProductName string
 
 const (
-	ProductNameLoft        ProductName = "Loft"
-	ProductNameVClusterPro ProductName = "vCluster Platform"
+	ProductNameDevsy        ProductName = "Devsy"
+	ProductNameDevsyPro ProductName = "devsy Platform"
 	ProductNameDevPodPro   ProductName = "DevPod.Pro"
 )
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
-// UISettings holds the loft ui configuration settings
+// UISettings holds the devsy ui configuration settings
 // +k8s:openapi-gen=true
 type UISettings struct {
 	metav1.TypeMeta   `json:",inline"`
@@ -30,34 +30,34 @@ type UISettingsSpec struct {
 	// +optional
 	ProductName string `json:"productName,omitempty"`
 
-	// Offline is true if loft is running in an airgapped environment
+	// Offline is true if devsy is running in an airgapped environment
 	// +optional
 	Offline bool `json:"offline,omitempty"`
 
-	// HasHelmRelease indicates whether the vCluster Platform instance
+	// HasHelmRelease indicates whether the devsy Platform instance
 	// has been installed via Helm
 	HasHelmRelease bool `json:"hasHelmRelease,omitempty"`
 
-	// DefaultVClusterVersion is the default version of vClusters
-	DefaultVClusterVersion string `json:"defaultVClusterVersion,omitempty"`
+	// DefaultDevsyVersion is the default version of devsys
+	DefaultDevsyVersion string `json:"defaultDevsyVersion,omitempty"`
 
-	// LoftHosted indicates whether the vCluster Platform instance
-	// is hosted and operated by Loft Labs Inc.
-	LoftHosted bool `json:"loftHosted,omitempty"`
+	// DevsyHosted indicates whether the devsy Platform instance
+	// is hosted and operated by Devsy Labs Inc.
+	DevsyHosted bool `json:"devsyHosted,omitempty"`
 }
 
 type UISettingsConfig struct {
-	// LoftVersion holds the current loft version
+	// DevsyVersion holds the current devsy version
 	// +optional
-	LoftVersion string `json:"loftVersion,omitempty"`
-	// LogoURL is url pointing to the logo to use in the Loft UI. This path must be accessible for clients accessing
-	// the Loft UI!
+	DevsyVersion string `json:"devsyVersion,omitempty"`
+	// LogoURL is url pointing to the logo to use in the Devsy UI. This path must be accessible for clients accessing
+	// the Devsy UI!
 	// +optional
 	LogoURL string `json:"logoURL,omitempty"`
 	// LogoBackgroundColor is the color value (ex: "#12345") to use as the background color for the logo
 	// +optional
 	LogoBackgroundColor string `json:"logoBackgroundColor,omitempty"`
-	// LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Loft
+	// LegalTemplate is a text (html) string containing the legal template to prompt to users when authenticating to Devsy
 	// +optional
 	LegalTemplate string `json:"legalTemplate,omitempty"`
 	// PrimaryColor is the color value (ex: "#12345") to use as the primary color

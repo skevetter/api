@@ -139,7 +139,7 @@ type DevPodWorkspaceTemplateDefinition struct {
 // +enum
 type GitCloneStrategy string
 
-// WARN: Need to match https://github.com/loft-sh/devpod/pkg/git/clone.go
+// WARN: Need to match https://github.com/devsy-sh/devpod/pkg/git/clone.go
 const (
 	FullCloneStrategy     GitCloneStrategy = ""
 	BloblessCloneStrategy GitCloneStrategy = "blobless"

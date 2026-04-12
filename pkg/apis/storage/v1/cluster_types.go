@@ -8,19 +8,19 @@ import (
 )
 
 const (
-	MetricsFederationServiceNamespaceAnnotation = "loft.sh/metrics-federation-service-namespace"
-	MetricsFederationServiceNameAnnotation      = "loft.sh/metrics-federation-service-name"
-	MetricsFederationServicePortAnnotation      = "loft.sh/metrics-federation-service-port"
+	MetricsFederationServiceNamespaceAnnotation = "devsy.sh/metrics-federation-service-namespace"
+	MetricsFederationServiceNameAnnotation      = "devsy.sh/metrics-federation-service-name"
+	MetricsFederationServicePortAnnotation      = "devsy.sh/metrics-federation-service-port"
 
-	PrometheusLastAppliedHashAnnotation                              = "loft.sh/prometheus-last-applied-hash"
+	PrometheusLastAppliedHashAnnotation                              = "devsy.sh/prometheus-last-applied-hash"
 	PrometheusDeployed                  agentstoragev1.ConditionType = "PrometheusDeployed"
 	PrometheusAvailable                 agentstoragev1.ConditionType = "PrometheusAvailable"
 
-	GlobalPrometheusLastAppliedHashAnnotation                              = "loft.sh/global-prometheus-last-applied-hash"
+	GlobalPrometheusLastAppliedHashAnnotation                              = "devsy.sh/global-prometheus-last-applied-hash"
 	GlobalPrometheusDeployed                  agentstoragev1.ConditionType = "GlobalPrometheusDeployed"
 	GlobalPrometheusAvailable                 agentstoragev1.ConditionType = "GlobalPrometheusAvailable"
 
-	OpenCostLastAppliedHashAnnotation                              = "loft.sh/opencost-last-applied-hash"
+	OpenCostLastAppliedHashAnnotation                              = "devsy.sh/opencost-last-applied-hash"
 	OpenCostDeployed                  agentstoragev1.ConditionType = "OpenCostDeployed"
 	OpenCostAvailable                 agentstoragev1.ConditionType = "OpenCostAvailable"
 )

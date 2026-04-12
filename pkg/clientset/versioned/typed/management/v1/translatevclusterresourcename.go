@@ -13,41 +13,41 @@ import (
 	gentype "k8s.io/client-go/gentype"
 )
 
-// TranslateVClusterResourceNamesGetter has a method to return a TranslateVClusterResourceNameInterface.
+// TranslateDevsyResourceNamesGetter has a method to return a TranslateDevsyResourceNameInterface.
 // A group's client should implement this interface.
-type TranslateVClusterResourceNamesGetter interface {
-	TranslateVClusterResourceNames() TranslateVClusterResourceNameInterface
+type TranslateDevsyResourceNamesGetter interface {
+	TranslateDevsyResourceNames() TranslateDevsyResourceNameInterface
 }
 
-// TranslateVClusterResourceNameInterface has methods to work with TranslateVClusterResourceName resources.
-type TranslateVClusterResourceNameInterface interface {
-	Create(ctx context.Context, translateVClusterResourceName *v1.TranslateVClusterResourceName, opts metav1.CreateOptions) (*v1.TranslateVClusterResourceName, error)
-	Update(ctx context.Context, translateVClusterResourceName *v1.TranslateVClusterResourceName, opts metav1.UpdateOptions) (*v1.TranslateVClusterResourceName, error)
+// TranslateDevsyResourceNameInterface has methods to work with TranslateDevsyResourceName resources.
+type TranslateDevsyResourceNameInterface interface {
+	Create(ctx context.Context, translateDevsyResourceName *v1.TranslateDevsyResourceName, opts metav1.CreateOptions) (*v1.TranslateDevsyResourceName, error)
+	Update(ctx context.Context, translateDevsyResourceName *v1.TranslateDevsyResourceName, opts metav1.UpdateOptions) (*v1.TranslateDevsyResourceName, error)
 	// Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
-	UpdateStatus(ctx context.Context, translateVClusterResourceName *v1.TranslateVClusterResourceName, opts metav1.UpdateOptions) (*v1.TranslateVClusterResourceName, error)
+	UpdateStatus(ctx context.Context, translateDevsyResourceName *v1.TranslateDevsyResourceName, opts metav1.UpdateOptions) (*v1.TranslateDevsyResourceName, error)
 	Delete(ctx context.Context, name string, opts metav1.DeleteOptions) error
 	DeleteCollection(ctx context.Context, opts metav1.DeleteOptions, listOpts metav1.ListOptions) error
-	Get(ctx context.Context, name string, opts metav1.GetOptions) (*v1.TranslateVClusterResourceName, error)
-	List(ctx context.Context, opts metav1.ListOptions) (*v1.TranslateVClusterResourceNameList, error)
+	Get(ctx context.Context, name string, opts metav1.GetOptions) (*v1.TranslateDevsyResourceName, error)
+	List(ctx context.Context, opts metav1.ListOptions) (*v1.TranslateDevsyResourceNameList, error)
 	Watch(ctx context.Context, opts metav1.ListOptions) (watch.Interface, error)
-	Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.TranslateVClusterResourceName, err error)
-	TranslateVClusterResourceNameExpansion
+	Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts metav1.PatchOptions, subresources ...string) (result *v1.TranslateDevsyResourceName, err error)
+	TranslateDevsyResourceNameExpansion
 }
 
-// translateVClusterResourceNames implements TranslateVClusterResourceNameInterface
-type translateVClusterResourceNames struct {
-	*gentype.ClientWithList[*v1.TranslateVClusterResourceName, *v1.TranslateVClusterResourceNameList]
+// translateDevsyResourceNames implements TranslateDevsyResourceNameInterface
+type translateDevsyResourceNames struct {
+	*gentype.ClientWithList[*v1.TranslateDevsyResourceName, *v1.TranslateDevsyResourceNameList]
 }
 
-// newTranslateVClusterResourceNames returns a TranslateVClusterResourceNames
-func newTranslateVClusterResourceNames(c *ManagementV1Client) *translateVClusterResourceNames {
-	return &translateVClusterResourceNames{
-		gentype.NewClientWithList[*v1.TranslateVClusterResourceName, *v1.TranslateVClusterResourceNameList](
-			"translatevclusterresourcenames",
+// newTranslateDevsyResourceNames returns a TranslateDevsyResourceNames
+func newTranslateDevsyResourceNames(c *ManagementV1Client) *translateDevsyResourceNames {
+	return &translateDevsyResourceNames{
+		gentype.NewClientWithList[*v1.TranslateDevsyResourceName, *v1.TranslateDevsyResourceNameList](
+			"translatedevsyresourcenames",
 			c.RESTClient(),
 			scheme.ParameterCodec,
 			"",
-			func() *v1.TranslateVClusterResourceName { return &v1.TranslateVClusterResourceName{} },
-			func() *v1.TranslateVClusterResourceNameList { return &v1.TranslateVClusterResourceNameList{} }),
+			func() *v1.TranslateDevsyResourceName { return &v1.TranslateDevsyResourceName{} },
+			func() *v1.TranslateDevsyResourceNameList { return &v1.TranslateDevsyResourceNameList{} }),
 	}
 }

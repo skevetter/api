@@ -6,13 +6,13 @@ import (
 
 // LoginCmd returns the login command for the product
 func LoginCmd() string {
-	loginCmd := "loft login"
+	loginCmd := "devsy login"
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		return "devpod login"
 	case licenseapi.DevsyPro:
-		return "vcluster login"
+		return "devsy login"
 	case licenseapi.Devsy:
 	}
 
@@ -21,13 +21,13 @@ func LoginCmd() string {
 
 // StartCmd returns the start command for the product
 func StartCmd() string {
-	loginCmd := "loft start"
+	loginCmd := "devsy start"
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		loginCmd = "devpod pro start"
 	case licenseapi.DevsyPro:
-		loginCmd = "vcluster platform start"
+		loginCmd = "devsy platform start"
 	case licenseapi.Devsy:
 	}
 
@@ -36,13 +36,13 @@ func StartCmd() string {
 
 // Url returns the url command for the product
 func Url() string {
-	loginCmd := "loft-url"
+	loginCmd := "devsy-url"
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		loginCmd = "devpod-pro-url"
 	case licenseapi.DevsyPro:
-		loginCmd = "vcluster-pro-url"
+		loginCmd = "devsy-pro-url"
 	case licenseapi.Devsy:
 	}
 
@@ -51,13 +51,13 @@ func Url() string {
 
 // ResetPassword returns the reset password command for the product
 func ResetPassword() string {
-	resetPassword := "loft reset password"
+	resetPassword := "devsy reset password"
 
 	switch Name() {
 	case licenseapi.DevPodPro:
 		return "devpod pro reset password"
 	case licenseapi.DevsyPro:
-		return "vcluster platform reset password"
+		return "devsy platform reset password"
 	case licenseapi.Devsy:
 	}
 
