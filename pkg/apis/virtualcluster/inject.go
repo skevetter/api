@@ -1,7 +1,7 @@
 package virtualcluster
 
 import (
-	"github.com/loft-sh/api/v4/pkg/managerfactory"
+	"github.com/skevetter/api/pkg/managerfactory"
 )
 
 var Factory managerfactory.SharedManagerFactory

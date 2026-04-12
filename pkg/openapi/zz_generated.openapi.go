@@ -16,584 +16,584 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Analytics":                                      schema_loft_sh_admin_apis_pkg_licenseapi_Analytics(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Announcement":                                   schema_loft_sh_admin_apis_pkg_licenseapi_Announcement(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.BlockRequest":                                   schema_loft_sh_admin_apis_pkg_licenseapi_BlockRequest(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Button":                                         schema_loft_sh_admin_apis_pkg_licenseapi_Button(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Feature":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Feature(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestInput":                            schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestInput(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestOutput":                           schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestOutput(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.InstanceTokenAuth":                              schema_loft_sh_admin_apis_pkg_licenseapi_InstanceTokenAuth(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.InstanceTokenClaims":                            schema_loft_sh_admin_apis_pkg_licenseapi_InstanceTokenClaims(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Invoice":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Invoice(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.License":                                        schema_loft_sh_admin_apis_pkg_licenseapi_License(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute":                                schema_loft_sh_admin_apis_pkg_licenseapi_LicenseAPIRoute(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoutes":                               schema_loft_sh_admin_apis_pkg_licenseapi_LicenseAPIRoutes(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Limit":                                          schema_loft_sh_admin_apis_pkg_licenseapi_Limit(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Module":                                         schema_loft_sh_admin_apis_pkg_licenseapi_Module(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.OfflineLicenseKeyClaims":                        schema_loft_sh_admin_apis_pkg_licenseapi_OfflineLicenseKeyClaims(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Plan":                                           schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.PlanExpiration":                                 schema_loft_sh_admin_apis_pkg_licenseapi_PlanExpiration(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPeriod":                                     schema_loft_sh_admin_apis_pkg_licenseapi_PlanPeriod(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPrice":                                      schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.PriceTier":                                      schema_loft_sh_admin_apis_pkg_licenseapi_PriceTier(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Request":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Request(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount":                                  schema_loft_sh_admin_apis_pkg_licenseapi_ResourceCount(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.TierResource":                                   schema_loft_sh_admin_apis_pkg_licenseapi_TierResource(ref),
-		"github.com/loft-sh/admin-apis/pkg/licenseapi.Trial":                                          schema_loft_sh_admin_apis_pkg_licenseapi_Trial(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash":                                schema_apis_loft_cluster_v1_Bash(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart":                               schema_apis_loft_cluster_v1_Chart(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfo":                           schema_apis_loft_cluster_v1_ChartInfo(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoList":                       schema_apis_loft_cluster_v1_ChartInfoList(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoSpec":                       schema_apis_loft_cluster_v1_ChartInfoSpec(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoStatus":                     schema_apis_loft_cluster_v1_ChartInfoStatus(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef":                      schema_apis_loft_cluster_v1_ChartSecretRef(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.EpochInfo":                           schema_apis_loft_cluster_v1_EpochInfo(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Feature":                             schema_apis_loft_cluster_v1_Feature(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureList":                         schema_apis_loft_cluster_v1_FeatureList(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureSpec":                         schema_apis_loft_cluster_v1_FeatureSpec(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureStatus":                       schema_apis_loft_cluster_v1_FeatureStatus(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmRelease":                         schema_apis_loft_cluster_v1_HelmRelease(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseApp":                      schema_apis_loft_cluster_v1_HelmReleaseApp(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig":                   schema_apis_loft_cluster_v1_HelmReleaseConfig(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseList":                     schema_apis_loft_cluster_v1_HelmReleaseList(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseSpec":                     schema_apis_loft_cluster_v1_HelmReleaseSpec(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseStatus":                   schema_apis_loft_cluster_v1_HelmReleaseStatus(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Info":                                schema_apis_loft_cluster_v1_Info(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.LastActivityInfo":                    schema_apis_loft_cluster_v1_LastActivityInfo(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Maintainer":                          schema_apis_loft_cluster_v1_Maintainer(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata":                            schema_apis_loft_cluster_v1_Metadata(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ProjectSecretRef":                    schema_apis_loft_cluster_v1_ProjectSecretRef(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig":                     schema_apis_loft_cluster_v1_SleepModeConfig(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigSpec":                 schema_apis_loft_cluster_v1_SleepModeConfigSpec(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigStatus":               schema_apis_loft_cluster_v1_SleepModeConfigStatus(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuota":                        schema_apis_loft_storage_v1_ClusterQuota(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaList":                    schema_apis_loft_storage_v1_ClusterQuotaList(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaSpec":                    schema_apis_loft_storage_v1_ClusterQuotaSpec(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatus":                  schema_apis_loft_storage_v1_ClusterQuotaStatus(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatusByNamespace":       schema_apis_loft_storage_v1_ClusterQuotaStatusByNamespace(ref),
-		"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition":                           schema_apis_loft_storage_v1_Condition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/audit/v1.Event":                                           schema_pkg_apis_audit_v1_Event(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/audit/v1.EventList":                                       schema_pkg_apis_audit_v1_EventList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/audit/v1.ObjectReference":                                 schema_pkg_apis_audit_v1_ObjectReference(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAnalyticsSpec":                         schema_pkg_apis_management_v1_AgentAnalyticsSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditConfig":                           schema_pkg_apis_management_v1_AgentAuditConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEvent":                            schema_pkg_apis_management_v1_AgentAuditEvent(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventList":                        schema_pkg_apis_management_v1_AgentAuditEventList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventSpec":                        schema_pkg_apis_management_v1_AgentAuditEventSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventStatus":                      schema_pkg_apis_management_v1_AgentAuditEventStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Announcement":                               schema_pkg_apis_management_v1_Announcement(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementList":                           schema_pkg_apis_management_v1_AnnouncementList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementSpec":                           schema_pkg_apis_management_v1_AnnouncementSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementStatus":                         schema_pkg_apis_management_v1_AnnouncementStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.App":                                        schema_pkg_apis_management_v1_App(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppCredentials":                             schema_pkg_apis_management_v1_AppCredentials(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppCredentialsList":                         schema_pkg_apis_management_v1_AppCredentialsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppList":                                    schema_pkg_apis_management_v1_AppList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppSpec":                                    schema_pkg_apis_management_v1_AppSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppStatus":                                  schema_pkg_apis_management_v1_AppStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Apps":                                       schema_pkg_apis_management_v1_Apps(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Audit":                                      schema_pkg_apis_management_v1_Audit(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicy":                                schema_pkg_apis_management_v1_AuditPolicy(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicyRule":                            schema_pkg_apis_management_v1_AuditPolicyRule(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Authentication":                             schema_pkg_apis_management_v1_Authentication(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub":                       schema_pkg_apis_management_v1_AuthenticationGithub(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithubOrg":                    schema_pkg_apis_management_v1_AuthenticationGithubOrg(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab":                       schema_pkg_apis_management_v1_AuthenticationGitlab(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle":                       schema_pkg_apis_management_v1_AuthenticationGoogle(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft":                    schema_pkg_apis_management_v1_AuthenticationMicrosoft(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC":                         schema_pkg_apis_management_v1_AuthenticationOIDC(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationPassword":                     schema_pkg_apis_management_v1_AuthenticationPassword(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationRancher":                      schema_pkg_apis_management_v1_AuthenticationRancher(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML":                         schema_pkg_apis_management_v1_AuthenticationSAML(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Backup":                                     schema_pkg_apis_management_v1_Backup(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApply":                                schema_pkg_apis_management_v1_BackupApply(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApplyList":                            schema_pkg_apis_management_v1_BackupApplyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApplyOptions":                         schema_pkg_apis_management_v1_BackupApplyOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApplySpec":                            schema_pkg_apis_management_v1_BackupApplySpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupList":                                 schema_pkg_apis_management_v1_BackupList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupSpec":                                 schema_pkg_apis_management_v1_BackupSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupStatus":                               schema_pkg_apis_management_v1_BackupStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Cloud":                                      schema_pkg_apis_management_v1_Cloud(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Cluster":                                    schema_pkg_apis_management_v1_Cluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccess":                              schema_pkg_apis_management_v1_ClusterAccess(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessKey":                           schema_pkg_apis_management_v1_ClusterAccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessKeyList":                       schema_pkg_apis_management_v1_ClusterAccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessList":                          schema_pkg_apis_management_v1_ClusterAccessList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessSpec":                          schema_pkg_apis_management_v1_ClusterAccessSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessStatus":                        schema_pkg_apis_management_v1_ClusterAccessStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccounts":                            schema_pkg_apis_management_v1_ClusterAccounts(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfig":                         schema_pkg_apis_management_v1_ClusterAgentConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfigCommon":                   schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfigList":                     schema_pkg_apis_management_v1_ClusterAgentConfigList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterCharts":                              schema_pkg_apis_management_v1_ClusterCharts(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterChartsList":                          schema_pkg_apis_management_v1_ClusterChartsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterDomain":                              schema_pkg_apis_management_v1_ClusterDomain(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterDomainList":                          schema_pkg_apis_management_v1_ClusterDomainList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterList":                                schema_pkg_apis_management_v1_ClusterList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember":                              schema_pkg_apis_management_v1_ClusterMember(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMemberAccess":                        schema_pkg_apis_management_v1_ClusterMemberAccess(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMemberAccessList":                    schema_pkg_apis_management_v1_ClusterMemberAccessList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMembers":                             schema_pkg_apis_management_v1_ClusterMembers(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMembersList":                         schema_pkg_apis_management_v1_ClusterMembersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterReset":                               schema_pkg_apis_management_v1_ClusterReset(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterResetList":                           schema_pkg_apis_management_v1_ClusterResetList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplate":                        schema_pkg_apis_management_v1_ClusterRoleTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateList":                    schema_pkg_apis_management_v1_ClusterRoleTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateSpec":                    schema_pkg_apis_management_v1_ClusterRoleTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateStatus":                  schema_pkg_apis_management_v1_ClusterRoleTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterSpec":                                schema_pkg_apis_management_v1_ClusterSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterStatus":                              schema_pkg_apis_management_v1_ClusterStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterVirtualClusterDefaults":              schema_pkg_apis_management_v1_ClusterVirtualClusterDefaults(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterVirtualClusterDefaultsList":          schema_pkg_apis_management_v1_ClusterVirtualClusterDefaultsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Config":                                     schema_pkg_apis_management_v1_Config(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigList":                                 schema_pkg_apis_management_v1_ConfigList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigSpec":                                 schema_pkg_apis_management_v1_ConfigSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigStatus":                               schema_pkg_apis_management_v1_ConfigStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Connector":                                  schema_pkg_apis_management_v1_Connector(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConnectorWithName":                          schema_pkg_apis_management_v1_ConnectorWithName(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfig":                schema_pkg_apis_management_v1_ConvertVirtualClusterConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigList":            schema_pkg_apis_management_v1_ConvertVirtualClusterConfigList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec":            schema_pkg_apis_management_v1_ConvertVirtualClusterConfigSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus":          schema_pkg_apis_management_v1_ConvertVirtualClusterConfigStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControl":                                schema_pkg_apis_management_v1_CostControl(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlClusterConfig":                   schema_pkg_apis_management_v1_CostControlClusterConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlGlobalConfig":                    schema_pkg_apis_management_v1_CostControlGlobalConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlResourcePrice":                   schema_pkg_apis_management_v1_CostControlResourcePrice(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlSettings":                        schema_pkg_apis_management_v1_CostControlSettings(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodDeleteOptions":                        schema_pkg_apis_management_v1_DevPodDeleteOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodDeleteOptionsList":                    schema_pkg_apis_management_v1_DevPodDeleteOptionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplate":                  schema_pkg_apis_management_v1_DevPodEnvironmentTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateList":              schema_pkg_apis_management_v1_DevPodEnvironmentTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec":              schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus":            schema_pkg_apis_management_v1_DevPodEnvironmentTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodSshOptions":                           schema_pkg_apis_management_v1_DevPodSshOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodSshOptionsList":                       schema_pkg_apis_management_v1_DevPodSshOptionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStatusOptions":                        schema_pkg_apis_management_v1_DevPodStatusOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStatusOptionsList":                    schema_pkg_apis_management_v1_DevPodStatusOptionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStopOptions":                          schema_pkg_apis_management_v1_DevPodStopOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStopOptionsList":                      schema_pkg_apis_management_v1_DevPodStopOptionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodUpOptions":                            schema_pkg_apis_management_v1_DevPodUpOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodUpOptionsList":                        schema_pkg_apis_management_v1_DevPodUpOptionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstance":                    schema_pkg_apis_management_v1_DevPodWorkspaceInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceList":                schema_pkg_apis_management_v1_DevPodWorkspaceInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec":                schema_pkg_apis_management_v1_DevPodWorkspaceInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceState":               schema_pkg_apis_management_v1_DevPodWorkspaceInstanceState(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStateList":           schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus":              schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot":        schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshoot(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshootList":    schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshootList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePreset":                      schema_pkg_apis_management_v1_DevPodWorkspacePreset(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetList":                  schema_pkg_apis_management_v1_DevPodWorkspacePresetList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetSource":                schema_pkg_apis_management_v1_DevPodWorkspacePresetSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetSpec":                  schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetStatus":                schema_pkg_apis_management_v1_DevPodWorkspacePresetStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplate":                    schema_pkg_apis_management_v1_DevPodWorkspaceTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateList":                schema_pkg_apis_management_v1_DevPodWorkspaceTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec":                schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus":              schema_pkg_apis_management_v1_DevPodWorkspaceTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointToken":                 schema_pkg_apis_management_v1_DirectClusterEndpointToken(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenList":             schema_pkg_apis_management_v1_DirectClusterEndpointTokenList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenSpec":             schema_pkg_apis_management_v1_DirectClusterEndpointTokenSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenStatus":           schema_pkg_apis_management_v1_DirectClusterEndpointTokenStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Event":                                      schema_pkg_apis_management_v1_Event(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.EventList":                                  schema_pkg_apis_management_v1_EventList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.EventSpec":                                  schema_pkg_apis_management_v1_EventSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.EventStatus":                                schema_pkg_apis_management_v1_EventStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Feature":                                    schema_pkg_apis_management_v1_Feature(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureList":                                schema_pkg_apis_management_v1_FeatureList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureSpec":                                schema_pkg_apis_management_v1_FeatureSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureStatus":                              schema_pkg_apis_management_v1_FeatureStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.GroupResources":                             schema_pkg_apis_management_v1_GroupResources(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthToken":                           schema_pkg_apis_management_v1_IngressAuthToken(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenList":                       schema_pkg_apis_management_v1_IngressAuthTokenList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenSpec":                       schema_pkg_apis_management_v1_IngressAuthTokenSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenStatus":                     schema_pkg_apis_management_v1_IngressAuthTokenStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Kiosk":                                      schema_pkg_apis_management_v1_Kiosk(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskList":                                  schema_pkg_apis_management_v1_KioskList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskSpec":                                  schema_pkg_apis_management_v1_KioskSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskStatus":                                schema_pkg_apis_management_v1_KioskStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.License":                                    schema_pkg_apis_management_v1_License(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseList":                                schema_pkg_apis_management_v1_LicenseList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequest":                             schema_pkg_apis_management_v1_LicenseRequest(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestList":                         schema_pkg_apis_management_v1_LicenseRequestList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestSpec":                         schema_pkg_apis_management_v1_LicenseRequestSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestStatus":                       schema_pkg_apis_management_v1_LicenseRequestStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseSpec":                                schema_pkg_apis_management_v1_LicenseSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseStatus":                              schema_pkg_apis_management_v1_LicenseStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseToken":                               schema_pkg_apis_management_v1_LicenseToken(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenList":                           schema_pkg_apis_management_v1_LicenseTokenList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenSpec":                           schema_pkg_apis_management_v1_LicenseTokenSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenStatus":                         schema_pkg_apis_management_v1_LicenseTokenStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgrade":                                schema_pkg_apis_management_v1_LoftUpgrade(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeList":                            schema_pkg_apis_management_v1_LoftUpgradeList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeSpec":                            schema_pkg_apis_management_v1_LoftUpgradeSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeStatus":                          schema_pkg_apis_management_v1_LoftUpgradeStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.MaintenanceWindow":                          schema_pkg_apis_management_v1_MaintenanceWindow(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDC":                                       schema_pkg_apis_management_v1_OIDC(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClient":                                 schema_pkg_apis_management_v1_OIDCClient(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientList":                             schema_pkg_apis_management_v1_OIDCClientList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientSpec":                             schema_pkg_apis_management_v1_OIDCClientSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientStatus":                           schema_pkg_apis_management_v1_OIDCClientStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey":                             schema_pkg_apis_management_v1_OwnedAccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeyList":                         schema_pkg_apis_management_v1_OwnedAccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeySpec":                         schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeyStatus":                       schema_pkg_apis_management_v1_OwnedAccessKeyStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.PredefinedApp":                              schema_pkg_apis_management_v1_PredefinedApp(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Project":                                    schema_pkg_apis_management_v1_Project(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfo":                           schema_pkg_apis_management_v1_ProjectChartInfo(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoList":                       schema_pkg_apis_management_v1_ProjectChartInfoList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoSpec":                       schema_pkg_apis_management_v1_ProjectChartInfoSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoStatus":                     schema_pkg_apis_management_v1_ProjectChartInfoStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectCharts":                              schema_pkg_apis_management_v1_ProjectCharts(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartsList":                          schema_pkg_apis_management_v1_ProjectChartsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectClusters":                            schema_pkg_apis_management_v1_ProjectClusters(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectClustersList":                        schema_pkg_apis_management_v1_ProjectClustersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpace":                         schema_pkg_apis_management_v1_ProjectImportSpace(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpaceList":                     schema_pkg_apis_management_v1_ProjectImportSpaceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpaceSource":                   schema_pkg_apis_management_v1_ProjectImportSpaceSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectList":                                schema_pkg_apis_management_v1_ProjectList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMember":                              schema_pkg_apis_management_v1_ProjectMember(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMembers":                             schema_pkg_apis_management_v1_ProjectMembers(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMembersList":                         schema_pkg_apis_management_v1_ProjectMembersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstance":                schema_pkg_apis_management_v1_ProjectMigrateSpaceInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstanceList":            schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource":          schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance":       schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceList":   schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource": schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectRunners":                             schema_pkg_apis_management_v1_ProjectRunners(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectRunnersList":                         schema_pkg_apis_management_v1_ProjectRunnersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecret":                              schema_pkg_apis_management_v1_ProjectSecret(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretList":                          schema_pkg_apis_management_v1_ProjectSecretList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretSpec":                          schema_pkg_apis_management_v1_ProjectSecretSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretStatus":                        schema_pkg_apis_management_v1_ProjectSecretStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSpec":                                schema_pkg_apis_management_v1_ProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectStatus":                              schema_pkg_apis_management_v1_ProjectStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectTemplates":                           schema_pkg_apis_management_v1_ProjectTemplates(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectTemplatesList":                       schema_pkg_apis_management_v1_ProjectTemplatesList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectToken":                              schema_pkg_apis_management_v1_RedirectToken(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenClaims":                        schema_pkg_apis_management_v1_RedirectTokenClaims(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenList":                          schema_pkg_apis_management_v1_RedirectTokenList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenSpec":                          schema_pkg_apis_management_v1_RedirectTokenSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenStatus":                        schema_pkg_apis_management_v1_RedirectTokenStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualCluster":                     schema_pkg_apis_management_v1_RegisterVirtualCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterList":                 schema_pkg_apis_management_v1_RegisterVirtualClusterList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterSpec":                 schema_pkg_apis_management_v1_RegisterVirtualClusterSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterStatus":               schema_pkg_apis_management_v1_RegisterVirtualClusterStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKey":                             schema_pkg_apis_management_v1_ResetAccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeyList":                         schema_pkg_apis_management_v1_ResetAccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeySpec":                         schema_pkg_apis_management_v1_ResetAccessKeySpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeyStatus":                       schema_pkg_apis_management_v1_ResetAccessKeyStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner":                                     schema_pkg_apis_management_v1_Runner(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerAccessKey":                            schema_pkg_apis_management_v1_RunnerAccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerAccessKeyList":                        schema_pkg_apis_management_v1_RunnerAccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerConfig":                               schema_pkg_apis_management_v1_RunnerConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerConfigList":                           schema_pkg_apis_management_v1_RunnerConfigList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerList":                                 schema_pkg_apis_management_v1_RunnerList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerSpec":                                 schema_pkg_apis_management_v1_RunnerSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerStatus":                               schema_pkg_apis_management_v1_RunnerStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Self":                                       schema_pkg_apis_management_v1_Self(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfList":                                   schema_pkg_apis_management_v1_SelfList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSpec":                                   schema_pkg_apis_management_v1_SelfSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfStatus":                                 schema_pkg_apis_management_v1_SelfStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReview":                    schema_pkg_apis_management_v1_SelfSubjectAccessReview(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewList":                schema_pkg_apis_management_v1_SelfSubjectAccessReviewList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewSpec":                schema_pkg_apis_management_v1_SelfSubjectAccessReviewSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewStatus":              schema_pkg_apis_management_v1_SelfSubjectAccessReviewStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecret":                               schema_pkg_apis_management_v1_SharedSecret(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretList":                           schema_pkg_apis_management_v1_SharedSecretList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretSpec":                           schema_pkg_apis_management_v1_SharedSecretSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretStatus":                         schema_pkg_apis_management_v1_SharedSecretStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstance":                              schema_pkg_apis_management_v1_SpaceInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceList":                          schema_pkg_apis_management_v1_SpaceInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceSpec":                          schema_pkg_apis_management_v1_SpaceInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceStatus":                        schema_pkg_apis_management_v1_SpaceInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplate":                              schema_pkg_apis_management_v1_SpaceTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateList":                          schema_pkg_apis_management_v1_SpaceTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateSpec":                          schema_pkg_apis_management_v1_SpaceTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateStatus":                        schema_pkg_apis_management_v1_SpaceTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReview":                        schema_pkg_apis_management_v1_SubjectAccessReview(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewList":                    schema_pkg_apis_management_v1_SubjectAccessReviewList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewSpec":                    schema_pkg_apis_management_v1_SubjectAccessReviewSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewStatus":                  schema_pkg_apis_management_v1_SubjectAccessReviewStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Task":                                       schema_pkg_apis_management_v1_Task(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskList":                                   schema_pkg_apis_management_v1_TaskList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskLog":                                    schema_pkg_apis_management_v1_TaskLog(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskLogList":                                schema_pkg_apis_management_v1_TaskLogList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskLogOptions":                             schema_pkg_apis_management_v1_TaskLogOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskSpec":                                   schema_pkg_apis_management_v1_TaskSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskStatus":                                 schema_pkg_apis_management_v1_TaskStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.Team":                                       schema_pkg_apis_management_v1_Team(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamAccessKeys":                             schema_pkg_apis_management_v1_TeamAccessKeys(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamAccessKeysList":                         schema_pkg_apis_management_v1_TeamAccessKeysList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamClusters":                               schema_pkg_apis_management_v1_TeamClusters(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamClustersList":                           schema_pkg_apis_management_v1_TeamClustersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamList":                                   schema_pkg_apis_management_v1_TeamList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamSpec":                                   schema_pkg_apis_management_v1_TeamSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamStatus":                                 schema_pkg_apis_management_v1_TeamStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceName":              schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameList":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameSpec":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameStatus":        schema_pkg_apis_management_v1_TranslateVClusterResourceNameStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.User":                                       schema_pkg_apis_management_v1_User(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserAccessKeys":                             schema_pkg_apis_management_v1_UserAccessKeys(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserAccessKeysList":                         schema_pkg_apis_management_v1_UserAccessKeysList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserClusters":                               schema_pkg_apis_management_v1_UserClusters(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserClustersList":                           schema_pkg_apis_management_v1_UserClustersList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserInfo":                                   schema_pkg_apis_management_v1_UserInfo(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserList":                                   schema_pkg_apis_management_v1_UserList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissions":                            schema_pkg_apis_management_v1_UserPermissions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissionsList":                        schema_pkg_apis_management_v1_UserPermissionsList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissionsRole":                        schema_pkg_apis_management_v1_UserPermissionsRole(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserProfile":                                schema_pkg_apis_management_v1_UserProfile(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserProfileList":                            schema_pkg_apis_management_v1_UserProfileList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserQuotasOptions":                          schema_pkg_apis_management_v1_UserQuotasOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserSpacesOptions":                          schema_pkg_apis_management_v1_UserSpacesOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserSpec":                                   schema_pkg_apis_management_v1_UserSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserStatus":                                 schema_pkg_apis_management_v1_UserStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserVirtualClustersOptions":                 schema_pkg_apis_management_v1_UserVirtualClustersOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterAccessKey":                    schema_pkg_apis_management_v1_VirtualClusterAccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterAccessKeyList":                schema_pkg_apis_management_v1_VirtualClusterAccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabase":             schema_pkg_apis_management_v1_VirtualClusterExternalDatabase(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseList":         schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec":         schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus":       schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstance":                     schema_pkg_apis_management_v1_VirtualClusterInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig":           schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigList":       schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec":       schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus":     schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceList":                 schema_pkg_apis_management_v1_VirtualClusterInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceLog":                  schema_pkg_apis_management_v1_VirtualClusterInstanceLog(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceLogList":              schema_pkg_apis_management_v1_VirtualClusterInstanceLogList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceLogOptions":           schema_pkg_apis_management_v1_VirtualClusterInstanceLogOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceSpec":                 schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceStatus":               schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplate":                     schema_pkg_apis_management_v1_VirtualClusterTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateList":                 schema_pkg_apis_management_v1_VirtualClusterTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateSpec":                 schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateStatus":               schema_pkg_apis_management_v1_VirtualClusterTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access":                                        schema_pkg_apis_storage_v1_Access(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKey":                                     schema_pkg_apis_storage_v1_AccessKey(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity":                             schema_pkg_apis_storage_v1_AccessKeyIdentity(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyList":                                 schema_pkg_apis_storage_v1_AccessKeyList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC":                                 schema_pkg_apis_storage_v1_AccessKeyOIDC(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider":                         schema_pkg_apis_storage_v1_AccessKeyOIDCProvider(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope":                                schema_pkg_apis_storage_v1_AccessKeyScope(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeCluster":                         schema_pkg_apis_storage_v1_AccessKeyScopeCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeProject":                         schema_pkg_apis_storage_v1_AccessKeyScopeProject(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRole":                            schema_pkg_apis_storage_v1_AccessKeyScopeRole(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRule":                            schema_pkg_apis_storage_v1_AccessKeyScopeRule(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeSpace":                           schema_pkg_apis_storage_v1_AccessKeyScopeSpace(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster":                  schema_pkg_apis_storage_v1_AccessKeyScopeVirtualCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeySpec":                                 schema_pkg_apis_storage_v1_AccessKeySpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyStatus":                               schema_pkg_apis_storage_v1_AccessKeyStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyVirtualCluster":                       schema_pkg_apis_storage_v1_AccessKeyVirtualCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedCluster":                                schema_pkg_apis_storage_v1_AllowedCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedClusterAccountTemplate":                 schema_pkg_apis_storage_v1_AllowedClusterAccountTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedRunner":                                 schema_pkg_apis_storage_v1_AllowedRunner(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedTemplate":                               schema_pkg_apis_storage_v1_AllowedTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.App":                                           schema_pkg_apis_storage_v1_App(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppConfig":                                     schema_pkg_apis_storage_v1_AppConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppList":                                       schema_pkg_apis_storage_v1_AppList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter":                                  schema_pkg_apis_storage_v1_AppParameter(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference":                                  schema_pkg_apis_storage_v1_AppReference(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppSpec":                                       schema_pkg_apis_storage_v1_AppSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppStatus":                                     schema_pkg_apis_storage_v1_AppStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppTask":                                       schema_pkg_apis_storage_v1_AppTask(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppVersion":                                    schema_pkg_apis_storage_v1_AppVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoIntegrationSpec":                           schema_pkg_apis_storage_v1_ArgoIntegrationSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectPolicyRule":                         schema_pkg_apis_storage_v1_ArgoProjectPolicyRule(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectRole":                               schema_pkg_apis_storage_v1_ArgoProjectRole(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpec":                               schema_pkg_apis_storage_v1_ArgoProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpecMetadata":                       schema_pkg_apis_storage_v1_ArgoProjectSpecMetadata(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoSSOSpec":                                   schema_pkg_apis_storage_v1_ArgoSSOSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Chart":                                         schema_pkg_apis_storage_v1_Chart(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ChartStatus":                                   schema_pkg_apis_storage_v1_ChartStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Cluster":                                       schema_pkg_apis_storage_v1_Cluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccess":                                 schema_pkg_apis_storage_v1_ClusterAccess(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessList":                             schema_pkg_apis_storage_v1_ClusterAccessList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessSpec":                             schema_pkg_apis_storage_v1_ClusterAccessSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessStatus":                           schema_pkg_apis_storage_v1_ClusterAccessStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterList":                                   schema_pkg_apis_storage_v1_ClusterList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef":                                    schema_pkg_apis_storage_v1_ClusterRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef":                                schema_pkg_apis_storage_v1_ClusterRoleRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplate":                           schema_pkg_apis_storage_v1_ClusterRoleTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateList":                       schema_pkg_apis_storage_v1_ClusterRoleTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateSpec":                       schema_pkg_apis_storage_v1_ClusterRoleTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateStatus":                     schema_pkg_apis_storage_v1_ClusterRoleTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate":                   schema_pkg_apis_storage_v1_ClusterRoleTemplateTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterSpec":                                   schema_pkg_apis_storage_v1_ClusterSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterStatus":                                 schema_pkg_apis_storage_v1_ClusterStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.CredentialForwarding":                          schema_pkg_apis_storage_v1_CredentialForwarding(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodCommandDeleteOptions":                    schema_pkg_apis_storage_v1_DevPodCommandDeleteOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodCommandStatusOptions":                    schema_pkg_apis_storage_v1_DevPodCommandStatusOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodCommandStopOptions":                      schema_pkg_apis_storage_v1_DevPodCommandStopOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodCommandUpOptions":                        schema_pkg_apis_storage_v1_DevPodCommandUpOptions(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplate":                     schema_pkg_apis_storage_v1_DevPodEnvironmentTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition":           schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateList":                 schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec":                 schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus":               schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion":              schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProjectSpec":                             schema_pkg_apis_storage_v1_DevPodProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption":                          schema_pkg_apis_storage_v1_DevPodProviderOption(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOptionFrom":                      schema_pkg_apis_storage_v1_DevPodProviderOptionFrom(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderSource":                          schema_pkg_apis_storage_v1_DevPodProviderSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstance":                       schema_pkg_apis_storage_v1_DevPodWorkspaceInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceList":                   schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec":                   schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus":                 schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition":     schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePreset":                         schema_pkg_apis_storage_v1_DevPodWorkspacePreset(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetList":                     schema_pkg_apis_storage_v1_DevPodWorkspacePresetList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource":                   schema_pkg_apis_storage_v1_DevPodWorkspacePresetSource(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSpec":                     schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetStatus":                   schema_pkg_apis_storage_v1_DevPodWorkspacePresetStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetVersion":                  schema_pkg_apis_storage_v1_DevPodWorkspacePresetVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceProvider":                       schema_pkg_apis_storage_v1_DevPodWorkspaceProvider(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplate":                       schema_pkg_apis_storage_v1_DevPodWorkspaceTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition":             schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateList":                   schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec":                   schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus":                 schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion":                schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DockerCredentialForwarding":                    schema_pkg_apis_storage_v1_DockerCredentialForwarding(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo":                                    schema_pkg_apis_storage_v1_EntityInfo(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef":                                schema_pkg_apis_storage_v1_EnvironmentRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitCredentialForwarding":                       schema_pkg_apis_storage_v1_GitCredentialForwarding(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitEnvironmentTemplate":                        schema_pkg_apis_storage_v1_GitEnvironmentTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitProjectSpec":                                schema_pkg_apis_storage_v1_GitProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GroupResources":                                schema_pkg_apis_storage_v1_GroupResources(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChart":                                     schema_pkg_apis_storage_v1_HelmChart(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChartRepository":                           schema_pkg_apis_storage_v1_HelmChartRepository(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmConfiguration":                             schema_pkg_apis_storage_v1_HelmConfiguration(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTask":                                      schema_pkg_apis_storage_v1_HelmTask(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTaskRelease":                               schema_pkg_apis_storage_v1_HelmTaskRelease(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ImportVirtualClustersSpec":                     schema_pkg_apis_storage_v1_ImportVirtualClustersSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess":                                schema_pkg_apis_storage_v1_InstanceAccess(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule":                            schema_pkg_apis_storage_v1_InstanceAccessRule(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceDeployedAppStatus":                     schema_pkg_apis_storage_v1_InstanceDeployedAppStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef":                                 schema_pkg_apis_storage_v1_KindSecretRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessSpec":                        schema_pkg_apis_storage_v1_LocalClusterAccessSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessTemplate":                    schema_pkg_apis_storage_v1_LocalClusterAccessTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplate":                      schema_pkg_apis_storage_v1_LocalClusterRoleTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec":                  schema_pkg_apis_storage_v1_LocalClusterRoleTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Member":                                        schema_pkg_apis_storage_v1_Member(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics":                                       schema_pkg_apis_storage_v1_Metrics(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NamespacePattern":                              schema_pkg_apis_storage_v1_NamespacePattern(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeer":                                   schema_pkg_apis_storage_v1_NetworkPeer(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerList":                               schema_pkg_apis_storage_v1_NetworkPeerList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerSpec":                               schema_pkg_apis_storage_v1_NetworkPeerSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerStatus":                             schema_pkg_apis_storage_v1_NetworkPeerStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus":                                 schema_pkg_apis_storage_v1_ObjectsStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost":                                      schema_pkg_apis_storage_v1_OpenCost(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.PodSelector":                                   schema_pkg_apis_storage_v1_PodSelector(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.PresetRef":                                     schema_pkg_apis_storage_v1_PresetRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Project":                                       schema_pkg_apis_storage_v1_Project(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectList":                                   schema_pkg_apis_storage_v1_ProjectList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectSpec":                                   schema_pkg_apis_storage_v1_ProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectStatus":                                 schema_pkg_apis_storage_v1_ProjectStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatus":                                   schema_pkg_apis_storage_v1_QuotaStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProject":                            schema_pkg_apis_storage_v1_QuotaStatusProject(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProjectCluster":                     schema_pkg_apis_storage_v1_QuotaStatusProjectCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUser":                               schema_pkg_apis_storage_v1_QuotaStatusUser(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUserUsed":                           schema_pkg_apis_storage_v1_QuotaStatusUserUsed(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Quotas":                                        schema_pkg_apis_storage_v1_Quotas(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherIntegrationSpec":                        schema_pkg_apis_storage_v1_RancherIntegrationSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherProjectRef":                             schema_pkg_apis_storage_v1_RancherProjectRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequirePreset":                                 schema_pkg_apis_storage_v1_RequirePreset(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequireTemplate":                               schema_pkg_apis_storage_v1_RequireTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Runner":                                        schema_pkg_apis_storage_v1_Runner(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerClusterRef":                              schema_pkg_apis_storage_v1_RunnerClusterRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerList":                                    schema_pkg_apis_storage_v1_RunnerList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate":           schema_pkg_apis_storage_v1_RunnerPersistentVolumeClaimTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec":       schema_pkg_apis_storage_v1_RunnerPersistentVolumeClaimTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplate":                             schema_pkg_apis_storage_v1_RunnerPodTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplateSpec":                         schema_pkg_apis_storage_v1_RunnerPodTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerRef":                                     schema_pkg_apis_storage_v1_RunnerRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplate":                         schema_pkg_apis_storage_v1_RunnerServiceTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplateSpec":                     schema_pkg_apis_storage_v1_RunnerServiceTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerSpec":                                    schema_pkg_apis_storage_v1_RunnerSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerStatus":                                  schema_pkg_apis_storage_v1_RunnerStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SSHProjectSpec":                                schema_pkg_apis_storage_v1_SSHProjectSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef":                                     schema_pkg_apis_storage_v1_SecretRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecret":                                  schema_pkg_apis_storage_v1_SharedSecret(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretList":                              schema_pkg_apis_storage_v1_SharedSecretList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretSpec":                              schema_pkg_apis_storage_v1_SharedSecretSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretStatus":                            schema_pkg_apis_storage_v1_SharedSecretStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstance":                                 schema_pkg_apis_storage_v1_SpaceInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceList":                             schema_pkg_apis_storage_v1_SpaceInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceSpec":                             schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceStatus":                           schema_pkg_apis_storage_v1_SpaceInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition":               schema_pkg_apis_storage_v1_SpaceInstanceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplate":                                 schema_pkg_apis_storage_v1_SpaceTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition":                       schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateList":                             schema_pkg_apis_storage_v1_SpaceTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateSpec":                             schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateStatus":                           schema_pkg_apis_storage_v1_SpaceTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateVersion":                          schema_pkg_apis_storage_v1_SpaceTemplateVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Storage":                                       schema_pkg_apis_storage_v1_Storage(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer":                               schema_pkg_apis_storage_v1_StreamContainer(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SyncMembersSpec":                               schema_pkg_apis_storage_v1_SyncMembersSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Target":                                        schema_pkg_apis_storage_v1_Target(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetCluster":                                 schema_pkg_apis_storage_v1_TargetCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetInstance":                                schema_pkg_apis_storage_v1_TargetInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetVirtualCluster":                          schema_pkg_apis_storage_v1_TargetVirtualCluster(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Task":                                          schema_pkg_apis_storage_v1_Task(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskDefinition":                                schema_pkg_apis_storage_v1_TaskDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskList":                                      schema_pkg_apis_storage_v1_TaskList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskSpec":                                      schema_pkg_apis_storage_v1_TaskSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskStatus":                                    schema_pkg_apis_storage_v1_TaskStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Team":                                          schema_pkg_apis_storage_v1_Team(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamList":                                      schema_pkg_apis_storage_v1_TeamList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamSpec":                                      schema_pkg_apis_storage_v1_TeamSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamStatus":                                    schema_pkg_apis_storage_v1_TeamStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart":                             schema_pkg_apis_storage_v1_TemplateHelmChart(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata":                              schema_pkg_apis_storage_v1_TemplateMetadata(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef":                                   schema_pkg_apis_storage_v1_TemplateRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.User":                                          schema_pkg_apis_storage_v1_User(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserList":                                      schema_pkg_apis_storage_v1_UserList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam":                                    schema_pkg_apis_storage_v1_UserOrTeam(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeamEntity":                              schema_pkg_apis_storage_v1_UserOrTeamEntity(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserSpec":                                      schema_pkg_apis_storage_v1_UserSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserStatus":                                    schema_pkg_apis_storage_v1_UserStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultAuthSpec":                                 schema_pkg_apis_storage_v1_VaultAuthSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec":                          schema_pkg_apis_storage_v1_VaultIntegrationSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPoint":                     schema_pkg_apis_storage_v1_VirtualClusterAccessPoint(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec":          schema_pkg_apis_storage_v1_VirtualClusterAccessPointIngressSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterClusterRef":                      schema_pkg_apis_storage_v1_VirtualClusterClusterRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterCommonSpec":                      schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmChart":                       schema_pkg_apis_storage_v1_VirtualClusterHelmChart(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease":                     schema_pkg_apis_storage_v1_VirtualClusterHelmRelease(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus":               schema_pkg_apis_storage_v1_VirtualClusterHelmReleaseStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstance":                        schema_pkg_apis_storage_v1_VirtualClusterInstance(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceList":                    schema_pkg_apis_storage_v1_VirtualClusterInstanceList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceSpec":                    schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceStatus":                  schema_pkg_apis_storage_v1_VirtualClusterInstanceStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition":      schema_pkg_apis_storage_v1_VirtualClusterInstanceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterProSpec":                         schema_pkg_apis_storage_v1_VirtualClusterProSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition":         schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterStatus":                          schema_pkg_apis_storage_v1_VirtualClusterStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplate":                        schema_pkg_apis_storage_v1_VirtualClusterTemplate(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition":              schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateList":                    schema_pkg_apis_storage_v1_VirtualClusterTemplateList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef":        schema_pkg_apis_storage_v1_VirtualClusterTemplateSpaceTemplateRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpec":                    schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateStatus":                  schema_pkg_apis_storage_v1_VirtualClusterTemplateStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateVersion":                 schema_pkg_apis_storage_v1_VirtualClusterTemplateVersion(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.WorkspaceRef":                                  schema_pkg_apis_storage_v1_WorkspaceRef(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/storage/v1.WorkspaceStatusResult":                         schema_pkg_apis_storage_v1_WorkspaceStatusResult(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/ui/v1.NavBarButton":                                       schema_pkg_apis_ui_v1_NavBarButton(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettings":                                         schema_pkg_apis_ui_v1_UISettings(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsConfig":                                   schema_pkg_apis_ui_v1_UISettingsConfig(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsSpec":                                     schema_pkg_apis_ui_v1_UISettingsSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsStatus":                                   schema_pkg_apis_ui_v1_UISettingsStatus(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmRelease":                            schema_pkg_apis_virtualcluster_v1_HelmRelease(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseList":                        schema_pkg_apis_virtualcluster_v1_HelmReleaseList(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseSpec":                        schema_pkg_apis_virtualcluster_v1_HelmReleaseSpec(ref),
-		"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseStatus":                      schema_pkg_apis_virtualcluster_v1_HelmReleaseStatus(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Analytics":                                      schema_loft_sh_admin_apis_pkg_licenseapi_Analytics(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Announcement":                                   schema_loft_sh_admin_apis_pkg_licenseapi_Announcement(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.BlockRequest":                                   schema_loft_sh_admin_apis_pkg_licenseapi_BlockRequest(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Button":                                         schema_loft_sh_admin_apis_pkg_licenseapi_Button(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Feature":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Feature(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestInput":                            schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestInput(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestOutput":                           schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestOutput(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.InstanceTokenAuth":                              schema_loft_sh_admin_apis_pkg_licenseapi_InstanceTokenAuth(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.InstanceTokenClaims":                            schema_loft_sh_admin_apis_pkg_licenseapi_InstanceTokenClaims(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Invoice":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Invoice(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.License":                                        schema_loft_sh_admin_apis_pkg_licenseapi_License(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute":                                schema_loft_sh_admin_apis_pkg_licenseapi_LicenseAPIRoute(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoutes":                               schema_loft_sh_admin_apis_pkg_licenseapi_LicenseAPIRoutes(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Limit":                                          schema_loft_sh_admin_apis_pkg_licenseapi_Limit(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Module":                                         schema_loft_sh_admin_apis_pkg_licenseapi_Module(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.OfflineLicenseKeyClaims":                        schema_loft_sh_admin_apis_pkg_licenseapi_OfflineLicenseKeyClaims(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Plan":                                           schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.PlanExpiration":                                 schema_loft_sh_admin_apis_pkg_licenseapi_PlanExpiration(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.PlanPeriod":                                     schema_loft_sh_admin_apis_pkg_licenseapi_PlanPeriod(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.PlanPrice":                                      schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.PriceTier":                                      schema_loft_sh_admin_apis_pkg_licenseapi_PriceTier(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Request":                                        schema_loft_sh_admin_apis_pkg_licenseapi_Request(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount":                                  schema_loft_sh_admin_apis_pkg_licenseapi_ResourceCount(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.TierResource":                                   schema_loft_sh_admin_apis_pkg_licenseapi_TierResource(ref),
+		"github.com/skevetter/admin-apis/pkg/licenseapi.Trial":                                          schema_loft_sh_admin_apis_pkg_licenseapi_Trial(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash":                                schema_apis_loft_cluster_v1_Bash(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart":                               schema_apis_loft_cluster_v1_Chart(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfo":                           schema_apis_loft_cluster_v1_ChartInfo(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoList":                       schema_apis_loft_cluster_v1_ChartInfoList(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoSpec":                       schema_apis_loft_cluster_v1_ChartInfoSpec(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoStatus":                     schema_apis_loft_cluster_v1_ChartInfoStatus(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef":                      schema_apis_loft_cluster_v1_ChartSecretRef(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.EpochInfo":                           schema_apis_loft_cluster_v1_EpochInfo(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Feature":                             schema_apis_loft_cluster_v1_Feature(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureList":                         schema_apis_loft_cluster_v1_FeatureList(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureSpec":                         schema_apis_loft_cluster_v1_FeatureSpec(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureStatus":                       schema_apis_loft_cluster_v1_FeatureStatus(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease":                         schema_apis_loft_cluster_v1_HelmRelease(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseApp":                      schema_apis_loft_cluster_v1_HelmReleaseApp(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig":                   schema_apis_loft_cluster_v1_HelmReleaseConfig(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseList":                     schema_apis_loft_cluster_v1_HelmReleaseList(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseSpec":                     schema_apis_loft_cluster_v1_HelmReleaseSpec(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseStatus":                   schema_apis_loft_cluster_v1_HelmReleaseStatus(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Info":                                schema_apis_loft_cluster_v1_Info(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.LastActivityInfo":                    schema_apis_loft_cluster_v1_LastActivityInfo(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Maintainer":                          schema_apis_loft_cluster_v1_Maintainer(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata":                            schema_apis_loft_cluster_v1_Metadata(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ProjectSecretRef":                    schema_apis_loft_cluster_v1_ProjectSecretRef(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig":                     schema_apis_loft_cluster_v1_SleepModeConfig(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigSpec":                 schema_apis_loft_cluster_v1_SleepModeConfigSpec(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigStatus":               schema_apis_loft_cluster_v1_SleepModeConfigStatus(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota":                        schema_apis_loft_storage_v1_ClusterQuota(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaList":                    schema_apis_loft_storage_v1_ClusterQuotaList(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaSpec":                    schema_apis_loft_storage_v1_ClusterQuotaSpec(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatus":                  schema_apis_loft_storage_v1_ClusterQuotaStatus(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatusByNamespace":       schema_apis_loft_storage_v1_ClusterQuotaStatusByNamespace(ref),
+		"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition":                           schema_apis_loft_storage_v1_Condition(ref),
+		"github.com/skevetter/api/pkg/apis/audit/v1.Event":                                           schema_pkg_apis_audit_v1_Event(ref),
+		"github.com/skevetter/api/pkg/apis/audit/v1.EventList":                                       schema_pkg_apis_audit_v1_EventList(ref),
+		"github.com/skevetter/api/pkg/apis/audit/v1.ObjectReference":                                 schema_pkg_apis_audit_v1_ObjectReference(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAnalyticsSpec":                         schema_pkg_apis_management_v1_AgentAnalyticsSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditConfig":                           schema_pkg_apis_management_v1_AgentAuditConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEvent":                            schema_pkg_apis_management_v1_AgentAuditEvent(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventList":                        schema_pkg_apis_management_v1_AgentAuditEventList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventSpec":                        schema_pkg_apis_management_v1_AgentAuditEventSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventStatus":                      schema_pkg_apis_management_v1_AgentAuditEventStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Announcement":                               schema_pkg_apis_management_v1_Announcement(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AnnouncementList":                           schema_pkg_apis_management_v1_AnnouncementList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AnnouncementSpec":                           schema_pkg_apis_management_v1_AnnouncementSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AnnouncementStatus":                         schema_pkg_apis_management_v1_AnnouncementStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.App":                                        schema_pkg_apis_management_v1_App(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AppCredentials":                             schema_pkg_apis_management_v1_AppCredentials(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AppCredentialsList":                         schema_pkg_apis_management_v1_AppCredentialsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AppList":                                    schema_pkg_apis_management_v1_AppList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AppSpec":                                    schema_pkg_apis_management_v1_AppSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AppStatus":                                  schema_pkg_apis_management_v1_AppStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Apps":                                       schema_pkg_apis_management_v1_Apps(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Audit":                                      schema_pkg_apis_management_v1_Audit(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuditPolicy":                                schema_pkg_apis_management_v1_AuditPolicy(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuditPolicyRule":                            schema_pkg_apis_management_v1_AuditPolicyRule(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Authentication":                             schema_pkg_apis_management_v1_Authentication(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub":                       schema_pkg_apis_management_v1_AuthenticationGithub(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithubOrg":                    schema_pkg_apis_management_v1_AuthenticationGithubOrg(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab":                       schema_pkg_apis_management_v1_AuthenticationGitlab(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle":                       schema_pkg_apis_management_v1_AuthenticationGoogle(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft":                    schema_pkg_apis_management_v1_AuthenticationMicrosoft(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC":                         schema_pkg_apis_management_v1_AuthenticationOIDC(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationPassword":                     schema_pkg_apis_management_v1_AuthenticationPassword(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationRancher":                      schema_pkg_apis_management_v1_AuthenticationRancher(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML":                         schema_pkg_apis_management_v1_AuthenticationSAML(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Backup":                                     schema_pkg_apis_management_v1_Backup(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupApply":                                schema_pkg_apis_management_v1_BackupApply(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupApplyList":                            schema_pkg_apis_management_v1_BackupApplyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupApplyOptions":                         schema_pkg_apis_management_v1_BackupApplyOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupApplySpec":                            schema_pkg_apis_management_v1_BackupApplySpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupList":                                 schema_pkg_apis_management_v1_BackupList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupSpec":                                 schema_pkg_apis_management_v1_BackupSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.BackupStatus":                               schema_pkg_apis_management_v1_BackupStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Cloud":                                      schema_pkg_apis_management_v1_Cloud(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Cluster":                                    schema_pkg_apis_management_v1_Cluster(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccess":                              schema_pkg_apis_management_v1_ClusterAccess(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessKey":                           schema_pkg_apis_management_v1_ClusterAccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessKeyList":                       schema_pkg_apis_management_v1_ClusterAccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessList":                          schema_pkg_apis_management_v1_ClusterAccessList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessSpec":                          schema_pkg_apis_management_v1_ClusterAccessSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessStatus":                        schema_pkg_apis_management_v1_ClusterAccessStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccounts":                            schema_pkg_apis_management_v1_ClusterAccounts(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfig":                         schema_pkg_apis_management_v1_ClusterAgentConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfigCommon":                   schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfigList":                     schema_pkg_apis_management_v1_ClusterAgentConfigList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterCharts":                              schema_pkg_apis_management_v1_ClusterCharts(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterChartsList":                          schema_pkg_apis_management_v1_ClusterChartsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterDomain":                              schema_pkg_apis_management_v1_ClusterDomain(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterDomainList":                          schema_pkg_apis_management_v1_ClusterDomainList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterList":                                schema_pkg_apis_management_v1_ClusterList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterMember":                              schema_pkg_apis_management_v1_ClusterMember(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterMemberAccess":                        schema_pkg_apis_management_v1_ClusterMemberAccess(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterMemberAccessList":                    schema_pkg_apis_management_v1_ClusterMemberAccessList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterMembers":                             schema_pkg_apis_management_v1_ClusterMembers(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterMembersList":                         schema_pkg_apis_management_v1_ClusterMembersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterReset":                               schema_pkg_apis_management_v1_ClusterReset(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterResetList":                           schema_pkg_apis_management_v1_ClusterResetList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplate":                        schema_pkg_apis_management_v1_ClusterRoleTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateList":                    schema_pkg_apis_management_v1_ClusterRoleTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateSpec":                    schema_pkg_apis_management_v1_ClusterRoleTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateStatus":                  schema_pkg_apis_management_v1_ClusterRoleTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterSpec":                                schema_pkg_apis_management_v1_ClusterSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterStatus":                              schema_pkg_apis_management_v1_ClusterStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterVirtualClusterDefaults":              schema_pkg_apis_management_v1_ClusterVirtualClusterDefaults(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ClusterVirtualClusterDefaultsList":          schema_pkg_apis_management_v1_ClusterVirtualClusterDefaultsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Config":                                     schema_pkg_apis_management_v1_Config(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConfigList":                                 schema_pkg_apis_management_v1_ConfigList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConfigSpec":                                 schema_pkg_apis_management_v1_ConfigSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConfigStatus":                               schema_pkg_apis_management_v1_ConfigStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Connector":                                  schema_pkg_apis_management_v1_Connector(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConnectorWithName":                          schema_pkg_apis_management_v1_ConnectorWithName(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfig":                schema_pkg_apis_management_v1_ConvertVirtualClusterConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigList":            schema_pkg_apis_management_v1_ConvertVirtualClusterConfigList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec":            schema_pkg_apis_management_v1_ConvertVirtualClusterConfigSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus":          schema_pkg_apis_management_v1_ConvertVirtualClusterConfigStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.CostControl":                                schema_pkg_apis_management_v1_CostControl(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.CostControlClusterConfig":                   schema_pkg_apis_management_v1_CostControlClusterConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.CostControlGlobalConfig":                    schema_pkg_apis_management_v1_CostControlGlobalConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.CostControlResourcePrice":                   schema_pkg_apis_management_v1_CostControlResourcePrice(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.CostControlSettings":                        schema_pkg_apis_management_v1_CostControlSettings(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodDeleteOptions":                        schema_pkg_apis_management_v1_DevPodDeleteOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodDeleteOptionsList":                    schema_pkg_apis_management_v1_DevPodDeleteOptionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplate":                  schema_pkg_apis_management_v1_DevPodEnvironmentTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateList":              schema_pkg_apis_management_v1_DevPodEnvironmentTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec":              schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus":            schema_pkg_apis_management_v1_DevPodEnvironmentTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodSshOptions":                           schema_pkg_apis_management_v1_DevPodSshOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodSshOptionsList":                       schema_pkg_apis_management_v1_DevPodSshOptionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodStatusOptions":                        schema_pkg_apis_management_v1_DevPodStatusOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodStatusOptionsList":                    schema_pkg_apis_management_v1_DevPodStatusOptionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodStopOptions":                          schema_pkg_apis_management_v1_DevPodStopOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodStopOptionsList":                      schema_pkg_apis_management_v1_DevPodStopOptionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodUpOptions":                            schema_pkg_apis_management_v1_DevPodUpOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodUpOptionsList":                        schema_pkg_apis_management_v1_DevPodUpOptionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstance":                    schema_pkg_apis_management_v1_DevPodWorkspaceInstance(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceList":                schema_pkg_apis_management_v1_DevPodWorkspaceInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec":                schema_pkg_apis_management_v1_DevPodWorkspaceInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceState":               schema_pkg_apis_management_v1_DevPodWorkspaceInstanceState(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStateList":           schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus":              schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot":        schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshoot(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshootList":    schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshootList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePreset":                      schema_pkg_apis_management_v1_DevPodWorkspacePreset(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetList":                  schema_pkg_apis_management_v1_DevPodWorkspacePresetList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetSource":                schema_pkg_apis_management_v1_DevPodWorkspacePresetSource(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetSpec":                  schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetStatus":                schema_pkg_apis_management_v1_DevPodWorkspacePresetStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplate":                    schema_pkg_apis_management_v1_DevPodWorkspaceTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateList":                schema_pkg_apis_management_v1_DevPodWorkspaceTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec":                schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus":              schema_pkg_apis_management_v1_DevPodWorkspaceTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointToken":                 schema_pkg_apis_management_v1_DirectClusterEndpointToken(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenList":             schema_pkg_apis_management_v1_DirectClusterEndpointTokenList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenSpec":             schema_pkg_apis_management_v1_DirectClusterEndpointTokenSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenStatus":           schema_pkg_apis_management_v1_DirectClusterEndpointTokenStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Event":                                      schema_pkg_apis_management_v1_Event(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.EventList":                                  schema_pkg_apis_management_v1_EventList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.EventSpec":                                  schema_pkg_apis_management_v1_EventSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.EventStatus":                                schema_pkg_apis_management_v1_EventStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Feature":                                    schema_pkg_apis_management_v1_Feature(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.FeatureList":                                schema_pkg_apis_management_v1_FeatureList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.FeatureSpec":                                schema_pkg_apis_management_v1_FeatureSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.FeatureStatus":                              schema_pkg_apis_management_v1_FeatureStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.GroupResources":                             schema_pkg_apis_management_v1_GroupResources(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthToken":                           schema_pkg_apis_management_v1_IngressAuthToken(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenList":                       schema_pkg_apis_management_v1_IngressAuthTokenList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenSpec":                       schema_pkg_apis_management_v1_IngressAuthTokenSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenStatus":                     schema_pkg_apis_management_v1_IngressAuthTokenStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Kiosk":                                      schema_pkg_apis_management_v1_Kiosk(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.KioskList":                                  schema_pkg_apis_management_v1_KioskList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.KioskSpec":                                  schema_pkg_apis_management_v1_KioskSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.KioskStatus":                                schema_pkg_apis_management_v1_KioskStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.License":                                    schema_pkg_apis_management_v1_License(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseList":                                schema_pkg_apis_management_v1_LicenseList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequest":                             schema_pkg_apis_management_v1_LicenseRequest(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestList":                         schema_pkg_apis_management_v1_LicenseRequestList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestSpec":                         schema_pkg_apis_management_v1_LicenseRequestSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestStatus":                       schema_pkg_apis_management_v1_LicenseRequestStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseSpec":                                schema_pkg_apis_management_v1_LicenseSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseStatus":                              schema_pkg_apis_management_v1_LicenseStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseToken":                               schema_pkg_apis_management_v1_LicenseToken(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenList":                           schema_pkg_apis_management_v1_LicenseTokenList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenSpec":                           schema_pkg_apis_management_v1_LicenseTokenSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenStatus":                         schema_pkg_apis_management_v1_LicenseTokenStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade":                                schema_pkg_apis_management_v1_LoftUpgrade(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeList":                            schema_pkg_apis_management_v1_LoftUpgradeList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec":                            schema_pkg_apis_management_v1_LoftUpgradeSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus":                          schema_pkg_apis_management_v1_LoftUpgradeStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.MaintenanceWindow":                          schema_pkg_apis_management_v1_MaintenanceWindow(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OIDC":                                       schema_pkg_apis_management_v1_OIDC(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OIDCClient":                                 schema_pkg_apis_management_v1_OIDCClient(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OIDCClientList":                             schema_pkg_apis_management_v1_OIDCClientList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OIDCClientSpec":                             schema_pkg_apis_management_v1_OIDCClientSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OIDCClientStatus":                           schema_pkg_apis_management_v1_OIDCClientStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey":                             schema_pkg_apis_management_v1_OwnedAccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeyList":                         schema_pkg_apis_management_v1_OwnedAccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeySpec":                         schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeyStatus":                       schema_pkg_apis_management_v1_OwnedAccessKeyStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.PredefinedApp":                              schema_pkg_apis_management_v1_PredefinedApp(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Project":                                    schema_pkg_apis_management_v1_Project(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfo":                           schema_pkg_apis_management_v1_ProjectChartInfo(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoList":                       schema_pkg_apis_management_v1_ProjectChartInfoList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoSpec":                       schema_pkg_apis_management_v1_ProjectChartInfoSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoStatus":                     schema_pkg_apis_management_v1_ProjectChartInfoStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectCharts":                              schema_pkg_apis_management_v1_ProjectCharts(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartsList":                          schema_pkg_apis_management_v1_ProjectChartsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectClusters":                            schema_pkg_apis_management_v1_ProjectClusters(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectClustersList":                        schema_pkg_apis_management_v1_ProjectClustersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpace":                         schema_pkg_apis_management_v1_ProjectImportSpace(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpaceList":                     schema_pkg_apis_management_v1_ProjectImportSpaceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpaceSource":                   schema_pkg_apis_management_v1_ProjectImportSpaceSource(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectList":                                schema_pkg_apis_management_v1_ProjectList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMember":                              schema_pkg_apis_management_v1_ProjectMember(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMembers":                             schema_pkg_apis_management_v1_ProjectMembers(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMembersList":                         schema_pkg_apis_management_v1_ProjectMembersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstance":                schema_pkg_apis_management_v1_ProjectMigrateSpaceInstance(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstanceList":            schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource":          schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceSource(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance":       schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstance(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceList":   schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource": schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceSource(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectRunners":                             schema_pkg_apis_management_v1_ProjectRunners(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectRunnersList":                         schema_pkg_apis_management_v1_ProjectRunnersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecret":                              schema_pkg_apis_management_v1_ProjectSecret(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretList":                          schema_pkg_apis_management_v1_ProjectSecretList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretSpec":                          schema_pkg_apis_management_v1_ProjectSecretSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretStatus":                        schema_pkg_apis_management_v1_ProjectSecretStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectSpec":                                schema_pkg_apis_management_v1_ProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectStatus":                              schema_pkg_apis_management_v1_ProjectStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectTemplates":                           schema_pkg_apis_management_v1_ProjectTemplates(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ProjectTemplatesList":                       schema_pkg_apis_management_v1_ProjectTemplatesList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RedirectToken":                              schema_pkg_apis_management_v1_RedirectToken(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenClaims":                        schema_pkg_apis_management_v1_RedirectTokenClaims(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenList":                          schema_pkg_apis_management_v1_RedirectTokenList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenSpec":                          schema_pkg_apis_management_v1_RedirectTokenSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenStatus":                        schema_pkg_apis_management_v1_RedirectTokenStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualCluster":                     schema_pkg_apis_management_v1_RegisterVirtualCluster(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterList":                 schema_pkg_apis_management_v1_RegisterVirtualClusterList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterSpec":                 schema_pkg_apis_management_v1_RegisterVirtualClusterSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterStatus":               schema_pkg_apis_management_v1_RegisterVirtualClusterStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKey":                             schema_pkg_apis_management_v1_ResetAccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeyList":                         schema_pkg_apis_management_v1_ResetAccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeySpec":                         schema_pkg_apis_management_v1_ResetAccessKeySpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeyStatus":                       schema_pkg_apis_management_v1_ResetAccessKeyStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Runner":                                     schema_pkg_apis_management_v1_Runner(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerAccessKey":                            schema_pkg_apis_management_v1_RunnerAccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerAccessKeyList":                        schema_pkg_apis_management_v1_RunnerAccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerConfig":                               schema_pkg_apis_management_v1_RunnerConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerConfigList":                           schema_pkg_apis_management_v1_RunnerConfigList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerList":                                 schema_pkg_apis_management_v1_RunnerList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerSpec":                                 schema_pkg_apis_management_v1_RunnerSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.RunnerStatus":                               schema_pkg_apis_management_v1_RunnerStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Self":                                       schema_pkg_apis_management_v1_Self(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfList":                                   schema_pkg_apis_management_v1_SelfList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfSpec":                                   schema_pkg_apis_management_v1_SelfSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfStatus":                                 schema_pkg_apis_management_v1_SelfStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReview":                    schema_pkg_apis_management_v1_SelfSubjectAccessReview(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewList":                schema_pkg_apis_management_v1_SelfSubjectAccessReviewList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewSpec":                schema_pkg_apis_management_v1_SelfSubjectAccessReviewSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewStatus":              schema_pkg_apis_management_v1_SelfSubjectAccessReviewStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SharedSecret":                               schema_pkg_apis_management_v1_SharedSecret(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SharedSecretList":                           schema_pkg_apis_management_v1_SharedSecretList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SharedSecretSpec":                           schema_pkg_apis_management_v1_SharedSecretSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SharedSecretStatus":                         schema_pkg_apis_management_v1_SharedSecretStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstance":                              schema_pkg_apis_management_v1_SpaceInstance(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceList":                          schema_pkg_apis_management_v1_SpaceInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceSpec":                          schema_pkg_apis_management_v1_SpaceInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceStatus":                        schema_pkg_apis_management_v1_SpaceInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplate":                              schema_pkg_apis_management_v1_SpaceTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateList":                          schema_pkg_apis_management_v1_SpaceTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateSpec":                          schema_pkg_apis_management_v1_SpaceTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateStatus":                        schema_pkg_apis_management_v1_SpaceTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReview":                        schema_pkg_apis_management_v1_SubjectAccessReview(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewList":                    schema_pkg_apis_management_v1_SubjectAccessReviewList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewSpec":                    schema_pkg_apis_management_v1_SubjectAccessReviewSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewStatus":                  schema_pkg_apis_management_v1_SubjectAccessReviewStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Task":                                       schema_pkg_apis_management_v1_Task(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskList":                                   schema_pkg_apis_management_v1_TaskList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskLog":                                    schema_pkg_apis_management_v1_TaskLog(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskLogList":                                schema_pkg_apis_management_v1_TaskLogList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskLogOptions":                             schema_pkg_apis_management_v1_TaskLogOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskSpec":                                   schema_pkg_apis_management_v1_TaskSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TaskStatus":                                 schema_pkg_apis_management_v1_TaskStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.Team":                                       schema_pkg_apis_management_v1_Team(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamAccessKeys":                             schema_pkg_apis_management_v1_TeamAccessKeys(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamAccessKeysList":                         schema_pkg_apis_management_v1_TeamAccessKeysList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamClusters":                               schema_pkg_apis_management_v1_TeamClusters(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamClustersList":                           schema_pkg_apis_management_v1_TeamClustersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamList":                                   schema_pkg_apis_management_v1_TeamList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamSpec":                                   schema_pkg_apis_management_v1_TeamSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TeamStatus":                                 schema_pkg_apis_management_v1_TeamStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName":              schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameList":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec":          schema_pkg_apis_management_v1_TranslateVClusterResourceNameSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus":        schema_pkg_apis_management_v1_TranslateVClusterResourceNameStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.User":                                       schema_pkg_apis_management_v1_User(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeys":                             schema_pkg_apis_management_v1_UserAccessKeys(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeysList":                         schema_pkg_apis_management_v1_UserAccessKeysList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserClusters":                               schema_pkg_apis_management_v1_UserClusters(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserClustersList":                           schema_pkg_apis_management_v1_UserClustersList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserInfo":                                   schema_pkg_apis_management_v1_UserInfo(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserList":                                   schema_pkg_apis_management_v1_UserList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserPermissions":                            schema_pkg_apis_management_v1_UserPermissions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserPermissionsList":                        schema_pkg_apis_management_v1_UserPermissionsList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserPermissionsRole":                        schema_pkg_apis_management_v1_UserPermissionsRole(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserProfile":                                schema_pkg_apis_management_v1_UserProfile(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserProfileList":                            schema_pkg_apis_management_v1_UserProfileList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserQuotasOptions":                          schema_pkg_apis_management_v1_UserQuotasOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserSpacesOptions":                          schema_pkg_apis_management_v1_UserSpacesOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserSpec":                                   schema_pkg_apis_management_v1_UserSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserStatus":                                 schema_pkg_apis_management_v1_UserStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.UserVirtualClustersOptions":                 schema_pkg_apis_management_v1_UserVirtualClustersOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterAccessKey":                    schema_pkg_apis_management_v1_VirtualClusterAccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterAccessKeyList":                schema_pkg_apis_management_v1_VirtualClusterAccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabase":             schema_pkg_apis_management_v1_VirtualClusterExternalDatabase(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseList":         schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec":         schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus":       schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstance":                     schema_pkg_apis_management_v1_VirtualClusterInstance(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig":           schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfig(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigList":       schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec":       schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus":     schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceList":                 schema_pkg_apis_management_v1_VirtualClusterInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceLog":                  schema_pkg_apis_management_v1_VirtualClusterInstanceLog(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceLogList":              schema_pkg_apis_management_v1_VirtualClusterInstanceLogList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceLogOptions":           schema_pkg_apis_management_v1_VirtualClusterInstanceLogOptions(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceSpec":                 schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceStatus":               schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplate":                     schema_pkg_apis_management_v1_VirtualClusterTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateList":                 schema_pkg_apis_management_v1_VirtualClusterTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateSpec":                 schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateStatus":               schema_pkg_apis_management_v1_VirtualClusterTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Access":                                        schema_pkg_apis_storage_v1_Access(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKey":                                     schema_pkg_apis_storage_v1_AccessKey(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity":                             schema_pkg_apis_storage_v1_AccessKeyIdentity(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyList":                                 schema_pkg_apis_storage_v1_AccessKeyList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC":                                 schema_pkg_apis_storage_v1_AccessKeyOIDC(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider":                         schema_pkg_apis_storage_v1_AccessKeyOIDCProvider(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope":                                schema_pkg_apis_storage_v1_AccessKeyScope(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeCluster":                         schema_pkg_apis_storage_v1_AccessKeyScopeCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeProject":                         schema_pkg_apis_storage_v1_AccessKeyScopeProject(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRole":                            schema_pkg_apis_storage_v1_AccessKeyScopeRole(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRule":                            schema_pkg_apis_storage_v1_AccessKeyScopeRule(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeSpace":                           schema_pkg_apis_storage_v1_AccessKeyScopeSpace(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster":                  schema_pkg_apis_storage_v1_AccessKeyScopeVirtualCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeySpec":                                 schema_pkg_apis_storage_v1_AccessKeySpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyStatus":                               schema_pkg_apis_storage_v1_AccessKeyStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyVirtualCluster":                       schema_pkg_apis_storage_v1_AccessKeyVirtualCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AllowedCluster":                                schema_pkg_apis_storage_v1_AllowedCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AllowedClusterAccountTemplate":                 schema_pkg_apis_storage_v1_AllowedClusterAccountTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AllowedRunner":                                 schema_pkg_apis_storage_v1_AllowedRunner(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AllowedTemplate":                               schema_pkg_apis_storage_v1_AllowedTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.App":                                           schema_pkg_apis_storage_v1_App(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppConfig":                                     schema_pkg_apis_storage_v1_AppConfig(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppList":                                       schema_pkg_apis_storage_v1_AppList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppParameter":                                  schema_pkg_apis_storage_v1_AppParameter(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppReference":                                  schema_pkg_apis_storage_v1_AppReference(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppSpec":                                       schema_pkg_apis_storage_v1_AppSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppStatus":                                     schema_pkg_apis_storage_v1_AppStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppTask":                                       schema_pkg_apis_storage_v1_AppTask(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.AppVersion":                                    schema_pkg_apis_storage_v1_AppVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoIntegrationSpec":                           schema_pkg_apis_storage_v1_ArgoIntegrationSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectPolicyRule":                         schema_pkg_apis_storage_v1_ArgoProjectPolicyRule(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectRole":                               schema_pkg_apis_storage_v1_ArgoProjectRole(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpec":                               schema_pkg_apis_storage_v1_ArgoProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpecMetadata":                       schema_pkg_apis_storage_v1_ArgoProjectSpecMetadata(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ArgoSSOSpec":                                   schema_pkg_apis_storage_v1_ArgoSSOSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Chart":                                         schema_pkg_apis_storage_v1_Chart(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ChartStatus":                                   schema_pkg_apis_storage_v1_ChartStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Cluster":                                       schema_pkg_apis_storage_v1_Cluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccess":                                 schema_pkg_apis_storage_v1_ClusterAccess(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessList":                             schema_pkg_apis_storage_v1_ClusterAccessList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessSpec":                             schema_pkg_apis_storage_v1_ClusterAccessSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessStatus":                           schema_pkg_apis_storage_v1_ClusterAccessStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterList":                                   schema_pkg_apis_storage_v1_ClusterList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef":                                    schema_pkg_apis_storage_v1_ClusterRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef":                                schema_pkg_apis_storage_v1_ClusterRoleRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplate":                           schema_pkg_apis_storage_v1_ClusterRoleTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateList":                       schema_pkg_apis_storage_v1_ClusterRoleTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateSpec":                       schema_pkg_apis_storage_v1_ClusterRoleTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateStatus":                     schema_pkg_apis_storage_v1_ClusterRoleTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate":                   schema_pkg_apis_storage_v1_ClusterRoleTemplateTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterSpec":                                   schema_pkg_apis_storage_v1_ClusterSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ClusterStatus":                                 schema_pkg_apis_storage_v1_ClusterStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.CredentialForwarding":                          schema_pkg_apis_storage_v1_CredentialForwarding(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodCommandDeleteOptions":                    schema_pkg_apis_storage_v1_DevPodCommandDeleteOptions(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodCommandStatusOptions":                    schema_pkg_apis_storage_v1_DevPodCommandStatusOptions(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodCommandStopOptions":                      schema_pkg_apis_storage_v1_DevPodCommandStopOptions(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodCommandUpOptions":                        schema_pkg_apis_storage_v1_DevPodCommandUpOptions(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplate":                     schema_pkg_apis_storage_v1_DevPodEnvironmentTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition":           schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateList":                 schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec":                 schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus":               schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion":              schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProjectSpec":                             schema_pkg_apis_storage_v1_DevPodProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption":                          schema_pkg_apis_storage_v1_DevPodProviderOption(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOptionFrom":                      schema_pkg_apis_storage_v1_DevPodProviderOptionFrom(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderSource":                          schema_pkg_apis_storage_v1_DevPodProviderSource(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstance":                       schema_pkg_apis_storage_v1_DevPodWorkspaceInstance(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceList":                   schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec":                   schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus":                 schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition":     schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePreset":                         schema_pkg_apis_storage_v1_DevPodWorkspacePreset(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetList":                     schema_pkg_apis_storage_v1_DevPodWorkspacePresetList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource":                   schema_pkg_apis_storage_v1_DevPodWorkspacePresetSource(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSpec":                     schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetStatus":                   schema_pkg_apis_storage_v1_DevPodWorkspacePresetStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetVersion":                  schema_pkg_apis_storage_v1_DevPodWorkspacePresetVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceProvider":                       schema_pkg_apis_storage_v1_DevPodWorkspaceProvider(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplate":                       schema_pkg_apis_storage_v1_DevPodWorkspaceTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition":             schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateList":                   schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec":                   schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus":                 schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion":                schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.DockerCredentialForwarding":                    schema_pkg_apis_storage_v1_DockerCredentialForwarding(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo":                                    schema_pkg_apis_storage_v1_EntityInfo(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef":                                schema_pkg_apis_storage_v1_EnvironmentRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.GitCredentialForwarding":                       schema_pkg_apis_storage_v1_GitCredentialForwarding(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.GitEnvironmentTemplate":                        schema_pkg_apis_storage_v1_GitEnvironmentTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.GitProjectSpec":                                schema_pkg_apis_storage_v1_GitProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.GroupResources":                                schema_pkg_apis_storage_v1_GroupResources(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.HelmChart":                                     schema_pkg_apis_storage_v1_HelmChart(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.HelmChartRepository":                           schema_pkg_apis_storage_v1_HelmChartRepository(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.HelmConfiguration":                             schema_pkg_apis_storage_v1_HelmConfiguration(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.HelmTask":                                      schema_pkg_apis_storage_v1_HelmTask(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.HelmTaskRelease":                               schema_pkg_apis_storage_v1_HelmTaskRelease(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ImportVirtualClustersSpec":                     schema_pkg_apis_storage_v1_ImportVirtualClustersSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess":                                schema_pkg_apis_storage_v1_InstanceAccess(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule":                            schema_pkg_apis_storage_v1_InstanceAccessRule(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.InstanceDeployedAppStatus":                     schema_pkg_apis_storage_v1_InstanceDeployedAppStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef":                                 schema_pkg_apis_storage_v1_KindSecretRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessSpec":                        schema_pkg_apis_storage_v1_LocalClusterAccessSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessTemplate":                    schema_pkg_apis_storage_v1_LocalClusterAccessTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplate":                      schema_pkg_apis_storage_v1_LocalClusterRoleTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec":                  schema_pkg_apis_storage_v1_LocalClusterRoleTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Member":                                        schema_pkg_apis_storage_v1_Member(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Metrics":                                       schema_pkg_apis_storage_v1_Metrics(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.NamespacePattern":                              schema_pkg_apis_storage_v1_NamespacePattern(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeer":                                   schema_pkg_apis_storage_v1_NetworkPeer(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerList":                               schema_pkg_apis_storage_v1_NetworkPeerList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerSpec":                               schema_pkg_apis_storage_v1_NetworkPeerSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerStatus":                             schema_pkg_apis_storage_v1_NetworkPeerStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus":                                 schema_pkg_apis_storage_v1_ObjectsStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.OpenCost":                                      schema_pkg_apis_storage_v1_OpenCost(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.PodSelector":                                   schema_pkg_apis_storage_v1_PodSelector(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.PresetRef":                                     schema_pkg_apis_storage_v1_PresetRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Project":                                       schema_pkg_apis_storage_v1_Project(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ProjectList":                                   schema_pkg_apis_storage_v1_ProjectList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ProjectSpec":                                   schema_pkg_apis_storage_v1_ProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.ProjectStatus":                                 schema_pkg_apis_storage_v1_ProjectStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatus":                                   schema_pkg_apis_storage_v1_QuotaStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProject":                            schema_pkg_apis_storage_v1_QuotaStatusProject(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProjectCluster":                     schema_pkg_apis_storage_v1_QuotaStatusProjectCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUser":                               schema_pkg_apis_storage_v1_QuotaStatusUser(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUserUsed":                           schema_pkg_apis_storage_v1_QuotaStatusUserUsed(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Quotas":                                        schema_pkg_apis_storage_v1_Quotas(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RancherIntegrationSpec":                        schema_pkg_apis_storage_v1_RancherIntegrationSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RancherProjectRef":                             schema_pkg_apis_storage_v1_RancherProjectRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RequirePreset":                                 schema_pkg_apis_storage_v1_RequirePreset(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RequireTemplate":                               schema_pkg_apis_storage_v1_RequireTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Runner":                                        schema_pkg_apis_storage_v1_Runner(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerClusterRef":                              schema_pkg_apis_storage_v1_RunnerClusterRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerList":                                    schema_pkg_apis_storage_v1_RunnerList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate":           schema_pkg_apis_storage_v1_RunnerPersistentVolumeClaimTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec":       schema_pkg_apis_storage_v1_RunnerPersistentVolumeClaimTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplate":                             schema_pkg_apis_storage_v1_RunnerPodTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplateSpec":                         schema_pkg_apis_storage_v1_RunnerPodTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerRef":                                     schema_pkg_apis_storage_v1_RunnerRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplate":                         schema_pkg_apis_storage_v1_RunnerServiceTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplateSpec":                     schema_pkg_apis_storage_v1_RunnerServiceTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerSpec":                                    schema_pkg_apis_storage_v1_RunnerSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.RunnerStatus":                                  schema_pkg_apis_storage_v1_RunnerStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SSHProjectSpec":                                schema_pkg_apis_storage_v1_SSHProjectSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SecretRef":                                     schema_pkg_apis_storage_v1_SecretRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecret":                                  schema_pkg_apis_storage_v1_SharedSecret(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretList":                              schema_pkg_apis_storage_v1_SharedSecretList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretSpec":                              schema_pkg_apis_storage_v1_SharedSecretSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretStatus":                            schema_pkg_apis_storage_v1_SharedSecretStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstance":                                 schema_pkg_apis_storage_v1_SpaceInstance(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceList":                             schema_pkg_apis_storage_v1_SpaceInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceSpec":                             schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceStatus":                           schema_pkg_apis_storage_v1_SpaceInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition":               schema_pkg_apis_storage_v1_SpaceInstanceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplate":                                 schema_pkg_apis_storage_v1_SpaceTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition":                       schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateList":                             schema_pkg_apis_storage_v1_SpaceTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateSpec":                             schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateStatus":                           schema_pkg_apis_storage_v1_SpaceTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateVersion":                          schema_pkg_apis_storage_v1_SpaceTemplateVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Storage":                                       schema_pkg_apis_storage_v1_Storage(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer":                               schema_pkg_apis_storage_v1_StreamContainer(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.SyncMembersSpec":                               schema_pkg_apis_storage_v1_SyncMembersSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Target":                                        schema_pkg_apis_storage_v1_Target(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TargetCluster":                                 schema_pkg_apis_storage_v1_TargetCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TargetInstance":                                schema_pkg_apis_storage_v1_TargetInstance(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TargetVirtualCluster":                          schema_pkg_apis_storage_v1_TargetVirtualCluster(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Task":                                          schema_pkg_apis_storage_v1_Task(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TaskDefinition":                                schema_pkg_apis_storage_v1_TaskDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TaskList":                                      schema_pkg_apis_storage_v1_TaskList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TaskSpec":                                      schema_pkg_apis_storage_v1_TaskSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TaskStatus":                                    schema_pkg_apis_storage_v1_TaskStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.Team":                                          schema_pkg_apis_storage_v1_Team(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TeamList":                                      schema_pkg_apis_storage_v1_TeamList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TeamSpec":                                      schema_pkg_apis_storage_v1_TeamSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TeamStatus":                                    schema_pkg_apis_storage_v1_TeamStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart":                             schema_pkg_apis_storage_v1_TemplateHelmChart(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata":                              schema_pkg_apis_storage_v1_TemplateMetadata(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef":                                   schema_pkg_apis_storage_v1_TemplateRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.User":                                          schema_pkg_apis_storage_v1_User(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.UserList":                                      schema_pkg_apis_storage_v1_UserList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam":                                    schema_pkg_apis_storage_v1_UserOrTeam(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeamEntity":                              schema_pkg_apis_storage_v1_UserOrTeamEntity(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.UserSpec":                                      schema_pkg_apis_storage_v1_UserSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.UserStatus":                                    schema_pkg_apis_storage_v1_UserStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VaultAuthSpec":                                 schema_pkg_apis_storage_v1_VaultAuthSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec":                          schema_pkg_apis_storage_v1_VaultIntegrationSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPoint":                     schema_pkg_apis_storage_v1_VirtualClusterAccessPoint(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec":          schema_pkg_apis_storage_v1_VirtualClusterAccessPointIngressSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterClusterRef":                      schema_pkg_apis_storage_v1_VirtualClusterClusterRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterCommonSpec":                      schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmChart":                       schema_pkg_apis_storage_v1_VirtualClusterHelmChart(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease":                     schema_pkg_apis_storage_v1_VirtualClusterHelmRelease(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus":               schema_pkg_apis_storage_v1_VirtualClusterHelmReleaseStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstance":                        schema_pkg_apis_storage_v1_VirtualClusterInstance(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceList":                    schema_pkg_apis_storage_v1_VirtualClusterInstanceList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceSpec":                    schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceStatus":                  schema_pkg_apis_storage_v1_VirtualClusterInstanceStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition":      schema_pkg_apis_storage_v1_VirtualClusterInstanceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterProSpec":                         schema_pkg_apis_storage_v1_VirtualClusterProSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition":         schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterStatus":                          schema_pkg_apis_storage_v1_VirtualClusterStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplate":                        schema_pkg_apis_storage_v1_VirtualClusterTemplate(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition":              schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateList":                    schema_pkg_apis_storage_v1_VirtualClusterTemplateList(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef":        schema_pkg_apis_storage_v1_VirtualClusterTemplateSpaceTemplateRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpec":                    schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateStatus":                  schema_pkg_apis_storage_v1_VirtualClusterTemplateStatus(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateVersion":                 schema_pkg_apis_storage_v1_VirtualClusterTemplateVersion(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.WorkspaceRef":                                  schema_pkg_apis_storage_v1_WorkspaceRef(ref),
+		"github.com/skevetter/api/pkg/apis/storage/v1.WorkspaceStatusResult":                         schema_pkg_apis_storage_v1_WorkspaceStatusResult(ref),
+		"github.com/skevetter/api/pkg/apis/ui/v1.NavBarButton":                                       schema_pkg_apis_ui_v1_NavBarButton(ref),
+		"github.com/skevetter/api/pkg/apis/ui/v1.UISettings":                                         schema_pkg_apis_ui_v1_UISettings(ref),
+		"github.com/skevetter/api/pkg/apis/ui/v1.UISettingsConfig":                                   schema_pkg_apis_ui_v1_UISettingsConfig(ref),
+		"github.com/skevetter/api/pkg/apis/ui/v1.UISettingsSpec":                                     schema_pkg_apis_ui_v1_UISettingsSpec(ref),
+		"github.com/skevetter/api/pkg/apis/ui/v1.UISettingsStatus":                                   schema_pkg_apis_ui_v1_UISettingsStatus(ref),
+		"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmRelease":                            schema_pkg_apis_virtualcluster_v1_HelmRelease(ref),
+		"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseList":                        schema_pkg_apis_virtualcluster_v1_HelmReleaseList(ref),
+		"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseSpec":                        schema_pkg_apis_virtualcluster_v1_HelmReleaseSpec(ref),
+		"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseStatus":                      schema_pkg_apis_virtualcluster_v1_HelmReleaseStatus(ref),
 		"k8s.io/api/admissionregistration/v1.AuditAnnotation":                                         schema_k8sio_api_admissionregistration_v1_AuditAnnotation(ref),
 		"k8s.io/api/admissionregistration/v1.ExpressionWarning":                                       schema_k8sio_api_admissionregistration_v1_ExpressionWarning(ref),
 		"k8s.io/api/admissionregistration/v1.MatchCondition":                                          schema_k8sio_api_admissionregistration_v1_MatchCondition(ref),
@@ -1392,7 +1392,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Analytics(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Request"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.Request"),
 									},
 								},
 							},
@@ -1402,7 +1402,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Analytics(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Request"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Request"},
 	}
 }
 
@@ -1441,7 +1441,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Announcement(ref common.ReferenceC
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Button"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Button"),
 									},
 								},
 							},
@@ -1451,7 +1451,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Announcement(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Button"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Button"},
 	}
 }
 
@@ -1493,14 +1493,14 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_BlockRequest(ref common.ReferenceC
 					},
 					"overage": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"),
+							Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"},
 	}
 }
 
@@ -1666,7 +1666,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestOutput(ref common.Re
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Button"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.Button"),
 									},
 								},
 							},
@@ -1676,7 +1676,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_GenericRequestOutput(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Button"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Button"},
 	}
 }
 
@@ -1796,7 +1796,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 					"analytics": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Analytics indicates the analytics endpoints and which requests should be sent to the analytics server.",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Analytics"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.Analytics"),
 						},
 					},
 					"domainToken": {
@@ -1814,7 +1814,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Button"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Button"),
 									},
 								},
 							},
@@ -1827,7 +1827,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Announcement"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Announcement"),
 									},
 								},
 							},
@@ -1840,7 +1840,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Module"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Module"),
 									},
 								},
 							},
@@ -1854,7 +1854,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.BlockRequest"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.BlockRequest"),
 									},
 								},
 							},
@@ -1870,7 +1870,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 					"routes": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoutes"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoutes"),
 						},
 					},
 					"plans": {
@@ -1881,7 +1881,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Plan"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.Plan"),
 									},
 								},
 							},
@@ -1891,7 +1891,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_License(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Analytics", "github.com/loft-sh/admin-apis/pkg/licenseapi.Announcement", "github.com/loft-sh/admin-apis/pkg/licenseapi.BlockRequest", "github.com/loft-sh/admin-apis/pkg/licenseapi.Button", "github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoutes", "github.com/loft-sh/admin-apis/pkg/licenseapi.Module", "github.com/loft-sh/admin-apis/pkg/licenseapi.Plan"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Analytics", "github.com/skevetter/admin-apis/pkg/licenseapi.Announcement", "github.com/skevetter/admin-apis/pkg/licenseapi.BlockRequest", "github.com/skevetter/admin-apis/pkg/licenseapi.Button", "github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoutes", "github.com/skevetter/admin-apis/pkg/licenseapi.Module", "github.com/skevetter/admin-apis/pkg/licenseapi.Plan"},
 	}
 }
 
@@ -1937,56 +1937,56 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_LicenseAPIRoutes(ref common.Refere
 					"chatAuth": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"featureDetails": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"featureSetup": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"featurePreview": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"moduleActivation": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"modulePreview": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"checkout": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 					"portal": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
+							Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.LicenseAPIRoute"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.LicenseAPIRoute"},
 	}
 }
 
@@ -2014,14 +2014,14 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Limit(ref common.ReferenceCallback
 					"quantity": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Limit specifies the limit for this resource.",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"},
 	}
 }
 
@@ -2058,7 +2058,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Module(ref common.ReferenceCallbac
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Limit"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Limit"),
 									},
 								},
 							},
@@ -2070,7 +2070,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Module(ref common.ReferenceCallbac
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Feature"),
+										Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.Feature"),
 									},
 								},
 							},
@@ -2081,7 +2081,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Module(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Feature", "github.com/loft-sh/admin-apis/pkg/licenseapi.Limit"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Feature", "github.com/skevetter/admin-apis/pkg/licenseapi.Limit"},
 	}
 }
 
@@ -2093,14 +2093,14 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_OfflineLicenseKeyClaims(ref common
 				Properties: map[string]spec.Schema{
 					"license": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.License"),
+							Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.License"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.License"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.License"},
 	}
 }
 
@@ -2135,19 +2135,19 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref common.ReferenceCallback)
 					"period": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Period provides information about the plan's current period This is nil unless this is the active plan",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPeriod"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.PlanPeriod"),
 						},
 					},
 					"trial": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Trial provides details about a planned, ongoing or expired trial",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Trial"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.Trial"),
 						},
 					},
 					"invoice": {
 						SchemaProps: spec.SchemaProps{
 							Description: "UpcomingInvoice provides a preview of the next invoice that will be created for this Plan",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Invoice"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.Invoice"),
 						},
 					},
 					"features": {
@@ -2173,7 +2173,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Limit"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.Limit"),
 									},
 								},
 							},
@@ -2187,7 +2187,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPrice"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.PlanPrice"),
 									},
 								},
 							},
@@ -2201,7 +2201,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Plan"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.Plan"),
 									},
 								},
 							},
@@ -2211,7 +2211,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_Plan(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Invoice", "github.com/loft-sh/admin-apis/pkg/licenseapi.Limit", "github.com/loft-sh/admin-apis/pkg/licenseapi.Plan", "github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPeriod", "github.com/loft-sh/admin-apis/pkg/licenseapi.PlanPrice", "github.com/loft-sh/admin-apis/pkg/licenseapi.Trial"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Invoice", "github.com/skevetter/admin-apis/pkg/licenseapi.Limit", "github.com/skevetter/admin-apis/pkg/licenseapi.Plan", "github.com/skevetter/admin-apis/pkg/licenseapi.PlanPeriod", "github.com/skevetter/admin-apis/pkg/licenseapi.PlanPrice", "github.com/skevetter/admin-apis/pkg/licenseapi.Trial"},
 	}
 }
 
@@ -2307,7 +2307,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref common.ReferenceCall
 					"exp": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Expiration provides information about when this plan expires",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.PlanExpiration"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.PlanExpiration"),
 						},
 					},
 					"quantity": {
@@ -2320,7 +2320,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref common.ReferenceCall
 					"resource": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TierResource provides details about the main resource the tier quantity relates to This may be nil for plans that don't have their quantity tied to a resource",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.TierResource"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.TierResource"),
 						},
 					},
 					"tierMode": {
@@ -2338,7 +2338,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.PriceTier"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.PriceTier"),
 									},
 								},
 							},
@@ -2348,7 +2348,7 @@ func schema_loft_sh_admin_apis_pkg_licenseapi_PlanPrice(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.PlanExpiration", "github.com/loft-sh/admin-apis/pkg/licenseapi.PriceTier", "github.com/loft-sh/admin-apis/pkg/licenseapi.TierResource"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.PlanExpiration", "github.com/skevetter/admin-apis/pkg/licenseapi.PriceTier", "github.com/skevetter/admin-apis/pkg/licenseapi.TierResource"},
 	}
 }
 
@@ -2643,7 +2643,7 @@ func schema_apis_loft_cluster_v1_Chart(ref common.ReferenceCallback) common.Open
 					"usernameRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The username that is required for this repository",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"),
 						},
 					},
 					"password": {
@@ -2656,7 +2656,7 @@ func schema_apis_loft_cluster_v1_Chart(ref common.ReferenceCallback) common.Open
 					"passwordRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The password that is required for this repository",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"),
 						},
 					},
 					"insecureSkipTlsVerify": {
@@ -2670,7 +2670,7 @@ func schema_apis_loft_cluster_v1_Chart(ref common.ReferenceCallback) common.Open
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"},
 	}
 }
 
@@ -2703,20 +2703,20 @@ func schema_apis_loft_cluster_v1_ChartInfo(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoSpec"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoStatus"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoSpec", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfoStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoSpec", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfoStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -2753,7 +2753,7 @@ func schema_apis_loft_cluster_v1_ChartInfoList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfo"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfo"),
 									},
 								},
 							},
@@ -2764,7 +2764,7 @@ func schema_apis_loft_cluster_v1_ChartInfoList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -2778,14 +2778,14 @@ func schema_apis_loft_cluster_v1_ChartInfoSpec(ref common.ReferenceCallback) com
 						SchemaProps: spec.SchemaProps{
 							Description: "Chart holds information about a chart that should get deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"},
 	}
 }
 
@@ -2798,7 +2798,7 @@ func schema_apis_loft_cluster_v1_ChartInfoStatus(ref common.ReferenceCallback) c
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata provides information about a chart",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"),
 						},
 					},
 					"readme": {
@@ -2819,7 +2819,7 @@ func schema_apis_loft_cluster_v1_ChartInfoStatus(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"},
 	}
 }
 
@@ -2832,14 +2832,14 @@ func schema_apis_loft_cluster_v1_ChartSecretRef(ref common.ReferenceCallback) co
 					"projectSecretRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ProjectSecretRef holds the reference to a project secret",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ProjectSecretRef"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ProjectSecretRef"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ProjectSecretRef"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ProjectSecretRef"},
 	}
 }
 
@@ -2900,20 +2900,20 @@ func schema_apis_loft_cluster_v1_Feature(ref common.ReferenceCallback) common.Op
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureSpec"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureStatus"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureSpec", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.FeatureStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureSpec", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.FeatureStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -2950,7 +2950,7 @@ func schema_apis_loft_cluster_v1_FeatureList(ref common.ReferenceCallback) commo
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Feature"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Feature"),
 									},
 								},
 							},
@@ -2961,7 +2961,7 @@ func schema_apis_loft_cluster_v1_FeatureList(ref common.ReferenceCallback) commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Feature", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Feature", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -3082,20 +3082,20 @@ func schema_apis_loft_cluster_v1_HelmRelease(ref common.ReferenceCallback) commo
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseSpec"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseStatus"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseSpec", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseSpec", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -3135,7 +3135,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseConfig(ref common.ReferenceCallback)
 						SchemaProps: spec.SchemaProps{
 							Description: "Chart holds information about a chart that should get deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"),
 						},
 					},
 					"manifests": {
@@ -3148,7 +3148,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseConfig(ref common.ReferenceCallback)
 					"bash": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Bash holds the bash script to execute in a container in the target",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash"),
 						},
 					},
 					"values": {
@@ -3185,7 +3185,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseConfig(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"},
 	}
 }
 
@@ -3222,7 +3222,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseList(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmRelease"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease"),
 									},
 								},
 							},
@@ -3233,7 +3233,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseList(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -3247,7 +3247,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseSpec(ref common.ReferenceCallback) c
 						SchemaProps: spec.SchemaProps{
 							Description: "Chart holds information about a chart that should get deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"),
 						},
 					},
 					"manifests": {
@@ -3260,7 +3260,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseSpec(ref common.ReferenceCallback) c
 					"bash": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Bash holds the bash script to execute in a container in the target",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash"),
 						},
 					},
 					"values": {
@@ -3297,7 +3297,7 @@ func schema_apis_loft_cluster_v1_HelmReleaseSpec(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"},
 	}
 }
 
@@ -3317,20 +3317,20 @@ func schema_apis_loft_cluster_v1_HelmReleaseStatus(ref common.ReferenceCallback)
 					"info": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Info provides information about a release",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Info"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Info"),
 						},
 					},
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata provides information about a chart",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Info", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Info", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"},
 	}
 }
 
@@ -3570,7 +3570,7 @@ func schema_apis_loft_cluster_v1_Metadata(ref common.ReferenceCallback) common.O
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Maintainer"),
+										Ref: ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Maintainer"),
 									},
 								},
 							},
@@ -3667,7 +3667,7 @@ func schema_apis_loft_cluster_v1_Metadata(ref common.ReferenceCallback) common.O
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Maintainer"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Maintainer"},
 	}
 }
 
@@ -3734,20 +3734,20 @@ func schema_apis_loft_cluster_v1_SleepModeConfig(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigSpec"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigStatus"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigSpec", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigSpec", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -3898,7 +3898,7 @@ func schema_apis_loft_cluster_v1_SleepModeConfigStatus(ref common.ReferenceCallb
 					"lastActivityInfo": {
 						SchemaProps: spec.SchemaProps{
 							Description: "LastActivityInfo holds information about the last activity within this space",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.LastActivityInfo"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.LastActivityInfo"),
 						},
 					},
 					"sleepingSince": {
@@ -3911,13 +3911,13 @@ func schema_apis_loft_cluster_v1_SleepModeConfigStatus(ref common.ReferenceCallb
 					"currentEpoch": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Optional info that indicates how long the space was sleeping in the current epoch",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.EpochInfo"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.EpochInfo"),
 						},
 					},
 					"lastEpoch": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Optional info that indicates how long the space was sleeping in the current epoch",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.EpochInfo"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.EpochInfo"),
 						},
 					},
 					"sleptLastThirtyDays": {
@@ -3959,7 +3959,7 @@ func schema_apis_loft_cluster_v1_SleepModeConfigStatus(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.EpochInfo", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.LastActivityInfo"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.EpochInfo", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.LastActivityInfo"},
 	}
 }
 
@@ -3993,20 +3993,20 @@ func schema_apis_loft_storage_v1_ClusterQuota(ref common.ReferenceCallback) comm
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaSpec"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatus"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaSpec", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaSpec", "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -4044,7 +4044,7 @@ func schema_apis_loft_storage_v1_ClusterQuotaList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuota"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota"),
 									},
 								},
 							},
@@ -4055,7 +4055,7 @@ func schema_apis_loft_storage_v1_ClusterQuotaList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuota", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -4124,7 +4124,7 @@ func schema_apis_loft_storage_v1_ClusterQuotaStatus(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatusByNamespace"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatusByNamespace"),
 									},
 								},
 							},
@@ -4134,7 +4134,7 @@ func schema_apis_loft_storage_v1_ClusterQuotaStatus(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuotaStatusByNamespace", "k8s.io/api/core/v1.ResourceQuotaStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuotaStatusByNamespace", "k8s.io/api/core/v1.ResourceQuotaStatus"},
 	}
 }
 
@@ -4327,7 +4327,7 @@ func schema_pkg_apis_audit_v1_Event(ref common.ReferenceCallback) common.OpenAPI
 					"objectRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Object reference this request is targeted at. Does not apply for List-type requests, or non-resource requests.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/audit/v1.ObjectReference"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/audit/v1.ObjectReference"),
 						},
 					},
 					"responseStatus": {
@@ -4381,7 +4381,7 @@ func schema_pkg_apis_audit_v1_Event(ref common.ReferenceCallback) common.OpenAPI
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/audit/v1.ObjectReference", "k8s.io/api/authentication/v1.UserInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.MicroTime", "k8s.io/apimachinery/pkg/apis/meta/v1.Status", "k8s.io/apimachinery/pkg/runtime.Unknown"},
+			"github.com/skevetter/api/pkg/apis/audit/v1.ObjectReference", "k8s.io/api/authentication/v1.UserInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.MicroTime", "k8s.io/apimachinery/pkg/apis/meta/v1.Status", "k8s.io/apimachinery/pkg/runtime.Unknown"},
 	}
 }
 
@@ -4419,7 +4419,7 @@ func schema_pkg_apis_audit_v1_EventList(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/audit/v1.Event"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/audit/v1.Event"),
 									},
 								},
 							},
@@ -4430,7 +4430,7 @@ func schema_pkg_apis_audit_v1_EventList(ref common.ReferenceCallback) common.Ope
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/audit/v1.Event", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/audit/v1.Event", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -4547,7 +4547,7 @@ func schema_pkg_apis_management_v1_AgentAuditConfig(ref common.ReferenceCallback
 						SchemaProps: spec.SchemaProps{
 							Description: "The audit policy to use and log requests. By default loft will not log anything",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicy"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuditPolicy"),
 						},
 					},
 					"path": {
@@ -4589,7 +4589,7 @@ func schema_pkg_apis_management_v1_AgentAuditConfig(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicy"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuditPolicy"},
 	}
 }
 
@@ -4623,20 +4623,20 @@ func schema_pkg_apis_management_v1_AgentAuditEvent(ref common.ReferenceCallback)
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEventStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventSpec", "github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEventStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -4673,7 +4673,7 @@ func schema_pkg_apis_management_v1_AgentAuditEventList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEvent"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEvent"),
 									},
 								},
 							},
@@ -4684,7 +4684,7 @@ func schema_pkg_apis_management_v1_AgentAuditEventList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditEvent", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AgentAuditEvent", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -4702,7 +4702,7 @@ func schema_pkg_apis_management_v1_AgentAuditEventSpec(ref common.ReferenceCallb
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/audit/v1.Event"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/audit/v1.Event"),
 									},
 								},
 							},
@@ -4712,7 +4712,7 @@ func schema_pkg_apis_management_v1_AgentAuditEventSpec(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/audit/v1.Event"},
+			"github.com/skevetter/api/pkg/apis/audit/v1.Event"},
 	}
 }
 
@@ -4757,20 +4757,20 @@ func schema_pkg_apis_management_v1_Announcement(ref common.ReferenceCallback) co
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AnnouncementSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AnnouncementStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AnnouncementStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AnnouncementSpec", "github.com/skevetter/api/pkg/apis/management/v1.AnnouncementStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -4807,7 +4807,7 @@ func schema_pkg_apis_management_v1_AnnouncementList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Announcement"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Announcement"),
 									},
 								},
 							},
@@ -4818,7 +4818,7 @@ func schema_pkg_apis_management_v1_AnnouncementList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Announcement", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Announcement", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -4842,14 +4842,14 @@ func schema_pkg_apis_management_v1_AnnouncementStatus(ref common.ReferenceCallba
 						SchemaProps: spec.SchemaProps{
 							Description: "Announcement is the html announcement that should be displayed in the frontend",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.Announcement"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.Announcement"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.Announcement"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.Announcement"},
 	}
 }
 
@@ -4883,20 +4883,20 @@ func schema_pkg_apis_management_v1_App(ref common.ReferenceCallback) common.Open
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AppSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AppSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AppStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AppStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AppStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AppSpec", "github.com/skevetter/api/pkg/apis/management/v1.AppStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -4983,7 +4983,7 @@ func schema_pkg_apis_management_v1_AppCredentialsList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AppCredentials"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AppCredentials"),
 									},
 								},
 							},
@@ -4994,7 +4994,7 @@ func schema_pkg_apis_management_v1_AppCredentialsList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AppCredentials", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AppCredentials", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -5031,7 +5031,7 @@ func schema_pkg_apis_management_v1_AppList(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.App"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.App"),
 									},
 								},
 							},
@@ -5042,7 +5042,7 @@ func schema_pkg_apis_management_v1_AppList(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.App", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.App", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -5070,7 +5070,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -5128,7 +5128,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 						SchemaProps: spec.SchemaProps{
 							Description: "Config is the helm config to use to deploy the helm release",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"),
 						},
 					},
 					"wait": {
@@ -5153,7 +5153,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -5162,7 +5162,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 					"streamContainer": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config.bash instead StreamContainer can be used to stream a containers logs instead of the helm output.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"),
 						},
 					},
 					"versions": {
@@ -5173,7 +5173,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppVersion"),
 									},
 								},
 							},
@@ -5187,7 +5187,7 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -5203,14 +5203,14 @@ func schema_pkg_apis_management_v1_AppSpec(ref common.ReferenceCallback) common.
 					"helm": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config instead helm defines the configuration for a helm deployment",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmConfiguration"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmConfiguration"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmConfiguration", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig", "github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.AppVersion", "github.com/skevetter/api/pkg/apis/storage/v1.HelmConfiguration", "github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -5247,7 +5247,7 @@ func schema_pkg_apis_management_v1_Apps(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChartRepository"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmChartRepository"),
 									},
 								},
 							},
@@ -5261,7 +5261,7 @@ func schema_pkg_apis_management_v1_Apps(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.PredefinedApp"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.PredefinedApp"),
 									},
 								},
 							},
@@ -5271,7 +5271,7 @@ func schema_pkg_apis_management_v1_Apps(ref common.ReferenceCallback) common.Ope
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.PredefinedApp", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChartRepository"},
+			"github.com/skevetter/api/pkg/apis/management/v1.PredefinedApp", "github.com/skevetter/api/pkg/apis/storage/v1.HelmChartRepository"},
 	}
 }
 
@@ -5307,7 +5307,7 @@ func schema_pkg_apis_management_v1_Audit(ref common.ReferenceCallback) common.Op
 						SchemaProps: spec.SchemaProps{
 							Description: "The audit policy to use and log requests. By default loft will not log anything",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicy"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuditPolicy"),
 						},
 					},
 					"dataStoreEndpoint": {
@@ -5363,7 +5363,7 @@ func schema_pkg_apis_management_v1_Audit(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicy"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuditPolicy"},
 	}
 }
 
@@ -5382,7 +5382,7 @@ func schema_pkg_apis_management_v1_AuditPolicy(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicyRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AuditPolicyRule"),
 									},
 								},
 							},
@@ -5407,7 +5407,7 @@ func schema_pkg_apis_management_v1_AuditPolicy(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuditPolicyRule"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuditPolicyRule"},
 	}
 }
 
@@ -5479,7 +5479,7 @@ func schema_pkg_apis_management_v1_AuditPolicyRule(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.GroupResources"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.GroupResources"),
 									},
 								},
 							},
@@ -5565,7 +5565,7 @@ func schema_pkg_apis_management_v1_AuditPolicyRule(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.GroupResources"},
+			"github.com/skevetter/api/pkg/apis/management/v1.GroupResources"},
 	}
 }
 
@@ -5579,49 +5579,49 @@ func schema_pkg_apis_management_v1_Authentication(ref common.ReferenceCallback) 
 					"oidc": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OIDC holds oidc authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC"),
 						},
 					},
 					"github": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Github holds github authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub"),
 						},
 					},
 					"gitlab": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Gitlab holds gitlab authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab"),
 						},
 					},
 					"google": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Google holds google authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle"),
 						},
 					},
 					"microsoft": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Microsoft holds microsoft authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft"),
 						},
 					},
 					"saml": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SAML holds saml authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML"),
 						},
 					},
 					"rancher": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Rancher holds the rancher authentication options",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationRancher"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationRancher"),
 						},
 					},
 					"password": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Password holds password authentication relevant information",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationPassword"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationPassword"),
 						},
 					},
 					"connectors": {
@@ -5632,7 +5632,7 @@ func schema_pkg_apis_management_v1_Authentication(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConnectorWithName"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConnectorWithName"),
 									},
 								},
 							},
@@ -5701,7 +5701,7 @@ func schema_pkg_apis_management_v1_Authentication(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationPassword", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationRancher", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ConnectorWithName"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationPassword", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationRancher", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML", "github.com/skevetter/api/pkg/apis/management/v1.ConnectorWithName"},
 	}
 }
 
@@ -5742,7 +5742,7 @@ func schema_pkg_apis_management_v1_AuthenticationGithub(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithubOrg"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithubOrg"),
 									},
 								},
 							},
@@ -5767,7 +5767,7 @@ func schema_pkg_apis_management_v1_AuthenticationGithub(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithubOrg"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithubOrg"},
 	}
 }
 
@@ -6389,20 +6389,20 @@ func schema_pkg_apis_management_v1_Backup(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.BackupSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.BackupStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.BackupSpec", "github.com/skevetter/api/pkg/apis/management/v1.BackupStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -6435,14 +6435,14 @@ func schema_pkg_apis_management_v1_BackupApply(ref common.ReferenceCallback) com
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApplySpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.BackupApplySpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApplySpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.BackupApplySpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -6479,7 +6479,7 @@ func schema_pkg_apis_management_v1_BackupApplyList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApply"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.BackupApply"),
 									},
 								},
 							},
@@ -6490,7 +6490,7 @@ func schema_pkg_apis_management_v1_BackupApplyList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.BackupApply", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.BackupApply", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -6573,7 +6573,7 @@ func schema_pkg_apis_management_v1_BackupList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Backup"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Backup"),
 									},
 								},
 							},
@@ -6584,7 +6584,7 @@ func schema_pkg_apis_management_v1_BackupList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Backup", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Backup", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -6635,14 +6635,14 @@ func schema_pkg_apis_management_v1_Cloud(ref common.ReferenceCallback) common.Op
 						SchemaProps: spec.SchemaProps{
 							Description: "MaintenanceWindow specifies the maintenance window for the cloud configuration. This is a structured representation of the time window during which maintenance can occur.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.MaintenanceWindow"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.MaintenanceWindow"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.MaintenanceWindow"},
+			"github.com/skevetter/api/pkg/apis/management/v1.MaintenanceWindow"},
 	}
 }
 
@@ -6676,20 +6676,20 @@ func schema_pkg_apis_management_v1_Cluster(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterSpec", "github.com/skevetter/api/pkg/apis/management/v1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -6723,20 +6723,20 @@ func schema_pkg_apis_management_v1_ClusterAccess(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessSpec", "github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -6836,7 +6836,7 @@ func schema_pkg_apis_management_v1_ClusterAccessKeyList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessKey"),
 									},
 								},
 							},
@@ -6847,7 +6847,7 @@ func schema_pkg_apis_management_v1_ClusterAccessKeyList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -6884,7 +6884,7 @@ func schema_pkg_apis_management_v1_ClusterAccessList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccess"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccess"),
 									},
 								},
 							},
@@ -6895,7 +6895,7 @@ func schema_pkg_apis_management_v1_ClusterAccessList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -6923,7 +6923,7 @@ func schema_pkg_apis_management_v1_ClusterAccessSpec(ref common.ReferenceCallbac
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -6949,7 +6949,7 @@ func schema_pkg_apis_management_v1_ClusterAccessSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -6959,14 +6959,14 @@ func schema_pkg_apis_management_v1_ClusterAccessSpec(ref common.ReferenceCallbac
 						SchemaProps: spec.SchemaProps{
 							Description: "LocalClusterAccessTemplate holds the cluster access template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -6983,7 +6983,7 @@ func schema_pkg_apis_management_v1_ClusterAccessStatus(ref common.ReferenceCallb
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -6995,7 +6995,7 @@ func schema_pkg_apis_management_v1_ClusterAccessStatus(ref common.ReferenceCallb
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeamEntity"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeamEntity"),
 									},
 								},
 							},
@@ -7007,7 +7007,7 @@ func schema_pkg_apis_management_v1_ClusterAccessStatus(ref common.ReferenceCallb
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -7017,7 +7017,7 @@ func schema_pkg_apis_management_v1_ClusterAccessStatus(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeamEntity"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeamEntity"},
 	}
 }
 
@@ -7046,14 +7046,14 @@ func schema_pkg_apis_management_v1_ClusterAccounts(ref common.ReferenceCallback)
 						SchemaProps: spec.SchemaProps{
 							Description: "Cluster is the cluster object",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Cluster"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Cluster"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Cluster"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Cluster"},
 	}
 }
 
@@ -7094,7 +7094,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 					"audit": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Audit holds the agent audit config",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditConfig"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAuditConfig"),
 						},
 					},
 					"defaultImageRegistry": {
@@ -7136,7 +7136,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 						SchemaProps: spec.SchemaProps{
 							Description: "AnalyticsSpec holds info needed for the agent to send analytics data to the analytics backend.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAnalyticsSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAnalyticsSpec"),
 						},
 					},
 				},
@@ -7144,7 +7144,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfig(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAnalyticsSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AgentAnalyticsSpec", "github.com/skevetter/api/pkg/apis/management/v1.AgentAuditConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -7164,7 +7164,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref common.Reference
 					"audit": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Audit holds the agent audit config",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditConfig"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAuditConfig"),
 						},
 					},
 					"defaultImageRegistry": {
@@ -7206,7 +7206,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref common.Reference
 						SchemaProps: spec.SchemaProps{
 							Description: "AnalyticsSpec holds info needed for the agent to send analytics data to the analytics backend.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAnalyticsSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AgentAnalyticsSpec"),
 						},
 					},
 				},
@@ -7214,7 +7214,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigCommon(ref common.Reference
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAnalyticsSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AgentAuditConfig"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AgentAnalyticsSpec", "github.com/skevetter/api/pkg/apis/management/v1.AgentAuditConfig"},
 	}
 }
 
@@ -7251,7 +7251,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigList(ref common.ReferenceCa
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfig"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfig"),
 									},
 								},
 							},
@@ -7262,7 +7262,7 @@ func schema_pkg_apis_management_v1_ClusterAgentConfigList(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7300,7 +7300,7 @@ func schema_pkg_apis_management_v1_ClusterCharts(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmChart"),
 									},
 								},
 							},
@@ -7318,7 +7318,7 @@ func schema_pkg_apis_management_v1_ClusterCharts(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChart", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.HelmChart", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -7355,7 +7355,7 @@ func schema_pkg_apis_management_v1_ClusterChartsList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterCharts"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterCharts"),
 									},
 								},
 							},
@@ -7366,7 +7366,7 @@ func schema_pkg_apis_management_v1_ClusterChartsList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterCharts", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterCharts", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7449,7 +7449,7 @@ func schema_pkg_apis_management_v1_ClusterDomainList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterDomain"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterDomain"),
 									},
 								},
 							},
@@ -7460,7 +7460,7 @@ func schema_pkg_apis_management_v1_ClusterDomainList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterDomain", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterDomain", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7497,7 +7497,7 @@ func schema_pkg_apis_management_v1_ClusterList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Cluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Cluster"),
 									},
 								},
 							},
@@ -7508,7 +7508,7 @@ func schema_pkg_apis_management_v1_ClusterList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Cluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Cluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7522,14 +7522,14 @@ func schema_pkg_apis_management_v1_ClusterMember(ref common.ReferenceCallback) c
 						SchemaProps: spec.SchemaProps{
 							Description: "Info about the user or team",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -7567,7 +7567,7 @@ func schema_pkg_apis_management_v1_ClusterMemberAccess(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMember"),
 									},
 								},
 							},
@@ -7581,7 +7581,7 @@ func schema_pkg_apis_management_v1_ClusterMemberAccess(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMember"),
 									},
 								},
 							},
@@ -7591,7 +7591,7 @@ func schema_pkg_apis_management_v1_ClusterMemberAccess(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -7628,7 +7628,7 @@ func schema_pkg_apis_management_v1_ClusterMemberAccessList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMemberAccess"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMemberAccess"),
 									},
 								},
 							},
@@ -7639,7 +7639,7 @@ func schema_pkg_apis_management_v1_ClusterMemberAccessList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMemberAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterMemberAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7677,7 +7677,7 @@ func schema_pkg_apis_management_v1_ClusterMembers(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMember"),
 									},
 								},
 							},
@@ -7691,7 +7691,7 @@ func schema_pkg_apis_management_v1_ClusterMembers(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMember"),
 									},
 								},
 							},
@@ -7701,7 +7701,7 @@ func schema_pkg_apis_management_v1_ClusterMembers(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -7738,7 +7738,7 @@ func schema_pkg_apis_management_v1_ClusterMembersList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMembers"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterMembers"),
 									},
 								},
 							},
@@ -7749,7 +7749,7 @@ func schema_pkg_apis_management_v1_ClusterMembersList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMembers", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterMembers", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7832,7 +7832,7 @@ func schema_pkg_apis_management_v1_ClusterResetList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterReset"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterReset"),
 									},
 								},
 							},
@@ -7843,7 +7843,7 @@ func schema_pkg_apis_management_v1_ClusterResetList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterReset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterReset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7877,20 +7877,20 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplate(ref common.ReferenceCallb
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateSpec", "github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -7927,7 +7927,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplate"),
 									},
 								},
 							},
@@ -7938,7 +7938,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterRoleTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterRoleTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -7966,7 +7966,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateSpec(ref common.ReferenceC
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -7999,7 +7999,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -8009,20 +8009,20 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateSpec(ref common.ReferenceC
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRoleTemplate holds the cluster role template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
 						},
 					},
 					"localClusterRoleTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use ClusterRoleTemplate instead LocalClusterRoleTemplate holds the cluster role template",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -8039,7 +8039,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateStatus(ref common.Referenc
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -8049,7 +8049,7 @@ func schema_pkg_apis_management_v1_ClusterRoleTemplateStatus(ref common.Referenc
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -8077,14 +8077,14 @@ func schema_pkg_apis_management_v1_ClusterSpec(ref common.ReferenceCallback) com
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"config": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Holds a reference to a secret that holds the kube config to access this cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"local": {
@@ -8123,7 +8123,7 @@ func schema_pkg_apis_management_v1_ClusterSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -8132,20 +8132,20 @@ func schema_pkg_apis_management_v1_ClusterSpec(ref common.ReferenceCallback) com
 					"metrics": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metrics holds the cluster's metrics backend configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Metrics"),
 						},
 					},
 					"opencost": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OpenCost holds the cluster's OpenCost backend configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.OpenCost"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.Metrics", "github.com/skevetter/api/pkg/apis/storage/v1.OpenCost", "github.com/skevetter/api/pkg/apis/storage/v1.SecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -8182,7 +8182,7 @@ func schema_pkg_apis_management_v1_ClusterStatus(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -8199,7 +8199,7 @@ func schema_pkg_apis_management_v1_ClusterStatus(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -8232,7 +8232,7 @@ func schema_pkg_apis_management_v1_ClusterVirtualClusterDefaults(ref common.Refe
 					"defaultTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DefaultTemplate is the default virtual cluster template",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplate"),
 						},
 					},
 					"latestVersion": {
@@ -8260,7 +8260,7 @@ func schema_pkg_apis_management_v1_ClusterVirtualClusterDefaults(ref common.Refe
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -8297,7 +8297,7 @@ func schema_pkg_apis_management_v1_ClusterVirtualClusterDefaultsList(ref common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterVirtualClusterDefaults"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterVirtualClusterDefaults"),
 									},
 								},
 							},
@@ -8308,7 +8308,7 @@ func schema_pkg_apis_management_v1_ClusterVirtualClusterDefaultsList(ref common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterVirtualClusterDefaults", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterVirtualClusterDefaults", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -8342,20 +8342,20 @@ func schema_pkg_apis_management_v1_Config(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConfigSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConfigStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ConfigSpec", "github.com/skevetter/api/pkg/apis/management/v1.ConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -8392,7 +8392,7 @@ func schema_pkg_apis_management_v1_ConfigList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Config"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Config"),
 									},
 								},
 							},
@@ -8403,7 +8403,7 @@ func schema_pkg_apis_management_v1_ConfigList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Config", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Config", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -8438,25 +8438,25 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 						SchemaProps: spec.SchemaProps{
 							Description: "Authentication holds the information for authentication",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Authentication"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.Authentication"),
 						},
 					},
 					"oidc": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Configure the OIDC clients using either the OIDC Client UI or a secret. By default, vCluster Platform as an OIDC Provider is enabled but does not function without OIDC clients.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.OIDC"),
 						},
 					},
 					"apps": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Apps holds configuration around apps",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Apps"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.Apps"),
 						},
 					},
 					"audit": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Audit holds audit configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Audit"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.Audit"),
 						},
 					},
 					"loftHost": {
@@ -8483,13 +8483,13 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					"uiSettings": {
 						SchemaProps: spec.SchemaProps{
 							Description: "UISettings holds the settings for modifying the Loft user interface",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsConfig"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettingsConfig"),
 						},
 					},
 					"vault": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VaultIntegration holds the vault integration configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec"),
 						},
 					},
 					"disableConfigEndpoint": {
@@ -8502,20 +8502,20 @@ func schema_pkg_apis_management_v1_ConfigStatus(ref common.ReferenceCallback) co
 					"cloud": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Cloud holds the settings to be used exclusively in vCluster Cloud based environments and deployments.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Cloud"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.Cloud"),
 						},
 					},
 					"costControl": {
 						SchemaProps: spec.SchemaProps{
 							Description: "CostControl holds the settings related to the Cost Control ROI dashboard and its metrics gathering infrastructure",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControl"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControl"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Apps", "github.com/loft-sh/api/v4/pkg/apis/management/v1.Audit", "github.com/loft-sh/api/v4/pkg/apis/management/v1.Authentication", "github.com/loft-sh/api/v4/pkg/apis/management/v1.Cloud", "github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControl", "github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDC", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec", "github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsConfig"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Apps", "github.com/skevetter/api/pkg/apis/management/v1.Audit", "github.com/skevetter/api/pkg/apis/management/v1.Authentication", "github.com/skevetter/api/pkg/apis/management/v1.Cloud", "github.com/skevetter/api/pkg/apis/management/v1.CostControl", "github.com/skevetter/api/pkg/apis/management/v1.OIDC", "github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec", "github.com/skevetter/api/pkg/apis/ui/v1.UISettingsConfig"},
 	}
 }
 
@@ -8528,44 +8528,44 @@ func schema_pkg_apis_management_v1_Connector(ref common.ReferenceCallback) commo
 					"oidc": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OIDC holds oidc authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC"),
 						},
 					},
 					"github": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Github holds github authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub"),
 						},
 					},
 					"gitlab": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Gitlab holds gitlab authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab"),
 						},
 					},
 					"google": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Google holds google authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle"),
 						},
 					},
 					"microsoft": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Microsoft holds microsoft authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft"),
 						},
 					},
 					"saml": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SAML holds saml authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML"},
 	}
 }
 
@@ -8592,44 +8592,44 @@ func schema_pkg_apis_management_v1_ConnectorWithName(ref common.ReferenceCallbac
 					"oidc": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OIDC holds oidc authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC"),
 						},
 					},
 					"github": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Github holds github authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub"),
 						},
 					},
 					"gitlab": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Gitlab holds gitlab authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab"),
 						},
 					},
 					"google": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Google holds google authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle"),
 						},
 					},
 					"microsoft": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Microsoft holds microsoft authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft"),
 						},
 					},
 					"saml": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SAML holds saml authentication configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGithub", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGitlab", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationGoogle", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationOIDC", "github.com/loft-sh/api/v4/pkg/apis/management/v1.AuthenticationSAML"},
+			"github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGithub", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGitlab", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationGoogle", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationMicrosoft", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationOIDC", "github.com/skevetter/api/pkg/apis/management/v1.AuthenticationSAML"},
 	}
 }
 
@@ -8663,20 +8663,20 @@ func schema_pkg_apis_management_v1_ConvertVirtualClusterConfig(ref common.Refere
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigSpec", "github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -8713,7 +8713,7 @@ func schema_pkg_apis_management_v1_ConvertVirtualClusterConfigList(ref common.Re
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfig"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfig"),
 									},
 								},
 							},
@@ -8724,7 +8724,7 @@ func schema_pkg_apis_management_v1_ConvertVirtualClusterConfigList(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ConvertVirtualClusterConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ConvertVirtualClusterConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -8817,27 +8817,27 @@ func schema_pkg_apis_management_v1_CostControl(ref common.ReferenceCallback) com
 						SchemaProps: spec.SchemaProps{
 							Description: "Global are settings for globally managed components",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlGlobalConfig"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlGlobalConfig"),
 						},
 					},
 					"cluster": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Cluster are settings for each cluster's managed components. These settings apply to all connected clusters unless overridden by modifying the Cluster's spec",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlClusterConfig"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlClusterConfig"),
 						},
 					},
 					"settings": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Settings specify price-related settings that are taken into account for the ROI dashboard calculations.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlSettings"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlSettings"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlClusterConfig", "github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlGlobalConfig", "github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlSettings"},
+			"github.com/skevetter/api/pkg/apis/management/v1.CostControlClusterConfig", "github.com/skevetter/api/pkg/apis/management/v1.CostControlGlobalConfig", "github.com/skevetter/api/pkg/apis/management/v1.CostControlSettings"},
 	}
 }
 
@@ -8850,20 +8850,20 @@ func schema_pkg_apis_management_v1_CostControlClusterConfig(ref common.Reference
 					"metrics": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metrics are settings applied to metric infrastructure in each connected cluster. These can be overridden in individual clusters by modifying the Cluster's spec",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Metrics"),
 						},
 					},
 					"opencost": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OpenCost are settings applied to OpenCost deployments in each connected cluster. These can be overridden in individual clusters by modifying the Cluster's spec",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.OpenCost"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Metrics", "github.com/skevetter/api/pkg/apis/storage/v1.OpenCost"},
 	}
 }
 
@@ -8876,14 +8876,14 @@ func schema_pkg_apis_management_v1_CostControlGlobalConfig(ref common.ReferenceC
 					"metrics": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metrics these settings apply to metric infrastructure used to aggregate metrics across all connected clusters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Metrics"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Metrics"},
 	}
 }
 
@@ -8929,26 +8929,26 @@ func schema_pkg_apis_management_v1_CostControlSettings(ref common.ReferenceCallb
 					"averageCPUPricePerNode": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AvgCPUPricePerNode specifies the average CPU price per node.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlResourcePrice"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlResourcePrice"),
 						},
 					},
 					"averageRAMPricePerNode": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AvgRAMPricePerNode specifies the average RAM price per node.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlResourcePrice"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlResourcePrice"),
 						},
 					},
 					"controlPlanePricePerCluster": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ControlPlanePricePerCluster specifies the price of one physical cluster.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlResourcePrice"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.CostControlResourcePrice"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.CostControlResourcePrice"},
+			"github.com/skevetter/api/pkg/apis/management/v1.CostControlResourcePrice"},
 	}
 }
 
@@ -9018,7 +9018,7 @@ func schema_pkg_apis_management_v1_DevPodDeleteOptionsList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodDeleteOptions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodDeleteOptions"),
 									},
 								},
 							},
@@ -9029,7 +9029,7 @@ func schema_pkg_apis_management_v1_DevPodDeleteOptionsList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodDeleteOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodDeleteOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9063,20 +9063,20 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplate(ref common.Referenc
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateSpec", "github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -9113,7 +9113,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateList(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplate"),
 									},
 								},
 							},
@@ -9124,7 +9124,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateList(ref common.Refe
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9152,7 +9152,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref common.Refe
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"access": {
@@ -9163,7 +9163,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -9172,7 +9172,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref common.Refe
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for DevPod environments",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
 						},
 					},
 					"versions": {
@@ -9183,7 +9183,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion"),
 									},
 								},
 							},
@@ -9193,7 +9193,7 @@ func schema_pkg_apis_management_v1_DevPodEnvironmentTemplateSpec(ref common.Refe
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -9274,7 +9274,7 @@ func schema_pkg_apis_management_v1_DevPodSshOptionsList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodSshOptions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodSshOptions"),
 									},
 								},
 							},
@@ -9285,7 +9285,7 @@ func schema_pkg_apis_management_v1_DevPodSshOptionsList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodSshOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodSshOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9355,7 +9355,7 @@ func schema_pkg_apis_management_v1_DevPodStatusOptionsList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStatusOptions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodStatusOptions"),
 									},
 								},
 							},
@@ -9366,7 +9366,7 @@ func schema_pkg_apis_management_v1_DevPodStatusOptionsList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStatusOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodStatusOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9436,7 +9436,7 @@ func schema_pkg_apis_management_v1_DevPodStopOptionsList(ref common.ReferenceCal
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStopOptions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodStopOptions"),
 									},
 								},
 							},
@@ -9447,7 +9447,7 @@ func schema_pkg_apis_management_v1_DevPodStopOptionsList(ref common.ReferenceCal
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodStopOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodStopOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9538,7 +9538,7 @@ func schema_pkg_apis_management_v1_DevPodUpOptionsList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodUpOptions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodUpOptions"),
 									},
 								},
 							},
@@ -9549,7 +9549,7 @@ func schema_pkg_apis_management_v1_DevPodUpOptionsList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodUpOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodUpOptions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9583,20 +9583,20 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstance(ref common.ReferenceC
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceSpec", "github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -9633,7 +9633,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceList(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstance"),
 									},
 								},
 							},
@@ -9644,7 +9644,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceList(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9672,38 +9672,38 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceSpec(ref common.Refere
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"presetRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "PresetRef holds the DevPodWorkspacePreset template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.PresetRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.PresetRef"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the DevPod machine template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"environmentRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "EnvironmentRef is the reference to DevPodEnvironmentTemplate that should be used",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for DevPod machine creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"runnerRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RunnerRef is the reference to the connected runner holding this workspace",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerRef"),
 						},
 					},
 					"parameters": {
@@ -9721,7 +9721,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceSpec(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -9738,7 +9738,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceSpec(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.PresetRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef", "github.com/skevetter/api/pkg/apis/storage/v1.PresetRef", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerRef", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -9816,7 +9816,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStateList(ref common.R
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceState"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceState"),
 									},
 								},
 							},
@@ -9827,7 +9827,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStateList(ref common.R
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceState", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceState", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -9874,7 +9874,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStatus(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -9883,7 +9883,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStatus(ref common.Refe
 					"instance": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Instance is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -9896,20 +9896,20 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceStatus(ref common.Refe
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef holds the runners cluster if the workspace is scheduled on kubernetes based runner",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef"),
 						},
 					},
 					"sleepModeConfig": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SleepModeConfig is the sleep mode config of the workspace. This will only be shown in the front end.",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig", "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
 	}
 }
 
@@ -9949,13 +9949,13 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshoot(ref commo
 					"workspace": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Workspace holds the workspace's instance object data",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstance"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstance"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the workspace instance's template used to create it. This is the raw template, not the rendered one.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplate"),
 						},
 					},
 					"pods": {
@@ -10005,7 +10005,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshoot(ref commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstance", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplate", "k8s.io/api/core/v1.PersistentVolumeClaim", "k8s.io/api/core/v1.Pod", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstance", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplate", "k8s.io/api/core/v1.PersistentVolumeClaim", "k8s.io/api/core/v1.Pod", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10042,7 +10042,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshootList(ref c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot"),
 									},
 								},
 							},
@@ -10053,7 +10053,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceInstanceTroubleshootList(ref c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceInstanceTroubleshoot", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -10087,20 +10087,20 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePreset(ref common.ReferenceCal
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePresetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetSpec", "github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePresetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10137,7 +10137,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetList(ref common.Referenc
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePreset"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePreset"),
 									},
 								},
 							},
@@ -10148,7 +10148,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetList(ref common.Referenc
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePreset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePreset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -10196,19 +10196,19 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref common.Referenc
 					"source": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Source stores inline path of project source",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
 						},
 					},
 					"infrastructureRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "InfrastructureRef stores reference to DevPodWorkspaceTemplate to use",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"environmentRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "EnvironmentRef stores reference to DevPodEnvironmentTemplate",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef"),
 						},
 					},
 					"useProjectGitCredentials": {
@@ -10221,7 +10221,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref common.Referenc
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"access": {
@@ -10232,7 +10232,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref common.Referenc
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -10246,7 +10246,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref common.Referenc
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetVersion"),
 									},
 								},
 							},
@@ -10257,7 +10257,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspacePresetSpec(ref common.Referenc
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetVersion", "github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -10302,20 +10302,20 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplate(ref common.ReferenceC
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateSpec", "github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10352,7 +10352,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateList(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplate"),
 									},
 								},
 							},
@@ -10363,7 +10363,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateList(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -10391,7 +10391,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"parameters": {
@@ -10402,7 +10402,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -10412,7 +10412,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the DevPod workspace template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"versions": {
@@ -10423,7 +10423,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion"),
 									},
 								},
 							},
@@ -10437,7 +10437,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -10447,7 +10447,7 @@ func schema_pkg_apis_management_v1_DevPodWorkspaceTemplateSpec(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -10492,20 +10492,20 @@ func schema_pkg_apis_management_v1_DirectClusterEndpointToken(ref common.Referen
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenSpec", "github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10542,7 +10542,7 @@ func schema_pkg_apis_management_v1_DirectClusterEndpointTokenList(ref common.Ref
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointToken"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointToken"),
 									},
 								},
 							},
@@ -10553,7 +10553,7 @@ func schema_pkg_apis_management_v1_DirectClusterEndpointTokenList(ref common.Ref
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DirectClusterEndpointToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DirectClusterEndpointToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -10574,14 +10574,14 @@ func schema_pkg_apis_management_v1_DirectClusterEndpointTokenSpec(ref common.Ref
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope is the optional scope of the direct cluster endpoint",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"},
 	}
 }
 
@@ -10634,20 +10634,20 @@ func schema_pkg_apis_management_v1_Event(ref common.ReferenceCallback) common.Op
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.EventSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.EventSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.EventStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.EventStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.EventSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.EventStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.EventSpec", "github.com/skevetter/api/pkg/apis/management/v1.EventStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10684,7 +10684,7 @@ func schema_pkg_apis_management_v1_EventList(ref common.ReferenceCallback) commo
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Event"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Event"),
 									},
 								},
 							},
@@ -10695,7 +10695,7 @@ func schema_pkg_apis_management_v1_EventList(ref common.ReferenceCallback) commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Event", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Event", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -10809,7 +10809,7 @@ func schema_pkg_apis_management_v1_EventStatus(ref common.ReferenceCallback) com
 					"objectRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Object reference this request is targeted at. Does not apply for List-type requests, or non-resource requests.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/audit/v1.ObjectReference"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/audit/v1.ObjectReference"),
 						},
 					},
 					"responseStatus": {
@@ -10863,7 +10863,7 @@ func schema_pkg_apis_management_v1_EventStatus(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/audit/v1.ObjectReference", "k8s.io/api/authentication/v1.UserInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.MicroTime", "k8s.io/apimachinery/pkg/apis/meta/v1.Status", "k8s.io/apimachinery/pkg/runtime.Unknown"},
+			"github.com/skevetter/api/pkg/apis/audit/v1.ObjectReference", "k8s.io/api/authentication/v1.UserInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.MicroTime", "k8s.io/apimachinery/pkg/apis/meta/v1.Status", "k8s.io/apimachinery/pkg/runtime.Unknown"},
 	}
 }
 
@@ -10897,20 +10897,20 @@ func schema_pkg_apis_management_v1_Feature(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.FeatureSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.FeatureStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.FeatureStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.FeatureSpec", "github.com/skevetter/api/pkg/apis/management/v1.FeatureStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -10947,7 +10947,7 @@ func schema_pkg_apis_management_v1_FeatureList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Feature"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Feature"),
 									},
 								},
 							},
@@ -10958,7 +10958,7 @@ func schema_pkg_apis_management_v1_FeatureList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Feature", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Feature", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11130,20 +11130,20 @@ func schema_pkg_apis_management_v1_IngressAuthToken(ref common.ReferenceCallback
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenSpec", "github.com/skevetter/api/pkg/apis/management/v1.IngressAuthTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11180,7 +11180,7 @@ func schema_pkg_apis_management_v1_IngressAuthTokenList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthToken"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.IngressAuthToken"),
 									},
 								},
 							},
@@ -11191,7 +11191,7 @@ func schema_pkg_apis_management_v1_IngressAuthTokenList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.IngressAuthToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.IngressAuthToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11271,20 +11271,20 @@ func schema_pkg_apis_management_v1_Kiosk(ref common.ReferenceCallback) common.Op
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.KioskSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.KioskStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.KioskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.KioskSpec", "github.com/skevetter/api/pkg/apis/management/v1.KioskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11321,7 +11321,7 @@ func schema_pkg_apis_management_v1_KioskList(ref common.ReferenceCallback) commo
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Kiosk"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Kiosk"),
 									},
 								},
 							},
@@ -11332,7 +11332,7 @@ func schema_pkg_apis_management_v1_KioskList(ref common.ReferenceCallback) commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Kiosk", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Kiosk", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11346,46 +11346,46 @@ func schema_pkg_apis_management_v1_KioskSpec(ref common.ReferenceCallback) commo
 						SchemaProps: spec.SchemaProps{
 							Description: "cluster.loft.sh",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmRelease"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease"),
 						},
 					},
 					"sleepModeConfig": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig"),
 						},
 					},
 					"chartInfo": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfo"),
+							Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfo"),
 						},
 					},
 					"storageClusterQuota": {
 						SchemaProps: spec.SchemaProps{
 							Description: "storage.loft.sh",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuota"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota"),
 						},
 					},
 					"UISettings": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ui.loft.sh",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettings"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettings"),
 						},
 					},
 					"license": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.License"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.License"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartInfo", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmRelease", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.ClusterQuota", "github.com/loft-sh/api/v4/pkg/apis/management/v1.License", "github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettings"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartInfo", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmRelease", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig", "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.ClusterQuota", "github.com/skevetter/api/pkg/apis/management/v1.License", "github.com/skevetter/api/pkg/apis/ui/v1.UISettings"},
 	}
 }
 
@@ -11429,20 +11429,20 @@ func schema_pkg_apis_management_v1_License(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LicenseSpec", "github.com/skevetter/api/pkg/apis/management/v1.LicenseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11479,7 +11479,7 @@ func schema_pkg_apis_management_v1_LicenseList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.License"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.License"),
 									},
 								},
 							},
@@ -11490,7 +11490,7 @@ func schema_pkg_apis_management_v1_LicenseList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.License", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.License", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11525,21 +11525,21 @@ func schema_pkg_apis_management_v1_LicenseRequest(ref common.ReferenceCallback) 
 						SchemaProps: spec.SchemaProps{
 							Description: "Spec is the admin request spec (the input for the request).",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Status is the admin request output (the output or result of the request).",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequestStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestSpec", "github.com/skevetter/api/pkg/apis/management/v1.LicenseRequestStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11576,7 +11576,7 @@ func schema_pkg_apis_management_v1_LicenseRequestList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequest"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseRequest"),
 									},
 								},
 							},
@@ -11587,7 +11587,7 @@ func schema_pkg_apis_management_v1_LicenseRequestList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseRequest", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LicenseRequest", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11608,14 +11608,14 @@ func schema_pkg_apis_management_v1_LicenseRequestSpec(ref common.ReferenceCallba
 						SchemaProps: spec.SchemaProps{
 							Description: "Input is the input payload to send to the url.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestInput"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestInput"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestInput"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestInput"},
 	}
 }
 
@@ -11628,14 +11628,14 @@ func schema_pkg_apis_management_v1_LicenseRequestStatus(ref common.ReferenceCall
 					"output": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Output is where the request output is stored.",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestOutput"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestOutput"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.GenericRequestOutput"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.GenericRequestOutput"},
 	}
 }
 
@@ -11658,7 +11658,7 @@ func schema_pkg_apis_management_v1_LicenseStatus(ref common.ReferenceCallback) c
 					"license": {
 						SchemaProps: spec.SchemaProps{
 							Description: "License is the license data received from the license server.",
-							Ref:         ref("github.com/loft-sh/admin-apis/pkg/licenseapi.License"),
+							Ref:         ref("github.com/skevetter/admin-apis/pkg/licenseapi.License"),
 						},
 					},
 					"resourceUsage": {
@@ -11670,7 +11670,7 @@ func schema_pkg_apis_management_v1_LicenseStatus(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"),
+										Ref:     ref("github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"),
 									},
 								},
 							},
@@ -11680,7 +11680,7 @@ func schema_pkg_apis_management_v1_LicenseStatus(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.License", "github.com/loft-sh/admin-apis/pkg/licenseapi.ResourceCount"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.License", "github.com/skevetter/admin-apis/pkg/licenseapi.ResourceCount"},
 	}
 }
 
@@ -11714,20 +11714,20 @@ func schema_pkg_apis_management_v1_LicenseToken(ref common.ReferenceCallback) co
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenSpec", "github.com/skevetter/api/pkg/apis/management/v1.LicenseTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11764,7 +11764,7 @@ func schema_pkg_apis_management_v1_LicenseTokenList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseToken"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LicenseToken"),
 									},
 								},
 							},
@@ -11775,7 +11775,7 @@ func schema_pkg_apis_management_v1_LicenseTokenList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LicenseToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LicenseToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -11811,14 +11811,14 @@ func schema_pkg_apis_management_v1_LicenseTokenStatus(ref common.ReferenceCallba
 				Properties: map[string]spec.Schema{
 					"token": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/loft-sh/admin-apis/pkg/licenseapi.InstanceTokenAuth"),
+							Ref: ref("github.com/skevetter/admin-apis/pkg/licenseapi.InstanceTokenAuth"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/admin-apis/pkg/licenseapi.InstanceTokenAuth"},
+			"github.com/skevetter/admin-apis/pkg/licenseapi.InstanceTokenAuth"},
 	}
 }
 
@@ -11852,20 +11852,20 @@ func schema_pkg_apis_management_v1_LoftUpgrade(ref common.ReferenceCallback) com
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgradeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeSpec", "github.com/skevetter/api/pkg/apis/management/v1.LoftUpgradeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -11902,7 +11902,7 @@ func schema_pkg_apis_management_v1_LoftUpgradeList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgrade"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade"),
 									},
 								},
 							},
@@ -11913,7 +11913,7 @@ func schema_pkg_apis_management_v1_LoftUpgradeList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.LoftUpgrade", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.LoftUpgrade", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12014,7 +12014,7 @@ func schema_pkg_apis_management_v1_OIDC(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientSpec"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OIDCClientSpec"),
 									},
 								},
 							},
@@ -12024,7 +12024,7 @@ func schema_pkg_apis_management_v1_OIDC(ref common.ReferenceCallback) common.Ope
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientSpec"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OIDCClientSpec"},
 	}
 }
 
@@ -12058,20 +12058,20 @@ func schema_pkg_apis_management_v1_OIDCClient(ref common.ReferenceCallback) comm
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OIDCClientSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OIDCClientStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClientStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OIDCClientSpec", "github.com/skevetter/api/pkg/apis/management/v1.OIDCClientStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12108,7 +12108,7 @@ func schema_pkg_apis_management_v1_OIDCClientList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClient"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OIDCClient"),
 									},
 								},
 							},
@@ -12119,7 +12119,7 @@ func schema_pkg_apis_management_v1_OIDCClientList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OIDCClient", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OIDCClient", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12214,20 +12214,20 @@ func schema_pkg_apis_management_v1_OwnedAccessKey(ref common.ReferenceCallback) 
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeySpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeySpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeyStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeyStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeySpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeySpec", "github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12264,7 +12264,7 @@ func schema_pkg_apis_management_v1_OwnedAccessKeyList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey"),
 									},
 								},
 							},
@@ -12275,7 +12275,7 @@ func schema_pkg_apis_management_v1_OwnedAccessKeyList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12366,7 +12366,7 @@ func schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref common.ReferenceCallba
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope defines the scope of the access key.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"type": {
@@ -12379,7 +12379,7 @@ func schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref common.ReferenceCallba
 					"identity": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If available, contains information about the sso login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity"),
 						},
 					},
 					"identityRefresh": {
@@ -12391,7 +12391,7 @@ func schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref common.ReferenceCallba
 					"oidcProvider": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If the token is a refresh token, contains information about it",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
 						},
 					},
 					"parent": {
@@ -12404,14 +12404,14 @@ func schema_pkg_apis_management_v1_OwnedAccessKeySpec(ref common.ReferenceCallba
 					"oidcLogin": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use identity instead If available, contains information about the oidc login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -12536,20 +12536,20 @@ func schema_pkg_apis_management_v1_Project(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectSpec", "github.com/skevetter/api/pkg/apis/management/v1.ProjectStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12582,20 +12582,20 @@ func schema_pkg_apis_management_v1_ProjectChartInfo(ref common.ReferenceCallback
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfoStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoSpec", "github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfoStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12632,7 +12632,7 @@ func schema_pkg_apis_management_v1_ProjectChartInfoList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfo"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfo"),
 									},
 								},
 							},
@@ -12643,7 +12643,7 @@ func schema_pkg_apis_management_v1_ProjectChartInfoList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectChartInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectChartInfo", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12657,14 +12657,14 @@ func schema_pkg_apis_management_v1_ProjectChartInfoSpec(ref common.ReferenceCall
 						SchemaProps: spec.SchemaProps{
 							Description: "Chart holds information about a chart that should get deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"},
 	}
 }
 
@@ -12677,7 +12677,7 @@ func schema_pkg_apis_management_v1_ProjectChartInfoStatus(ref common.ReferenceCa
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata provides information about a chart",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"),
 						},
 					},
 					"readme": {
@@ -12698,7 +12698,7 @@ func schema_pkg_apis_management_v1_ProjectChartInfoStatus(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"},
 	}
 }
 
@@ -12736,7 +12736,7 @@ func schema_pkg_apis_management_v1_ProjectCharts(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmChart"),
 									},
 								},
 							},
@@ -12754,7 +12754,7 @@ func schema_pkg_apis_management_v1_ProjectCharts(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChart", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.HelmChart", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12791,7 +12791,7 @@ func schema_pkg_apis_management_v1_ProjectChartsList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectCharts"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectCharts"),
 									},
 								},
 							},
@@ -12802,7 +12802,7 @@ func schema_pkg_apis_management_v1_ProjectChartsList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectCharts", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectCharts", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12840,7 +12840,7 @@ func schema_pkg_apis_management_v1_ProjectClusters(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Cluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Cluster"),
 									},
 								},
 							},
@@ -12854,7 +12854,7 @@ func schema_pkg_apis_management_v1_ProjectClusters(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Runner"),
 									},
 								},
 							},
@@ -12864,7 +12864,7 @@ func schema_pkg_apis_management_v1_ProjectClusters(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Cluster", "github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Cluster", "github.com/skevetter/api/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12901,7 +12901,7 @@ func schema_pkg_apis_management_v1_ProjectClustersList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectClusters"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectClusters"),
 									},
 								},
 							},
@@ -12912,7 +12912,7 @@ func schema_pkg_apis_management_v1_ProjectClustersList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -12947,7 +12947,7 @@ func schema_pkg_apis_management_v1_ProjectImportSpace(ref common.ReferenceCallba
 						SchemaProps: spec.SchemaProps{
 							Description: "SourceSpace is the space to import into this project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpaceSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpaceSource"),
 						},
 					},
 				},
@@ -12955,7 +12955,7 @@ func schema_pkg_apis_management_v1_ProjectImportSpace(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpaceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpaceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -12992,7 +12992,7 @@ func schema_pkg_apis_management_v1_ProjectImportSpaceList(ref common.ReferenceCa
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpace"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpace"),
 									},
 								},
 							},
@@ -13003,7 +13003,7 @@ func schema_pkg_apis_management_v1_ProjectImportSpaceList(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectImportSpace", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectImportSpace", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13073,7 +13073,7 @@ func schema_pkg_apis_management_v1_ProjectList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Project"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Project"),
 									},
 								},
 							},
@@ -13084,7 +13084,7 @@ func schema_pkg_apis_management_v1_ProjectList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Project", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Project", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13098,14 +13098,14 @@ func schema_pkg_apis_management_v1_ProjectMember(ref common.ReferenceCallback) c
 						SchemaProps: spec.SchemaProps{
 							Description: "Info about the user or team",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -13143,7 +13143,7 @@ func schema_pkg_apis_management_v1_ProjectMembers(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMember"),
 									},
 								},
 							},
@@ -13157,7 +13157,7 @@ func schema_pkg_apis_management_v1_ProjectMembers(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMember"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMember"),
 									},
 								},
 							},
@@ -13167,7 +13167,7 @@ func schema_pkg_apis_management_v1_ProjectMembers(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMember", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -13204,7 +13204,7 @@ func schema_pkg_apis_management_v1_ProjectMembersList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMembers"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMembers"),
 									},
 								},
 							},
@@ -13215,7 +13215,7 @@ func schema_pkg_apis_management_v1_ProjectMembersList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMembers", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMembers", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13250,7 +13250,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateSpaceInstance(ref common.Refere
 						SchemaProps: spec.SchemaProps{
 							Description: "SourceSpaceInstance is the spaceinstance to migrate into this project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource"),
 						},
 					},
 				},
@@ -13258,7 +13258,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateSpaceInstance(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstanceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -13295,7 +13295,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceList(ref common.Re
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstance"),
 									},
 								},
 							},
@@ -13306,7 +13306,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateSpaceInstanceList(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateSpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateSpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13367,7 +13367,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstance(ref comm
 						SchemaProps: spec.SchemaProps{
 							Description: "SourceVirtualClusterInstance is the virtual cluster instance to migrate into this project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource"),
 						},
 					},
 				},
@@ -13375,7 +13375,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstance(ref comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstanceSource", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -13412,7 +13412,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceList(ref 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance"),
 									},
 								},
 							},
@@ -13423,7 +13423,7 @@ func schema_pkg_apis_management_v1_ProjectMigrateVirtualClusterInstanceList(ref 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectMigrateVirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13487,7 +13487,7 @@ func schema_pkg_apis_management_v1_ProjectRunners(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Runner"),
 									},
 								},
 							},
@@ -13497,7 +13497,7 @@ func schema_pkg_apis_management_v1_ProjectRunners(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -13534,7 +13534,7 @@ func schema_pkg_apis_management_v1_ProjectRunnersList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectRunners"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectRunners"),
 									},
 								},
 							},
@@ -13545,7 +13545,7 @@ func schema_pkg_apis_management_v1_ProjectRunnersList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectRunners", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectRunners", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13579,20 +13579,20 @@ func schema_pkg_apis_management_v1_ProjectSecret(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretSpec", "github.com/skevetter/api/pkg/apis/management/v1.ProjectSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -13629,7 +13629,7 @@ func schema_pkg_apis_management_v1_ProjectSecretList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecret"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectSecret"),
 									},
 								},
 							},
@@ -13640,7 +13640,7 @@ func schema_pkg_apis_management_v1_ProjectSecretList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -13668,7 +13668,7 @@ func schema_pkg_apis_management_v1_ProjectSecretSpec(ref common.ReferenceCallbac
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"data": {
@@ -13694,7 +13694,7 @@ func schema_pkg_apis_management_v1_ProjectSecretSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -13704,7 +13704,7 @@ func schema_pkg_apis_management_v1_ProjectSecretSpec(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -13723,7 +13723,7 @@ func schema_pkg_apis_management_v1_ProjectSecretStatus(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -13733,7 +13733,7 @@ func schema_pkg_apis_management_v1_ProjectSecretStatus(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -13761,14 +13761,14 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"quotas": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Quotas define the quotas inside the project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Quotas"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Quotas"),
 						},
 					},
 					"allowedClusters": {
@@ -13779,7 +13779,7 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedCluster"),
 									},
 								},
 							},
@@ -13793,7 +13793,7 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedRunner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedRunner"),
 									},
 								},
 							},
@@ -13807,7 +13807,7 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedTemplate"),
 									},
 								},
 							},
@@ -13817,14 +13817,14 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 						SchemaProps: spec.SchemaProps{
 							Description: "RequireTemplate configures if a template is required for instance creation.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequireTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RequireTemplate"),
 						},
 					},
 					"requirePreset": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RequirePreset configures if a preset is required for instance creation.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequirePreset"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RequirePreset"),
 						},
 					},
 					"members": {
@@ -13835,7 +13835,7 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Member"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Member"),
 									},
 								},
 							},
@@ -13849,7 +13849,7 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -13858,38 +13858,38 @@ func schema_pkg_apis_management_v1_ProjectSpec(ref common.ReferenceCallback) com
 					"namespacePattern": {
 						SchemaProps: spec.SchemaProps{
 							Description: "NamespacePattern specifies template patterns to use for creating each space or virtual cluster's namespace",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.NamespacePattern"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.NamespacePattern"),
 						},
 					},
 					"argoCD": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ArgoIntegration holds information about ArgoCD Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoIntegrationSpec"),
 						},
 					},
 					"vault": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VaultIntegration holds information about Vault Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec"),
 						},
 					},
 					"rancher": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RancherIntegration holds information about Rancher Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RancherIntegrationSpec"),
 						},
 					},
 					"devPod": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DevPod holds DevPod specific configuration for project",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProjectSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProjectSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedCluster", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedRunner", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoIntegrationSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Member", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.NamespacePattern", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Quotas", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherIntegrationSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequirePreset", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequireTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedCluster", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedRunner", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.ArgoIntegrationSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodProjectSpec", "github.com/skevetter/api/pkg/apis/storage/v1.Member", "github.com/skevetter/api/pkg/apis/storage/v1.NamespacePattern", "github.com/skevetter/api/pkg/apis/storage/v1.Quotas", "github.com/skevetter/api/pkg/apis/storage/v1.RancherIntegrationSpec", "github.com/skevetter/api/pkg/apis/storage/v1.RequirePreset", "github.com/skevetter/api/pkg/apis/storage/v1.RequireTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec"},
 	}
 }
 
@@ -13903,7 +13903,7 @@ func schema_pkg_apis_management_v1_ProjectStatus(ref common.ReferenceCallback) c
 					"quotas": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Quotas holds the quota status",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatus"),
 						},
 					},
 					"conditions": {
@@ -13914,7 +13914,7 @@ func schema_pkg_apis_management_v1_ProjectStatus(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -13924,7 +13924,7 @@ func schema_pkg_apis_management_v1_ProjectStatus(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatus"},
 	}
 }
 
@@ -13969,7 +13969,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplate"),
 									},
 								},
 							},
@@ -13990,7 +13990,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplate"),
 									},
 								},
 							},
@@ -14011,7 +14011,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplate"),
 									},
 								},
 							},
@@ -14025,7 +14025,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplate"),
 									},
 								},
 							},
@@ -14039,7 +14039,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePreset"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePreset"),
 									},
 								},
 							},
@@ -14056,7 +14056,7 @@ func schema_pkg_apis_management_v1_ProjectTemplates(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodEnvironmentTemplate", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspacePreset", "github.com/loft-sh/api/v4/pkg/apis/management/v1.DevPodWorkspaceTemplate", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplate", "github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.DevPodEnvironmentTemplate", "github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspacePreset", "github.com/skevetter/api/pkg/apis/management/v1.DevPodWorkspaceTemplate", "github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplate", "github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -14093,7 +14093,7 @@ func schema_pkg_apis_management_v1_ProjectTemplatesList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectTemplates"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ProjectTemplates"),
 									},
 								},
 							},
@@ -14104,7 +14104,7 @@ func schema_pkg_apis_management_v1_ProjectTemplatesList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ProjectTemplates", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ProjectTemplates", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14138,20 +14138,20 @@ func schema_pkg_apis_management_v1_RedirectToken(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenSpec", "github.com/skevetter/api/pkg/apis/management/v1.RedirectTokenStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -14208,7 +14208,7 @@ func schema_pkg_apis_management_v1_RedirectTokenList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectToken"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RedirectToken"),
 									},
 								},
 							},
@@ -14219,7 +14219,7 @@ func schema_pkg_apis_management_v1_RedirectTokenList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RedirectToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RedirectToken", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14292,20 +14292,20 @@ func schema_pkg_apis_management_v1_RegisterVirtualCluster(ref common.ReferenceCa
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterSpec", "github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -14342,7 +14342,7 @@ func schema_pkg_apis_management_v1_RegisterVirtualClusterList(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualCluster"),
 									},
 								},
 							},
@@ -14353,7 +14353,7 @@ func schema_pkg_apis_management_v1_RegisterVirtualClusterList(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RegisterVirtualCluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RegisterVirtualCluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14469,20 +14469,20 @@ func schema_pkg_apis_management_v1_ResetAccessKey(ref common.ReferenceCallback) 
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeySpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeySpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeyStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeyStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeySpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeySpec", "github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -14519,7 +14519,7 @@ func schema_pkg_apis_management_v1_ResetAccessKeyList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKey"),
 									},
 								},
 							},
@@ -14530,7 +14530,7 @@ func schema_pkg_apis_management_v1_ResetAccessKeyList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ResetAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ResetAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14621,7 +14621,7 @@ func schema_pkg_apis_management_v1_ResetAccessKeySpec(ref common.ReferenceCallba
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope defines the scope of the access key.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"type": {
@@ -14634,7 +14634,7 @@ func schema_pkg_apis_management_v1_ResetAccessKeySpec(ref common.ReferenceCallba
 					"identity": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If available, contains information about the sso login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity"),
 						},
 					},
 					"identityRefresh": {
@@ -14646,7 +14646,7 @@ func schema_pkg_apis_management_v1_ResetAccessKeySpec(ref common.ReferenceCallba
 					"oidcProvider": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If the token is a refresh token, contains information about it",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
 						},
 					},
 					"parent": {
@@ -14659,14 +14659,14 @@ func schema_pkg_apis_management_v1_ResetAccessKeySpec(ref common.ReferenceCallba
 					"oidcLogin": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use identity instead If available, contains information about the oidc login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -14720,20 +14720,20 @@ func schema_pkg_apis_management_v1_Runner(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RunnerSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RunnerStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RunnerSpec", "github.com/skevetter/api/pkg/apis/management/v1.RunnerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -14812,7 +14812,7 @@ func schema_pkg_apis_management_v1_RunnerAccessKeyList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RunnerAccessKey"),
 									},
 								},
 							},
@@ -14823,7 +14823,7 @@ func schema_pkg_apis_management_v1_RunnerAccessKeyList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RunnerAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14902,7 +14902,7 @@ func schema_pkg_apis_management_v1_RunnerConfigList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerConfig"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.RunnerConfig"),
 									},
 								},
 							},
@@ -14913,7 +14913,7 @@ func schema_pkg_apis_management_v1_RunnerConfigList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.RunnerConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.RunnerConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -14950,7 +14950,7 @@ func schema_pkg_apis_management_v1_RunnerList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Runner"),
 									},
 								},
 							},
@@ -14961,7 +14961,7 @@ func schema_pkg_apis_management_v1_RunnerList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -15003,13 +15003,13 @@ func schema_pkg_apis_management_v1_RunnerSpec(ref common.ReferenceCallback) comm
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If ClusterRef is defined, Loft will schedule the runner on the given cluster.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerClusterRef"),
 						},
 					},
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"unusable": {
@@ -15027,7 +15027,7 @@ func schema_pkg_apis_management_v1_RunnerSpec(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -15037,7 +15037,7 @@ func schema_pkg_apis_management_v1_RunnerSpec(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -15077,7 +15077,7 @@ func schema_pkg_apis_management_v1_RunnerStatus(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -15087,7 +15087,7 @@ func schema_pkg_apis_management_v1_RunnerStatus(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -15121,20 +15121,20 @@ func schema_pkg_apis_management_v1_Self(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SelfSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SelfStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SelfSpec", "github.com/skevetter/api/pkg/apis/management/v1.SelfStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -15171,7 +15171,7 @@ func schema_pkg_apis_management_v1_SelfList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Self"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Self"),
 									},
 								},
 							},
@@ -15182,7 +15182,7 @@ func schema_pkg_apis_management_v1_SelfList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Self", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Self", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -15214,13 +15214,13 @@ func schema_pkg_apis_management_v1_SelfStatus(ref common.ReferenceCallback) comm
 					"user": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The name of the currently logged in user",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/management/v1.UserInfo"),
 						},
 					},
 					"team": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The name of the currently logged in team",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 					"accessKey": {
@@ -15233,7 +15233,7 @@ func schema_pkg_apis_management_v1_SelfStatus(ref common.ReferenceCallback) comm
 					"accessKeyScope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The scope of the currently used access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"accessKeyType": {
@@ -15297,7 +15297,7 @@ func schema_pkg_apis_management_v1_SelfStatus(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserInfo", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserInfo", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -15331,20 +15331,20 @@ func schema_pkg_apis_management_v1_SelfSubjectAccessReview(ref common.ReferenceC
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReviewStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewSpec", "github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReviewStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -15381,7 +15381,7 @@ func schema_pkg_apis_management_v1_SelfSubjectAccessReviewList(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReview"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReview"),
 									},
 								},
 							},
@@ -15392,7 +15392,7 @@ func schema_pkg_apis_management_v1_SelfSubjectAccessReviewList(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SelfSubjectAccessReview", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SelfSubjectAccessReview", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -15494,20 +15494,20 @@ func schema_pkg_apis_management_v1_SharedSecret(ref common.ReferenceCallback) co
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SharedSecretSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SharedSecretStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SharedSecretSpec", "github.com/skevetter/api/pkg/apis/management/v1.SharedSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -15544,7 +15544,7 @@ func schema_pkg_apis_management_v1_SharedSecretList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecret"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SharedSecret"),
 									},
 								},
 							},
@@ -15555,7 +15555,7 @@ func schema_pkg_apis_management_v1_SharedSecretList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SharedSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SharedSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -15583,7 +15583,7 @@ func schema_pkg_apis_management_v1_SharedSecretSpec(ref common.ReferenceCallback
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"data": {
@@ -15609,7 +15609,7 @@ func schema_pkg_apis_management_v1_SharedSecretSpec(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -15619,7 +15619,7 @@ func schema_pkg_apis_management_v1_SharedSecretSpec(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -15638,7 +15638,7 @@ func schema_pkg_apis_management_v1_SharedSecretStatus(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -15648,7 +15648,7 @@ func schema_pkg_apis_management_v1_SharedSecretStatus(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -15682,20 +15682,20 @@ func schema_pkg_apis_management_v1_SpaceInstance(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceSpec", "github.com/skevetter/api/pkg/apis/management/v1.SpaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -15732,7 +15732,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceInstance"),
 									},
 								},
 							},
@@ -15743,7 +15743,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -15771,26 +15771,26 @@ func schema_pkg_apis_management_v1_SpaceInstanceSpec(ref common.ReferenceCallbac
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the space template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for space creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef is the reference to the connected cluster holding this space",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef"),
 						},
 					},
 					"parameters": {
@@ -15808,7 +15808,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"),
 									},
 								},
 							},
@@ -15822,7 +15822,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -15832,7 +15832,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceSpec(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -15872,7 +15872,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceStatus(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -15881,13 +15881,13 @@ func schema_pkg_apis_management_v1_SpaceInstanceStatus(ref common.ReferenceCallb
 					"spaceObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceObjects are the objects that were applied within the virtual cluster space",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"space": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Space is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -15900,7 +15900,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceStatus(ref common.ReferenceCallb
 					"sleepModeConfig": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SleepModeConfig is the sleep mode config of the space. This will only be shown in the front end.",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig"),
 						},
 					},
 					"canUse": {
@@ -15921,7 +15921,7 @@ func schema_pkg_apis_management_v1_SpaceInstanceStatus(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig", "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"},
 	}
 }
 
@@ -15955,20 +15955,20 @@ func schema_pkg_apis_management_v1_SpaceTemplate(ref common.ReferenceCallback) c
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateSpec", "github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16005,7 +16005,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateList(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplate"),
 									},
 								},
 							},
@@ -16016,7 +16016,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateList(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SpaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SpaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -16044,14 +16044,14 @@ func schema_pkg_apis_management_v1_SpaceTemplateSpec(ref common.ReferenceCallbac
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the space template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -16062,7 +16062,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -16076,7 +16076,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateVersion"),
 									},
 								},
 							},
@@ -16090,7 +16090,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateSpec(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -16100,7 +16100,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateSpec(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -16117,7 +16117,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateStatus(ref common.ReferenceCallb
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -16127,7 +16127,7 @@ func schema_pkg_apis_management_v1_SpaceTemplateStatus(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -16161,20 +16161,20 @@ func schema_pkg_apis_management_v1_SubjectAccessReview(ref common.ReferenceCallb
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReviewStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewSpec", "github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReviewStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16211,7 +16211,7 @@ func schema_pkg_apis_management_v1_SubjectAccessReviewList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReview"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReview"),
 									},
 								},
 							},
@@ -16222,7 +16222,7 @@ func schema_pkg_apis_management_v1_SubjectAccessReviewList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.SubjectAccessReview", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.SubjectAccessReview", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -16381,20 +16381,20 @@ func schema_pkg_apis_management_v1_Task(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TaskSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TaskStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TaskSpec", "github.com/skevetter/api/pkg/apis/management/v1.TaskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16431,7 +16431,7 @@ func schema_pkg_apis_management_v1_TaskList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Task"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Task"),
 									},
 								},
 							},
@@ -16442,7 +16442,7 @@ func schema_pkg_apis_management_v1_TaskList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Task", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Task", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -16513,7 +16513,7 @@ func schema_pkg_apis_management_v1_TaskLogList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskLog"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TaskLog"),
 									},
 								},
 							},
@@ -16524,7 +16524,7 @@ func schema_pkg_apis_management_v1_TaskLogList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TaskLog", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TaskLog", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -16633,7 +16633,7 @@ func schema_pkg_apis_management_v1_TaskSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -16642,34 +16642,34 @@ func schema_pkg_apis_management_v1_TaskSpec(ref common.ReferenceCallback) common
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope defines the scope of the access key.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"target": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Target where this task should get executed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Target"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Target"),
 						},
 					},
 					"task": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Task defines the task to execute",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TaskDefinition"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Target", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "github.com/skevetter/api/pkg/apis/storage/v1.Target", "github.com/skevetter/api/pkg/apis/storage/v1.TaskDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -16695,7 +16695,7 @@ func schema_pkg_apis_management_v1_TaskStatus(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -16724,19 +16724,19 @@ func schema_pkg_apis_management_v1_TaskStatus(ref common.ReferenceCallback) comm
 					},
 					"owner": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeamEntity"),
+							Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeamEntity"),
 						},
 					},
 					"cluster": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeamEntity", "k8s.io/api/core/v1.ContainerStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeamEntity", "k8s.io/api/core/v1.ContainerStatus"},
 	}
 }
 
@@ -16770,20 +16770,20 @@ func schema_pkg_apis_management_v1_Team(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TeamSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TeamStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TeamSpec", "github.com/skevetter/api/pkg/apis/management/v1.TeamStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16820,7 +16820,7 @@ func schema_pkg_apis_management_v1_TeamAccessKeys(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey"),
 									},
 								},
 							},
@@ -16830,7 +16830,7 @@ func schema_pkg_apis_management_v1_TeamAccessKeys(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16867,7 +16867,7 @@ func schema_pkg_apis_management_v1_TeamAccessKeysList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamAccessKeys"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TeamAccessKeys"),
 									},
 								},
 							},
@@ -16878,7 +16878,7 @@ func schema_pkg_apis_management_v1_TeamAccessKeysList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamAccessKeys", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TeamAccessKeys", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -16915,7 +16915,7 @@ func schema_pkg_apis_management_v1_TeamClusters(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccounts"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccounts"),
 									},
 								},
 							},
@@ -16925,7 +16925,7 @@ func schema_pkg_apis_management_v1_TeamClusters(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccounts", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccounts", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -16962,7 +16962,7 @@ func schema_pkg_apis_management_v1_TeamClustersList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamClusters"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TeamClusters"),
 									},
 								},
 							},
@@ -16973,7 +16973,7 @@ func schema_pkg_apis_management_v1_TeamClustersList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TeamClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TeamClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17010,7 +17010,7 @@ func schema_pkg_apis_management_v1_TeamList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.Team"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.Team"),
 									},
 								},
 							},
@@ -17021,7 +17021,7 @@ func schema_pkg_apis_management_v1_TeamList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.Team", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.Team", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17048,7 +17048,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"username": {
@@ -17095,7 +17095,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef"),
 									},
 								},
 							},
@@ -17109,7 +17109,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef"),
 									},
 								},
 							},
@@ -17123,7 +17123,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -17133,7 +17133,7 @@ func schema_pkg_apis_management_v1_TeamSpec(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef", "github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -17177,20 +17177,20 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceName(ref common.Refe
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceNameStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameSpec", "github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceNameStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -17227,7 +17227,7 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceName"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName"),
 									},
 								},
 							},
@@ -17238,7 +17238,7 @@ func schema_pkg_apis_management_v1_TranslateVClusterResourceNameList(ref common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.TranslateVClusterResourceName", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.TranslateVClusterResourceName", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17330,20 +17330,20 @@ func schema_pkg_apis_management_v1_User(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.UserStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserSpec", "github.com/skevetter/api/pkg/apis/management/v1.UserStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -17380,7 +17380,7 @@ func schema_pkg_apis_management_v1_UserAccessKeys(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey"),
 									},
 								},
 							},
@@ -17390,7 +17390,7 @@ func schema_pkg_apis_management_v1_UserAccessKeys(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.OwnedAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -17427,7 +17427,7 @@ func schema_pkg_apis_management_v1_UserAccessKeysList(ref common.ReferenceCallba
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserAccessKeys"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeys"),
 									},
 								},
 							},
@@ -17438,7 +17438,7 @@ func schema_pkg_apis_management_v1_UserAccessKeysList(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserAccessKeys", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserAccessKeys", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17475,7 +17475,7 @@ func schema_pkg_apis_management_v1_UserClusters(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccounts"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.ClusterAccounts"),
 									},
 								},
 							},
@@ -17485,7 +17485,7 @@ func schema_pkg_apis_management_v1_UserClusters(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccounts", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.ClusterAccounts", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -17522,7 +17522,7 @@ func schema_pkg_apis_management_v1_UserClustersList(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserClusters"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserClusters"),
 									},
 								},
 							},
@@ -17533,7 +17533,7 @@ func schema_pkg_apis_management_v1_UserClustersList(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserClusters", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17592,7 +17592,7 @@ func schema_pkg_apis_management_v1_UserInfo(ref common.ReferenceCallback) common
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -17602,7 +17602,7 @@ func schema_pkg_apis_management_v1_UserInfo(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -17639,7 +17639,7 @@ func schema_pkg_apis_management_v1_UserList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.User"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.User"),
 									},
 								},
 							},
@@ -17650,7 +17650,7 @@ func schema_pkg_apis_management_v1_UserList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.User", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.User", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17688,7 +17688,7 @@ func schema_pkg_apis_management_v1_UserPermissions(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissionsRole"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserPermissionsRole"),
 									},
 								},
 							},
@@ -17702,7 +17702,7 @@ func schema_pkg_apis_management_v1_UserPermissions(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissionsRole"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserPermissionsRole"),
 									},
 								},
 							},
@@ -17712,7 +17712,7 @@ func schema_pkg_apis_management_v1_UserPermissions(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissionsRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserPermissionsRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -17749,7 +17749,7 @@ func schema_pkg_apis_management_v1_UserPermissionsList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissions"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserPermissions"),
 									},
 								},
 							},
@@ -17760,7 +17760,7 @@ func schema_pkg_apis_management_v1_UserPermissionsList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserPermissions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserPermissions", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -17929,7 +17929,7 @@ func schema_pkg_apis_management_v1_UserProfileList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.UserProfile"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.UserProfile"),
 									},
 								},
 							},
@@ -17940,7 +17940,7 @@ func schema_pkg_apis_management_v1_UserProfileList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.UserProfile", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.UserProfile", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18049,7 +18049,7 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"username": {
@@ -18113,13 +18113,13 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 					"passwordRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "A reference to the user password",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"codesRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "A reference to the users access keys",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"imagePullSecrets": {
@@ -18129,7 +18129,7 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef"),
 									},
 								},
 							},
@@ -18157,7 +18157,7 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef"),
 									},
 								},
 							},
@@ -18171,7 +18171,7 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -18181,7 +18181,7 @@ func schema_pkg_apis_management_v1_UserSpec(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef", "github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.SecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -18329,7 +18329,7 @@ func schema_pkg_apis_management_v1_VirtualClusterAccessKeyList(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterAccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterAccessKey"),
 									},
 								},
 							},
@@ -18340,7 +18340,7 @@ func schema_pkg_apis_management_v1_VirtualClusterAccessKeyList(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterAccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18374,20 +18374,20 @@ func schema_pkg_apis_management_v1_VirtualClusterExternalDatabase(ref common.Ref
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseSpec", "github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -18424,7 +18424,7 @@ func schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseList(ref common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabase"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabase"),
 									},
 								},
 							},
@@ -18435,7 +18435,7 @@ func schema_pkg_apis_management_v1_VirtualClusterExternalDatabaseList(ref common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterExternalDatabase", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterExternalDatabase", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18507,20 +18507,20 @@ func schema_pkg_apis_management_v1_VirtualClusterInstance(ref common.ReferenceCa
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceSpec", "github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -18554,20 +18554,20 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfig(ref common.R
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigSpec", "github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfigStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -18604,7 +18604,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigList(ref comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig"),
 									},
 								},
 							},
@@ -18615,7 +18615,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceKubeConfigList(ref comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceKubeConfig", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18690,7 +18690,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceList(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstance"),
 									},
 								},
 							},
@@ -18701,7 +18701,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceList(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18772,7 +18772,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceLogList(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceLog"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceLog"),
 									},
 								},
 							},
@@ -18783,7 +18783,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceLogList(ref common.Refe
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterInstanceLog", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterInstanceLog", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -18901,26 +18901,26 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref common.Referen
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the virtual cluster template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for virtual cluster creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef is the reference to the connected cluster holding this virtual cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterClusterRef"),
 						},
 					},
 					"parameters": {
@@ -18938,7 +18938,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"),
 									},
 								},
 							},
@@ -18952,7 +18952,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -18976,7 +18976,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceSpec(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -19030,7 +19030,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref common.Refer
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -19039,19 +19039,19 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref common.Refer
 					"virtualClusterObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterObjects are the objects that were applied within the virtual cluster itself",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"spaceObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceObjects are the objects that were applied within the virtual cluster space",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"virtualCluster": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualCluster is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -19064,7 +19064,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref common.Refer
 					"sleepModeConfig": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SleepModeConfig is the sleep mode config of the space. This will only be shown in the front end.",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig"),
 						},
 					},
 					"canUse": {
@@ -19092,7 +19092,7 @@ func schema_pkg_apis_management_v1_VirtualClusterInstanceStatus(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.SleepModeConfig", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.SleepModeConfig", "github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -19126,20 +19126,20 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplate(ref common.ReferenceCa
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateSpec", "github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -19176,7 +19176,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateList(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplate"),
 									},
 								},
 							},
@@ -19187,7 +19187,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateList(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/management/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/management/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -19215,14 +19215,14 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref common.Referen
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the virtual cluster template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -19233,7 +19233,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -19247,7 +19247,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateVersion"),
 									},
 								},
 							},
@@ -19261,7 +19261,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -19270,14 +19270,14 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateSpec(ref common.Referen
 					"spaceTemplateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: SpaceTemplate to use to create the virtual cluster space if it does not exist",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateVersion"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateVersion"},
 	}
 }
 
@@ -19294,7 +19294,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateStatus(ref common.Refer
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 									},
 								},
 							},
@@ -19304,7 +19304,7 @@ func schema_pkg_apis_management_v1_VirtualClusterTemplateStatus(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -19419,20 +19419,20 @@ func schema_pkg_apis_storage_v1_AccessKey(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeySpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeySpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeySpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeySpec", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -19546,7 +19546,7 @@ func schema_pkg_apis_storage_v1_AccessKeyList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKey"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKey"),
 									},
 								},
 							},
@@ -19557,7 +19557,7 @@ func schema_pkg_apis_storage_v1_AccessKeyList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKey", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -19656,7 +19656,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRole"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRole"),
 									},
 								},
 							},
@@ -19670,7 +19670,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeProject"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeProject"),
 									},
 								},
 							},
@@ -19684,7 +19684,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeSpace"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeSpace"),
 									},
 								},
 							},
@@ -19698,7 +19698,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster"),
 									},
 								},
 							},
@@ -19712,7 +19712,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeCluster"),
 									},
 								},
 							},
@@ -19726,7 +19726,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRule"),
 									},
 								},
 							},
@@ -19743,7 +19743,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScope(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeCluster", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeProject", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRole", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeRule", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeSpace", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeCluster", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeProject", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRole", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeRule", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeSpace", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScopeVirtualCluster"},
 	}
 }
 
@@ -19865,7 +19865,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScopeRule(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.GroupResources"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.GroupResources"),
 									},
 								},
 							},
@@ -19931,7 +19931,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScopeRule(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyVirtualCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyVirtualCluster"),
 									},
 								},
 							},
@@ -19941,7 +19941,7 @@ func schema_pkg_apis_storage_v1_AccessKeyScopeRule(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyVirtualCluster", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.GroupResources"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyVirtualCluster", "github.com/skevetter/api/pkg/apis/storage/v1.GroupResources"},
 	}
 }
 
@@ -20084,7 +20084,7 @@ func schema_pkg_apis_storage_v1_AccessKeySpec(ref common.ReferenceCallback) comm
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope defines the scope of the access key.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"type": {
@@ -20097,7 +20097,7 @@ func schema_pkg_apis_storage_v1_AccessKeySpec(ref common.ReferenceCallback) comm
 					"identity": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If available, contains information about the sso login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity"),
 						},
 					},
 					"identityRefresh": {
@@ -20109,7 +20109,7 @@ func schema_pkg_apis_storage_v1_AccessKeySpec(ref common.ReferenceCallback) comm
 					"oidcProvider": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If the token is a refresh token, contains information about it",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider"),
 						},
 					},
 					"parent": {
@@ -20122,14 +20122,14 @@ func schema_pkg_apis_storage_v1_AccessKeySpec(ref common.ReferenceCallback) comm
 					"oidcLogin": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use identity instead If available, contains information about the oidc login data for this access key",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyIdentity", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDC", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyOIDCProvider", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -20307,20 +20307,20 @@ func schema_pkg_apis_storage_v1_App(ref common.ReferenceCallback) common.OpenAPI
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppSpec", "github.com/skevetter/api/pkg/apis/storage/v1.AppStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -20355,7 +20355,7 @@ func schema_pkg_apis_storage_v1_AppConfig(ref common.ReferenceCallback) common.O
 						SchemaProps: spec.SchemaProps{
 							Description: "Config is the helm config to use to deploy the helm release",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"),
 						},
 					},
 					"wait": {
@@ -20380,7 +20380,7 @@ func schema_pkg_apis_storage_v1_AppConfig(ref common.ReferenceCallback) common.O
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -20389,14 +20389,14 @@ func schema_pkg_apis_storage_v1_AppConfig(ref common.ReferenceCallback) common.O
 					"streamContainer": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config.bash instead StreamContainer can be used to stream a containers logs instead of the helm output.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"},
 	}
 }
 
@@ -20434,7 +20434,7 @@ func schema_pkg_apis_storage_v1_AppList(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.App"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.App"),
 									},
 								},
 							},
@@ -20445,7 +20445,7 @@ func schema_pkg_apis_storage_v1_AppList(ref common.ReferenceCallback) common.Ope
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.App", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.App", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -20631,7 +20631,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -20689,7 +20689,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 						SchemaProps: spec.SchemaProps{
 							Description: "Config is the helm config to use to deploy the helm release",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"),
 						},
 					},
 					"wait": {
@@ -20714,7 +20714,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -20723,7 +20723,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 					"streamContainer": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config.bash instead StreamContainer can be used to stream a containers logs instead of the helm output.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"),
 						},
 					},
 					"versions": {
@@ -20734,7 +20734,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppVersion"),
 									},
 								},
 							},
@@ -20748,7 +20748,7 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -20764,14 +20764,14 @@ func schema_pkg_apis_storage_v1_AppSpec(ref common.ReferenceCallback) common.Ope
 					"helm": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config instead helm defines the configuration for a helm deployment",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmConfiguration"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmConfiguration"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmConfiguration", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig", "github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.AppVersion", "github.com/skevetter/api/pkg/apis/storage/v1.HelmConfiguration", "github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -20810,14 +20810,14 @@ func schema_pkg_apis_storage_v1_AppTask(ref common.ReferenceCallback) common.Ope
 						SchemaProps: spec.SchemaProps{
 							Description: "AppReference is the reference to the app to deploy",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference"},
 	}
 }
 
@@ -20852,7 +20852,7 @@ func schema_pkg_apis_storage_v1_AppVersion(ref common.ReferenceCallback) common.
 						SchemaProps: spec.SchemaProps{
 							Description: "Config is the helm config to use to deploy the helm release",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"),
 						},
 					},
 					"wait": {
@@ -20877,7 +20877,7 @@ func schema_pkg_apis_storage_v1_AppVersion(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -20886,7 +20886,7 @@ func schema_pkg_apis_storage_v1_AppVersion(ref common.ReferenceCallback) common.
 					"streamContainer": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use config.bash instead StreamContainer can be used to stream a containers logs instead of the helm output.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"),
 						},
 					},
 					"version": {
@@ -20900,7 +20900,7 @@ func schema_pkg_apis_storage_v1_AppVersion(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.StreamContainer"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.StreamContainer"},
 	}
 }
 
@@ -20941,20 +20941,20 @@ func schema_pkg_apis_storage_v1_ArgoIntegrationSpec(ref common.ReferenceCallback
 					"sso": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SSO defines single-sign-on related values for the ArgoCD Integration. Enabling SSO will allow users to authenticate to ArgoCD via Loft.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoSSOSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoSSOSpec"),
 						},
 					},
 					"project": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Project defines project related values for the ArgoCD Integration. Enabling Project integration will cause Loft to generate and manage an ArgoCD appProject that corresponds to the Loft Project.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoSSOSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpec", "github.com/skevetter/api/pkg/apis/storage/v1.ArgoSSOSpec"},
 	}
 }
 
@@ -21019,7 +21019,7 @@ func schema_pkg_apis_storage_v1_ArgoProjectRole(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectPolicyRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectPolicyRule"),
 									},
 								},
 							},
@@ -21044,7 +21044,7 @@ func schema_pkg_apis_storage_v1_ArgoProjectRole(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectPolicyRule"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectPolicyRule"},
 	}
 }
 
@@ -21065,7 +21065,7 @@ func schema_pkg_apis_storage_v1_ArgoProjectSpec(ref common.ReferenceCallback) co
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata defines additional metadata to attach to the loft created project in ArgoCD.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpecMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpecMetadata"),
 						},
 					},
 					"sourceRepos": {
@@ -21091,7 +21091,7 @@ func schema_pkg_apis_storage_v1_ArgoProjectSpec(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectRole"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectRole"),
 									},
 								},
 							},
@@ -21101,7 +21101,7 @@ func schema_pkg_apis_storage_v1_ArgoProjectSpec(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectRole", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoProjectSpecMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectRole", "github.com/skevetter/api/pkg/apis/storage/v1.ArgoProjectSpecMetadata"},
 	}
 }
 
@@ -21308,20 +21308,20 @@ func schema_pkg_apis_storage_v1_Cluster(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterSpec", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -21355,20 +21355,20 @@ func schema_pkg_apis_storage_v1_ClusterAccess(ref common.ReferenceCallback) comm
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccessStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessSpec", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccessStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -21406,7 +21406,7 @@ func schema_pkg_apis_storage_v1_ClusterAccessList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccess"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccess"),
 									},
 								},
 							},
@@ -21417,7 +21417,7 @@ func schema_pkg_apis_storage_v1_ClusterAccessList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterAccess", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -21444,7 +21444,7 @@ func schema_pkg_apis_storage_v1_ClusterAccessSpec(ref common.ReferenceCallback) 
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -21470,7 +21470,7 @@ func schema_pkg_apis_storage_v1_ClusterAccessSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -21480,14 +21480,14 @@ func schema_pkg_apis_storage_v1_ClusterAccessSpec(ref common.ReferenceCallback) 
 						SchemaProps: spec.SchemaProps{
 							Description: "LocalClusterAccessTemplate holds the cluster access template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -21536,7 +21536,7 @@ func schema_pkg_apis_storage_v1_ClusterList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Cluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Cluster"),
 									},
 								},
 							},
@@ -21547,7 +21547,7 @@ func schema_pkg_apis_storage_v1_ClusterList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Cluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Cluster", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -21626,20 +21626,20 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplate(ref common.ReferenceCallback
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -21677,7 +21677,7 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplateList(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplate"),
 									},
 								},
 							},
@@ -21688,7 +21688,7 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplateList(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -21715,7 +21715,7 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplateSpec(ref common.ReferenceCall
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"clusters": {
@@ -21748,7 +21748,7 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplateSpec(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -21758,20 +21758,20 @@ func schema_pkg_apis_storage_v1_ClusterRoleTemplateSpec(ref common.ReferenceCall
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRoleTemplate holds the cluster role template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
 						},
 					},
 					"localClusterRoleTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: Use ClusterRoleTemplate instead LocalClusterRoleTemplate holds the cluster role template",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -21851,14 +21851,14 @@ func schema_pkg_apis_storage_v1_ClusterSpec(ref common.ReferenceCallback) common
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"config": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Holds a reference to a secret that holds the kube config to access this cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"local": {
@@ -21897,7 +21897,7 @@ func schema_pkg_apis_storage_v1_ClusterSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -21906,20 +21906,20 @@ func schema_pkg_apis_storage_v1_ClusterSpec(ref common.ReferenceCallback) common
 					"metrics": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metrics holds the cluster's metrics backend configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Metrics"),
 						},
 					},
 					"opencost": {
 						SchemaProps: spec.SchemaProps{
 							Description: "OpenCost holds the cluster's OpenCost backend configuration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.OpenCost"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Metrics", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.OpenCost", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.Metrics", "github.com/skevetter/api/pkg/apis/storage/v1.OpenCost", "github.com/skevetter/api/pkg/apis/storage/v1.SecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -21956,7 +21956,7 @@ func schema_pkg_apis_storage_v1_ClusterStatus(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -21966,7 +21966,7 @@ func schema_pkg_apis_storage_v1_ClusterStatus(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -21979,20 +21979,20 @@ func schema_pkg_apis_storage_v1_CredentialForwarding(ref common.ReferenceCallbac
 					"docker": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Docker specifies controls for how workspaces created by this template forward docker credentials",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DockerCredentialForwarding"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DockerCredentialForwarding"),
 						},
 					},
 					"git": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Git specifies controls for how workspaces created by this template forward git credentials",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitCredentialForwarding"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.GitCredentialForwarding"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DockerCredentialForwarding", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitCredentialForwarding"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DockerCredentialForwarding", "github.com/skevetter/api/pkg/apis/storage/v1.GitCredentialForwarding"},
 	}
 }
 
@@ -22227,20 +22227,20 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplate(ref common.ReferenceCa
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -22253,7 +22253,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateDefinition(ref common.R
 					"git": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Git holds configuration for git environment spec source",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitEnvironmentTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.GitEnvironmentTemplate"),
 						},
 					},
 					"inline": {
@@ -22267,7 +22267,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateDefinition(ref common.R
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitEnvironmentTemplate"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.GitEnvironmentTemplate"},
 	}
 }
 
@@ -22305,7 +22305,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateList(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplate"),
 									},
 								},
 							},
@@ -22316,7 +22316,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateList(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -22343,7 +22343,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref common.Referen
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"access": {
@@ -22354,7 +22354,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -22363,7 +22363,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref common.Referen
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for DevPod environments",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
 						},
 					},
 					"versions": {
@@ -22374,7 +22374,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion"),
 									},
 								},
 							},
@@ -22384,7 +22384,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateSpec(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -22409,7 +22409,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateVersion(ref common.Refe
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the environment template definition",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"),
 						},
 					},
 					"version": {
@@ -22423,7 +22423,7 @@ func schema_pkg_apis_storage_v1_DevPodEnvironmentTemplateVersion(ref common.Refe
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodEnvironmentTemplateDefinition"},
 	}
 }
 
@@ -22436,13 +22436,13 @@ func schema_pkg_apis_storage_v1_DevPodProjectSpec(ref common.ReferenceCallback) 
 					"git": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Git defines additional git related settings like credentials",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitProjectSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.GitProjectSpec"),
 						},
 					},
 					"ssh": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SSH defines additional ssh related settings like private keys, to be specified as base64 encoded strings.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SSHProjectSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SSHProjectSpec"),
 						},
 					},
 					"fallbackImage": {
@@ -22456,7 +22456,7 @@ func schema_pkg_apis_storage_v1_DevPodProjectSpec(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.GitProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SSHProjectSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.GitProjectSpec", "github.com/skevetter/api/pkg/apis/storage/v1.SSHProjectSpec"},
 	}
 }
 
@@ -22476,14 +22476,14 @@ func schema_pkg_apis_storage_v1_DevPodProviderOption(ref common.ReferenceCallbac
 					"valueFrom": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ValueFrom specifies a secret where this value should be taken from.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOptionFrom"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOptionFrom"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOptionFrom"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOptionFrom"},
 	}
 }
 
@@ -22576,20 +22576,20 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstance(ref common.ReferenceCall
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -22627,7 +22627,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceList(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstance"),
 									},
 								},
 							},
@@ -22638,7 +22638,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceList(ref common.Reference
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -22665,38 +22665,38 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceSpec(ref common.Reference
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"presetRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "PresetRef holds the DevPodWorkspacePreset template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.PresetRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.PresetRef"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the DevPod machine template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"environmentRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "EnvironmentRef is the reference to DevPodEnvironmentTemplate that should be used",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for DevPod machine creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"runnerRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RunnerRef is the reference to the connected runner holding this workspace",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerRef"),
 						},
 					},
 					"parameters": {
@@ -22714,7 +22714,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceSpec(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -22731,7 +22731,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceSpec(ref common.Reference
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.PresetRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef", "github.com/skevetter/api/pkg/apis/storage/v1.PresetRef", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerRef", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -22777,7 +22777,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceStatus(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -22786,7 +22786,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceStatus(ref common.Referen
 					"instance": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Instance is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -22799,14 +22799,14 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceStatus(ref common.Referen
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef holds the runners cluster if the workspace is scheduled on kubernetes based runner",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
 	}
 }
 
@@ -22820,14 +22820,14 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceInstanceTemplateDefinition(ref co
 						SchemaProps: spec.SchemaProps{
 							Description: "The virtual cluster instance metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -22861,20 +22861,20 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePreset(ref common.ReferenceCallba
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -22912,7 +22912,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetList(ref common.ReferenceCa
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePreset"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePreset"),
 									},
 								},
 							},
@@ -22923,7 +22923,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetList(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePreset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePreset", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -22969,19 +22969,19 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref common.ReferenceCa
 					"source": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Source stores inline path of project source",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
 						},
 					},
 					"infrastructureRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "InfrastructureRef stores reference to DevPodWorkspaceTemplate to use",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"environmentRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "EnvironmentRef stores reference to DevPodEnvironmentTemplate",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef"),
 						},
 					},
 					"useProjectGitCredentials": {
@@ -22994,7 +22994,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref common.ReferenceCa
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"access": {
@@ -23005,7 +23005,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref common.ReferenceCa
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -23019,7 +23019,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref common.ReferenceCa
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetVersion"),
 									},
 								},
 							},
@@ -23030,7 +23030,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetSpec(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetVersion", "github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -23061,19 +23061,19 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetVersion(ref common.Referenc
 					"source": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Source stores inline path of project source",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource"),
 						},
 					},
 					"infrastructureRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "InfrastructureRef stores reference to DevPodWorkspaceTemplate to use",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"environmentRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "EnvironmentRef stores reference to DevPodEnvironmentTemplate",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef"),
 						},
 					},
 					"useProjectGitCredentials": {
@@ -23087,7 +23087,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspacePresetVersion(ref common.Referenc
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.EnvironmentRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspacePresetSource", "github.com/skevetter/api/pkg/apis/storage/v1.EnvironmentRef", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"},
 	}
 }
 
@@ -23114,7 +23114,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceProvider(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption"),
 									},
 								},
 							},
@@ -23129,7 +23129,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceProvider(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption"),
 									},
 								},
 							},
@@ -23140,7 +23140,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceProvider(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption"},
 	}
 }
 
@@ -23174,20 +23174,20 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplate(ref common.ReferenceCall
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -23201,31 +23201,31 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 						SchemaProps: spec.SchemaProps{
 							Description: "Provider holds the DevPod provider configuration",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceProvider"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceProvider"),
 						},
 					},
 					"spaceTemplateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceTemplateRef is a reference to the space that should get created for this DevPod. If this is specified, the kubernetes provider will be selected automatically.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"spaceTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceTemplate is the inline template for a space that should get created for this DevPod. If this is specified, the kubernetes provider will be selected automatically.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"virtualClusterTemplateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterTemplateRef is a reference to the virtual cluster that should get created for this DevPod. If this is specified, the kubernetes provider will be selected automatically.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"virtualClusterTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterTemplate is the inline template for a virtual cluster that should get created for this DevPod. If this is specified, the kubernetes provider will be selected automatically.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"workspaceEnv": {
@@ -23237,7 +23237,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption"),
 									},
 								},
 							},
@@ -23252,7 +23252,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption"),
 									},
 								},
 							},
@@ -23262,7 +23262,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 						SchemaProps: spec.SchemaProps{
 							Description: "InstanceTemplate holds the workspace instance template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition"),
 						},
 					},
 					"useProjectGitCredentials": {
@@ -23290,7 +23290,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 					"credentialForwarding": {
 						SchemaProps: spec.SchemaProps{
 							Description: "CredentialForwarding specifies controls for how workspaces created by this template forward credentials into the workspace",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.CredentialForwarding"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.CredentialForwarding"),
 						},
 					},
 					"preventWakeUpOnConnection": {
@@ -23305,7 +23305,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateDefinition(ref common.Ref
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.CredentialForwarding", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProviderOption", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceProvider", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.CredentialForwarding", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodProviderOption", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceInstanceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceProvider", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -23343,7 +23343,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateList(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplate"),
 									},
 								},
 							},
@@ -23354,7 +23354,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateList(ref common.Reference
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -23382,7 +23382,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"parameters": {
@@ -23393,7 +23393,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -23403,7 +23403,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the DevPod workspace template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"versions": {
@@ -23414,7 +23414,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion"),
 									},
 								},
 							},
@@ -23428,7 +23428,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -23438,7 +23438,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateSpec(ref common.Reference
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -23463,7 +23463,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateVersion(ref common.Refere
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the DevPod template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -23474,7 +23474,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateVersion(ref common.Refere
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -23491,7 +23491,7 @@ func schema_pkg_apis_storage_v1_DevPodWorkspaceTemplateVersion(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodWorkspaceTemplateDefinition"},
 	}
 }
 
@@ -23745,7 +23745,7 @@ func schema_pkg_apis_storage_v1_HelmChart(ref common.ReferenceCallback) common.O
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata provides information about a chart",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"),
 						},
 					},
 					"versions": {
@@ -23767,14 +23767,14 @@ func schema_pkg_apis_storage_v1_HelmChart(ref common.ReferenceCallback) common.O
 						SchemaProps: spec.SchemaProps{
 							Description: "Repository is the repository name of this chart",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChartRepository"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmChartRepository"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmChartRepository"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata", "github.com/skevetter/api/pkg/apis/storage/v1.HelmChartRepository"},
 	}
 }
 
@@ -23899,7 +23899,7 @@ func schema_pkg_apis_storage_v1_HelmTask(ref common.ReferenceCallback) common.Op
 						SchemaProps: spec.SchemaProps{
 							Description: "Release holds the release information",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTaskRelease"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmTaskRelease"),
 						},
 					},
 					"type": {
@@ -23920,7 +23920,7 @@ func schema_pkg_apis_storage_v1_HelmTask(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTaskRelease"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.HelmTaskRelease"},
 	}
 }
 
@@ -23948,7 +23948,7 @@ func schema_pkg_apis_storage_v1_HelmTaskRelease(ref common.ReferenceCallback) co
 						SchemaProps: spec.SchemaProps{
 							Description: "Config is the helm config to use to deploy the release",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"),
 						},
 					},
 					"labels": {
@@ -23971,7 +23971,7 @@ func schema_pkg_apis_storage_v1_HelmTaskRelease(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.HelmReleaseConfig"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.HelmReleaseConfig"},
 	}
 }
 
@@ -24024,7 +24024,7 @@ func schema_pkg_apis_storage_v1_InstanceAccess(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"),
 									},
 								},
 							},
@@ -24034,7 +24034,7 @@ func schema_pkg_apis_storage_v1_InstanceAccess(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"},
 	}
 }
 
@@ -24221,7 +24221,7 @@ func schema_pkg_apis_storage_v1_LocalClusterAccessSpec(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 									},
 								},
 							},
@@ -24250,7 +24250,7 @@ func schema_pkg_apis_storage_v1_LocalClusterAccessSpec(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef"),
 									},
 								},
 							},
@@ -24267,7 +24267,7 @@ func schema_pkg_apis_storage_v1_LocalClusterAccessSpec(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -24288,14 +24288,14 @@ func schema_pkg_apis_storage_v1_LocalClusterAccessTemplate(ref common.ReferenceC
 						SchemaProps: spec.SchemaProps{
 							Description: "LocalClusterAccessSpec holds the spec of the cluster access in the cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterAccessSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterAccessSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -24316,14 +24316,14 @@ func schema_pkg_apis_storage_v1_LocalClusterRoleTemplate(ref common.ReferenceCal
 						SchemaProps: spec.SchemaProps{
 							Description: "LocalClusterRoleTemplateSpec holds the spec of the cluster role template in the cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.LocalClusterRoleTemplateSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -24351,14 +24351,14 @@ func schema_pkg_apis_storage_v1_LocalClusterRoleTemplateSpec(ref common.Referenc
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRoleTemplate holds the cluster role template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleTemplateTemplate"},
 	}
 }
 
@@ -24432,14 +24432,14 @@ func schema_pkg_apis_storage_v1_Metrics(ref common.ReferenceCallback) common.Ope
 						SchemaProps: spec.SchemaProps{
 							Description: "Storage contains settings related to the metrics backend's persistent volume configuration",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Storage"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Storage"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Storage", "k8s.io/api/core/v1.ResourceRequirements"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Storage", "k8s.io/api/core/v1.ResourceRequirements"},
 	}
 }
 
@@ -24657,20 +24657,20 @@ func schema_pkg_apis_storage_v1_NetworkPeer(ref common.ReferenceCallback) common
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ManagedFieldsEntry", "k8s.io/apimachinery/pkg/apis/meta/v1.OwnerReference", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerSpec", "github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ManagedFieldsEntry", "k8s.io/apimachinery/pkg/apis/meta/v1.OwnerReference", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -24708,7 +24708,7 @@ func schema_pkg_apis_storage_v1_NetworkPeerList(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeer"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeer"),
 									},
 								},
 							},
@@ -24719,7 +24719,7 @@ func schema_pkg_apis_storage_v1_NetworkPeerList(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.NetworkPeer", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.NetworkPeer", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -24855,7 +24855,7 @@ func schema_pkg_apis_storage_v1_ObjectsStatus(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ChartStatus"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ChartStatus"),
 									},
 								},
 							},
@@ -24869,7 +24869,7 @@ func schema_pkg_apis_storage_v1_ObjectsStatus(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 									},
 								},
 							},
@@ -24879,7 +24879,7 @@ func schema_pkg_apis_storage_v1_ObjectsStatus(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ChartStatus"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference", "github.com/skevetter/api/pkg/apis/storage/v1.ChartStatus"},
 	}
 }
 
@@ -24996,20 +24996,20 @@ func schema_pkg_apis_storage_v1_Project(ref common.ReferenceCallback) common.Ope
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ProjectSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ProjectStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ProjectStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ProjectSpec", "github.com/skevetter/api/pkg/apis/storage/v1.ProjectStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -25047,7 +25047,7 @@ func schema_pkg_apis_storage_v1_ProjectList(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Project"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Project"),
 									},
 								},
 							},
@@ -25058,7 +25058,7 @@ func schema_pkg_apis_storage_v1_ProjectList(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Project", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Project", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -25085,14 +25085,14 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"quotas": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Quotas define the quotas inside the project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Quotas"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Quotas"),
 						},
 					},
 					"allowedClusters": {
@@ -25103,7 +25103,7 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedCluster"),
 									},
 								},
 							},
@@ -25117,7 +25117,7 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedRunner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedRunner"),
 									},
 								},
 							},
@@ -25131,7 +25131,7 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AllowedTemplate"),
 									},
 								},
 							},
@@ -25141,14 +25141,14 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 						SchemaProps: spec.SchemaProps{
 							Description: "RequireTemplate configures if a template is required for instance creation.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequireTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RequireTemplate"),
 						},
 					},
 					"requirePreset": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RequirePreset configures if a preset is required for instance creation.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequirePreset"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RequirePreset"),
 						},
 					},
 					"members": {
@@ -25159,7 +25159,7 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Member"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Member"),
 									},
 								},
 							},
@@ -25173,7 +25173,7 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -25182,38 +25182,38 @@ func schema_pkg_apis_storage_v1_ProjectSpec(ref common.ReferenceCallback) common
 					"namespacePattern": {
 						SchemaProps: spec.SchemaProps{
 							Description: "NamespacePattern specifies template patterns to use for creating each space or virtual cluster's namespace",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.NamespacePattern"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.NamespacePattern"),
 						},
 					},
 					"argoCD": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ArgoIntegration holds information about ArgoCD Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ArgoIntegrationSpec"),
 						},
 					},
 					"vault": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VaultIntegration holds information about Vault Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec"),
 						},
 					},
 					"rancher": {
 						SchemaProps: spec.SchemaProps{
 							Description: "RancherIntegration holds information about Rancher Integration",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherIntegrationSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RancherIntegrationSpec"),
 						},
 					},
 					"devPod": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DevPod holds DevPod specific configuration for project",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProjectSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.DevPodProjectSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedCluster", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedRunner", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AllowedTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ArgoIntegrationSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.DevPodProjectSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Member", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.NamespacePattern", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Quotas", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherIntegrationSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequirePreset", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RequireTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultIntegrationSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedCluster", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedRunner", "github.com/skevetter/api/pkg/apis/storage/v1.AllowedTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.ArgoIntegrationSpec", "github.com/skevetter/api/pkg/apis/storage/v1.DevPodProjectSpec", "github.com/skevetter/api/pkg/apis/storage/v1.Member", "github.com/skevetter/api/pkg/apis/storage/v1.NamespacePattern", "github.com/skevetter/api/pkg/apis/storage/v1.Quotas", "github.com/skevetter/api/pkg/apis/storage/v1.RancherIntegrationSpec", "github.com/skevetter/api/pkg/apis/storage/v1.RequirePreset", "github.com/skevetter/api/pkg/apis/storage/v1.RequireTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VaultIntegrationSpec"},
 	}
 }
 
@@ -25226,7 +25226,7 @@ func schema_pkg_apis_storage_v1_ProjectStatus(ref common.ReferenceCallback) comm
 					"quotas": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Quotas holds the quota status",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatus"),
 						},
 					},
 					"conditions": {
@@ -25237,7 +25237,7 @@ func schema_pkg_apis_storage_v1_ProjectStatus(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -25247,7 +25247,7 @@ func schema_pkg_apis_storage_v1_ProjectStatus(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatus"},
 	}
 }
 
@@ -25260,20 +25260,20 @@ func schema_pkg_apis_storage_v1_QuotaStatus(ref common.ReferenceCallback) common
 					"project": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Project is the quota status for the whole project",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProject"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProject"),
 						},
 					},
 					"user": {
 						SchemaProps: spec.SchemaProps{
 							Description: "User is the quota status for each user / team. An example status could look like this: status:\n  quotas:\n    user:\n      limit:\n        pods: \"10\"\n        spaces: \"5\"\n      users:\n        admin:\n          used:\n            spaces: \"3\"  # <- calculated in our apiserver\n            pods: \"8\"    # <- the sum calculated from clusters\n      clusters:\n        cluster-1:  # <- populated by agent from cluster-1\n          users:\n            admin:\n              pods: \"3\"\n        cluster-2:\n          users:\n            admin:\n              pods: \"5\"",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUser"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUser"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProject", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUser"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProject", "github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUser"},
 	}
 }
 
@@ -25324,7 +25324,7 @@ func schema_pkg_apis_storage_v1_QuotaStatusProject(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProjectCluster"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProjectCluster"),
 									},
 								},
 							},
@@ -25334,7 +25334,7 @@ func schema_pkg_apis_storage_v1_QuotaStatusProject(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusProjectCluster"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusProjectCluster"},
 	}
 }
 
@@ -25392,7 +25392,7 @@ func schema_pkg_apis_storage_v1_QuotaStatusUser(ref common.ReferenceCallback) co
 						SchemaProps: spec.SchemaProps{
 							Description: "Used is the used amount per user / team",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUserUsed"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUserUsed"),
 						},
 					},
 					"clusters": {
@@ -25404,7 +25404,7 @@ func schema_pkg_apis_storage_v1_QuotaStatusUser(ref common.ReferenceCallback) co
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUserUsed"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUserUsed"),
 									},
 								},
 							},
@@ -25414,7 +25414,7 @@ func schema_pkg_apis_storage_v1_QuotaStatusUser(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.QuotaStatusUserUsed"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.QuotaStatusUserUsed"},
 	}
 }
 
@@ -25539,28 +25539,28 @@ func schema_pkg_apis_storage_v1_RancherIntegrationSpec(ref common.ReferenceCallb
 						SchemaProps: spec.SchemaProps{
 							Description: "ProjectRef defines references to rancher project, required for syncMembers and syncVirtualClusters.syncMembers",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherProjectRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RancherProjectRef"),
 						},
 					},
 					"importVirtualClusters": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ImportVirtualClusters defines settings to import virtual clusters to Rancher on creation",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ImportVirtualClustersSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ImportVirtualClustersSpec"),
 						},
 					},
 					"syncMembers": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SyncMembers defines settings to sync Rancher project members to the loft project",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SyncMembersSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SyncMembersSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.ImportVirtualClustersSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RancherProjectRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SyncMembersSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.ImportVirtualClustersSpec", "github.com/skevetter/api/pkg/apis/storage/v1.RancherProjectRef", "github.com/skevetter/api/pkg/apis/storage/v1.SyncMembersSpec"},
 	}
 }
 
@@ -25658,20 +25658,20 @@ func schema_pkg_apis_storage_v1_Runner(ref common.ReferenceCallback) common.Open
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.RunnerSpec", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -25698,26 +25698,26 @@ func schema_pkg_apis_storage_v1_RunnerClusterRef(ref common.ReferenceCallback) c
 					"persistentVolumeClaimTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "PersistentVolumeClaimTemplate holds additional options for the persistent volume claim",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate"),
 						},
 					},
 					"podTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "PodTemplate holds additional options for the runner pod",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplate"),
 						},
 					},
 					"serviceTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ServiceTemplate holds additional options for the service",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplate"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplate"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplate", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplate"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplate", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplate"},
 	}
 }
 
@@ -25755,7 +25755,7 @@ func schema_pkg_apis_storage_v1_RunnerList(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Runner"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Runner"),
 									},
 								},
 							},
@@ -25766,7 +25766,7 @@ func schema_pkg_apis_storage_v1_RunnerList(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Runner", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -25780,21 +25780,21 @@ func schema_pkg_apis_storage_v1_RunnerPersistentVolumeClaimTemplate(ref common.R
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata holds the template metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Spec holds the template spec",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPersistentVolumeClaimTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -25850,21 +25850,21 @@ func schema_pkg_apis_storage_v1_RunnerPodTemplate(ref common.ReferenceCallback) 
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata holds the template metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Spec holds the template spec",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplateSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplateSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerPodTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.RunnerPodTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -26045,21 +26045,21 @@ func schema_pkg_apis_storage_v1_RunnerServiceTemplate(ref common.ReferenceCallba
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata holds the template metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Spec holds the template spec",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplateSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplateSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerServiceTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.RunnerServiceTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -26120,13 +26120,13 @@ func schema_pkg_apis_storage_v1_RunnerSpec(ref common.ReferenceCallback) common.
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "If ClusterRef is defined, Loft will schedule the runner on the given cluster.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.RunnerClusterRef"),
 						},
 					},
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"unusable": {
@@ -26144,7 +26144,7 @@ func schema_pkg_apis_storage_v1_RunnerSpec(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -26154,7 +26154,7 @@ func schema_pkg_apis_storage_v1_RunnerSpec(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.RunnerClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.RunnerClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -26193,7 +26193,7 @@ func schema_pkg_apis_storage_v1_RunnerStatus(ref common.ReferenceCallback) commo
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -26203,7 +26203,7 @@ func schema_pkg_apis_storage_v1_RunnerStatus(ref common.ReferenceCallback) commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -26295,20 +26295,20 @@ func schema_pkg_apis_storage_v1_SharedSecret(ref common.ReferenceCallback) commo
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretSpec", "github.com/skevetter/api/pkg/apis/storage/v1.SharedSecretStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -26346,7 +26346,7 @@ func schema_pkg_apis_storage_v1_SharedSecretList(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecret"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SharedSecret"),
 									},
 								},
 							},
@@ -26357,7 +26357,7 @@ func schema_pkg_apis_storage_v1_SharedSecretList(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SharedSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SharedSecret", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -26385,7 +26385,7 @@ func schema_pkg_apis_storage_v1_SharedSecretSpec(ref common.ReferenceCallback) c
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"data": {
@@ -26411,7 +26411,7 @@ func schema_pkg_apis_storage_v1_SharedSecretSpec(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -26421,7 +26421,7 @@ func schema_pkg_apis_storage_v1_SharedSecretSpec(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -26440,7 +26440,7 @@ func schema_pkg_apis_storage_v1_SharedSecretStatus(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -26450,7 +26450,7 @@ func schema_pkg_apis_storage_v1_SharedSecretStatus(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"},
 	}
 }
 
@@ -26484,20 +26484,20 @@ func schema_pkg_apis_storage_v1_SpaceInstance(ref common.ReferenceCallback) comm
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceSpec", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -26535,7 +26535,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstance"),
 									},
 								},
 							},
@@ -26546,7 +26546,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -26573,26 +26573,26 @@ func schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref common.ReferenceCallback) 
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the space template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for space creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef is the reference to the connected cluster holding this space",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef"),
 						},
 					},
 					"parameters": {
@@ -26610,7 +26610,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"),
 									},
 								},
 							},
@@ -26624,7 +26624,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -26634,7 +26634,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceSpec(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -26673,7 +26673,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceStatus(ref common.ReferenceCallback
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -26682,13 +26682,13 @@ func schema_pkg_apis_storage_v1_SpaceInstanceStatus(ref common.ReferenceCallback
 					"spaceObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceObjects are the objects that were applied within the virtual cluster space",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"space": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Space is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -26702,7 +26702,7 @@ func schema_pkg_apis_storage_v1_SpaceInstanceStatus(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"},
 	}
 }
 
@@ -26717,14 +26717,14 @@ func schema_pkg_apis_storage_v1_SpaceInstanceTemplateDefinition(ref common.Refer
 						SchemaProps: spec.SchemaProps{
 							Description: "The space instance metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -26758,20 +26758,20 @@ func schema_pkg_apis_storage_v1_SpaceTemplate(ref common.ReferenceCallback) comm
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -26785,14 +26785,14 @@ func schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref common.ReferenceCall
 						SchemaProps: spec.SchemaProps{
 							Description: "The space metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"instanceTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "InstanceTemplate holds the space instance template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition"),
 						},
 					},
 					"objects": {
@@ -26810,7 +26810,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart"),
 									},
 								},
 							},
@@ -26824,7 +26824,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref common.ReferenceCall
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 									},
 								},
 							},
@@ -26833,14 +26833,14 @@ func schema_pkg_apis_storage_v1_SpaceTemplateDefinition(ref common.ReferenceCall
 					"access": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The space access",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceInstanceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -26878,7 +26878,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplate"),
 									},
 								},
 							},
@@ -26889,7 +26889,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -26917,14 +26917,14 @@ func schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref common.ReferenceCallback) 
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the space template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -26935,7 +26935,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -26949,7 +26949,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateVersion"),
 									},
 								},
 							},
@@ -26963,7 +26963,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -26973,7 +26973,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateSpec(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateVersion", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateVersion", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -26998,7 +26998,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateVersion(ref common.ReferenceCallbac
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the space template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -27009,7 +27009,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateVersion(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -27026,7 +27026,7 @@ func schema_pkg_apis_storage_v1_SpaceTemplateVersion(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SpaceTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.SpaceTemplateDefinition"},
 	}
 }
 
@@ -27128,26 +27128,26 @@ func schema_pkg_apis_storage_v1_Target(ref common.ReferenceCallback) common.Open
 					"spaceInstance": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceInstance defines a space instance as target",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetInstance"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TargetInstance"),
 						},
 					},
 					"virtualClusterInstance": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterInstance defines a virtual cluster instance as target",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetInstance"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TargetInstance"),
 						},
 					},
 					"cluster": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Cluster defines a connected cluster as target",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetCluster"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TargetCluster"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetCluster", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TargetInstance"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TargetCluster", "github.com/skevetter/api/pkg/apis/storage/v1.TargetInstance"},
 	}
 }
 
@@ -27265,20 +27265,20 @@ func schema_pkg_apis_storage_v1_Task(ref common.ReferenceCallback) common.OpenAP
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TaskSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TaskStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TaskSpec", "github.com/skevetter/api/pkg/apis/storage/v1.TaskStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -27291,20 +27291,20 @@ func schema_pkg_apis_storage_v1_TaskDefinition(ref common.ReferenceCallback) com
 					"appTask": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AppTask is an app task",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppTask"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AppTask"),
 						},
 					},
 					"helm": {
 						SchemaProps: spec.SchemaProps{
 							Description: "HelmTask executes a helm command",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTask"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.HelmTask"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppTask", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.HelmTask"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppTask", "github.com/skevetter/api/pkg/apis/storage/v1.HelmTask"},
 	}
 }
 
@@ -27342,7 +27342,7 @@ func schema_pkg_apis_storage_v1_TaskList(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Task"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Task"),
 									},
 								},
 							},
@@ -27353,7 +27353,7 @@ func schema_pkg_apis_storage_v1_TaskList(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Task", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Task", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -27378,7 +27378,7 @@ func schema_pkg_apis_storage_v1_TaskSpec(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -27387,34 +27387,34 @@ func schema_pkg_apis_storage_v1_TaskSpec(ref common.ReferenceCallback) common.Op
 					"scope": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Scope defines the scope of the access key.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope"),
 						},
 					},
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"target": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Target where this task should get executed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Target"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.Target"),
 						},
 					},
 					"task": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Task defines the task to execute",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TaskDefinition"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AccessKeyScope", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.Target", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TaskDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AccessKeyScope", "github.com/skevetter/api/pkg/apis/storage/v1.Target", "github.com/skevetter/api/pkg/apis/storage/v1.TaskDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -27439,7 +27439,7 @@ func schema_pkg_apis_storage_v1_TaskStatus(ref common.ReferenceCallback) common.
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -27470,7 +27470,7 @@ func schema_pkg_apis_storage_v1_TaskStatus(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "k8s.io/api/core/v1.ContainerStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "k8s.io/api/core/v1.ContainerStatus"},
 	}
 }
 
@@ -27504,20 +27504,20 @@ func schema_pkg_apis_storage_v1_Team(ref common.ReferenceCallback) common.OpenAP
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TeamSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TeamStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TeamStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TeamSpec", "github.com/skevetter/api/pkg/apis/storage/v1.TeamStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -27555,7 +27555,7 @@ func schema_pkg_apis_storage_v1_TeamList(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Team"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Team"),
 									},
 								},
 							},
@@ -27566,7 +27566,7 @@ func schema_pkg_apis_storage_v1_TeamList(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Team", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Team", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -27593,7 +27593,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"username": {
@@ -27640,7 +27640,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef"),
 									},
 								},
 							},
@@ -27654,7 +27654,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef"),
 									},
 								},
 							},
@@ -27668,7 +27668,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -27678,7 +27678,7 @@ func schema_pkg_apis_storage_v1_TeamSpec(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef", "github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -27729,7 +27729,7 @@ func schema_pkg_apis_storage_v1_TemplateHelmChart(ref common.ReferenceCallback) 
 					"usernameRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The username that is required for this repository",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"),
 						},
 					},
 					"password": {
@@ -27742,7 +27742,7 @@ func schema_pkg_apis_storage_v1_TemplateHelmChart(ref common.ReferenceCallback) 
 					"passwordRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "The password that is required for this repository",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"),
 						},
 					},
 					"insecureSkipTlsVerify": {
@@ -27791,7 +27791,7 @@ func schema_pkg_apis_storage_v1_TemplateHelmChart(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.ChartSecretRef"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.ChartSecretRef"},
 	}
 }
 
@@ -27902,20 +27902,20 @@ func schema_pkg_apis_storage_v1_User(ref common.ReferenceCallback) common.OpenAP
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.UserSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.UserStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.UserSpec", "github.com/skevetter/api/pkg/apis/storage/v1.UserStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -27953,7 +27953,7 @@ func schema_pkg_apis_storage_v1_UserList(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.User"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.User"),
 									},
 								},
 							},
@@ -27964,7 +27964,7 @@ func schema_pkg_apis_storage_v1_UserList(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.User", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.User", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -28003,20 +28003,20 @@ func schema_pkg_apis_storage_v1_UserOrTeamEntity(ref common.ReferenceCallback) c
 					"user": {
 						SchemaProps: spec.SchemaProps{
 							Description: "User describes an user",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 					"team": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Team describes a team",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.EntityInfo"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.EntityInfo"},
 	}
 }
 
@@ -28043,7 +28043,7 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"username": {
@@ -28107,13 +28107,13 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 					"passwordRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "A reference to the user password",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"codesRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "A reference to the users access keys",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.SecretRef"),
 						},
 					},
 					"imagePullSecrets": {
@@ -28123,7 +28123,7 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef"),
+										Ref: ref("github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef"),
 									},
 								},
 							},
@@ -28151,7 +28151,7 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef"),
 									},
 								},
 							},
@@ -28165,7 +28165,7 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -28175,7 +28175,7 @@ func schema_pkg_apis_storage_v1_UserSpec(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ClusterRoleRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.KindSecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.SecretRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.ClusterRoleRef", "github.com/skevetter/api/pkg/apis/storage/v1.KindSecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.SecretRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"},
 	}
 }
 
@@ -28271,7 +28271,7 @@ func schema_pkg_apis_storage_v1_VaultIntegrationSpec(ref common.ReferenceCallbac
 					"auth": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Auth defines the authentication method to use for this project.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultAuthSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VaultAuthSpec"),
 						},
 					},
 					"syncInterval": {
@@ -28285,7 +28285,7 @@ func schema_pkg_apis_storage_v1_VaultIntegrationSpec(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VaultAuthSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VaultAuthSpec"},
 	}
 }
 
@@ -28299,14 +28299,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterAccessPoint(ref common.ReferenceCa
 						SchemaProps: spec.SchemaProps{
 							Description: "Ingress defines virtual cluster access via ingress",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPointIngressSpec"},
 	}
 }
 
@@ -28377,7 +28377,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref common.ReferenceCal
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 									},
 								},
 							},
@@ -28391,7 +28391,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref common.ReferenceCal
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart"),
 									},
 								},
 							},
@@ -28407,28 +28407,28 @@ func schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref common.ReferenceCal
 					"access": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Access defines the access of users and teams to the virtual cluster.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess"),
 						},
 					},
 					"pro": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Pro defines the pro settings for the virtual cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterProSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterProSpec"),
 						},
 					},
 					"helmRelease": {
 						SchemaProps: spec.SchemaProps{
 							Description: "HelmRelease is the helm release configuration for the virtual cluster.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
 						},
 					},
 					"accessPoint": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AccessPoint defines settings to expose the virtual cluster directly via an ingress rather than through the (default) Loft proxy",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPoint"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPoint"),
 						},
 					},
 					"forwardToken": {
@@ -28442,7 +28442,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterCommonSpec(ref common.ReferenceCal
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPoint", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterProSpec"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPoint", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterProSpec"},
 	}
 }
 
@@ -28503,7 +28503,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterHelmRelease(ref common.ReferenceCa
 						SchemaProps: spec.SchemaProps{
 							Description: "infos about what chart to deploy",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmChart"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmChart"),
 						},
 					},
 					"values": {
@@ -28517,7 +28517,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterHelmRelease(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmChart"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmChart"},
 	}
 }
 
@@ -28554,14 +28554,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterHelmReleaseStatus(ref common.Refer
 						SchemaProps: spec.SchemaProps{
 							Description: "the release that was deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -28595,20 +28595,20 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstance(ref common.ReferenceCallb
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceSpec", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -28646,7 +28646,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstance"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstance"),
 									},
 								},
 							},
@@ -28657,7 +28657,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstance", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -28684,26 +28684,26 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref common.ReferenceC
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"templateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TemplateRef holds the virtual cluster template reference",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template is the inline template to use for virtual cluster creation. This is mutually exclusive with templateRef.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"clusterRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ClusterRef is the reference to the connected cluster holding this virtual cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterClusterRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterClusterRef"),
 						},
 					},
 					"parameters": {
@@ -28721,7 +28721,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule"),
 									},
 								},
 							},
@@ -28735,7 +28735,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -28759,7 +28759,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceSpec(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccessRule", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterClusterRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccessRule", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterClusterRef", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -28812,7 +28812,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceStatus(ref common.Referenc
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -28821,19 +28821,19 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceStatus(ref common.Referenc
 					"virtualClusterObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterObjects are the objects that were applied within the virtual cluster itself",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"spaceObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceObjects are the objects that were applied within the virtual cluster space",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"virtualCluster": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualCluster is the template rendered with all the parameters",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"ignoreReconciliation": {
@@ -28847,7 +28847,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceStatus(ref common.Referenc
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -28862,14 +28862,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterInstanceTemplateDefinition(ref com
 						SchemaProps: spec.SchemaProps{
 							Description: "The virtual cluster instance metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -28902,7 +28902,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref common
 						SchemaProps: spec.SchemaProps{
 							Description: "The space metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"objects": {
@@ -28920,7 +28920,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart"),
 									},
 								},
 							},
@@ -28934,7 +28934,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 									},
 								},
 							},
@@ -28944,7 +28944,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterSpaceTemplateDefinition(ref common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"},
 	}
 }
 
@@ -28991,7 +28991,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterStatus(ref common.ReferenceCallbac
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition"),
+										Ref:     ref("github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition"),
 									},
 								},
 							},
@@ -29007,7 +29007,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterStatus(ref common.ReferenceCallbac
 					"virtualClusterObjects": {
 						SchemaProps: spec.SchemaProps{
 							Description: "VirtualClusterObjects are the objects that were applied within the virtual cluster itself",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus"),
 						},
 					},
 					"deployHash": {
@@ -29027,14 +29027,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterStatus(ref common.ReferenceCallbac
 					"helmRelease": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: do not use anymore the status of the helm release that was used to deploy the virtual cluster",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1.Condition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.ObjectsStatus", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/storage/v1.Condition", "github.com/skevetter/api/pkg/apis/storage/v1.ObjectsStatus", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmReleaseStatus"},
 	}
 }
 
@@ -29068,20 +29068,20 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplate(ref common.ReferenceCallb
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpec", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -29095,14 +29095,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref common.Refe
 						SchemaProps: spec.SchemaProps{
 							Description: "The virtual cluster metadata",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata"),
 						},
 					},
 					"instanceTemplate": {
 						SchemaProps: spec.SchemaProps{
 							Description: "InstanceTemplate holds the virtual cluster instance template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition"),
 						},
 					},
 					"apps": {
@@ -29113,7 +29113,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppReference"),
 									},
 								},
 							},
@@ -29127,7 +29127,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref common.Refe
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart"),
 									},
 								},
 							},
@@ -29143,28 +29143,28 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref common.Refe
 					"access": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Access defines the access of users and teams to the virtual cluster.",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess"),
 						},
 					},
 					"pro": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Pro defines the pro settings for the virtual cluster",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterProSpec"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterProSpec"),
 						},
 					},
 					"helmRelease": {
 						SchemaProps: spec.SchemaProps{
 							Description: "HelmRelease is the helm release configuration for the virtual cluster.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease"),
 						},
 					},
 					"accessPoint": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AccessPoint defines settings to expose the virtual cluster directly via an ingress rather than through the (default) Loft proxy",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPoint"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPoint"),
 						},
 					},
 					"forwardToken": {
@@ -29178,14 +29178,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateDefinition(ref common.Refe
 						SchemaProps: spec.SchemaProps{
 							Description: "SpaceTemplate holds the space template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppReference", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.InstanceAccess", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateHelmChart", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.TemplateMetadata", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterAccessPoint", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterHelmRelease", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterProSpec", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppReference", "github.com/skevetter/api/pkg/apis/storage/v1.InstanceAccess", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateHelmChart", "github.com/skevetter/api/pkg/apis/storage/v1.TemplateMetadata", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterAccessPoint", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterHelmRelease", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterInstanceTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterProSpec", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterSpaceTemplateDefinition"},
 	}
 }
 
@@ -29223,7 +29223,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateList(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplate"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplate"),
 									},
 								},
 							},
@@ -29234,7 +29234,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateList(ref common.ReferenceC
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -29281,14 +29281,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref common.ReferenceC
 					"owner": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Owner holds the owner of this object",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam"),
 						},
 					},
 					"template": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the virtual cluster template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -29299,7 +29299,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -29313,7 +29313,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateVersion"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateVersion"),
 									},
 								},
 							},
@@ -29327,7 +29327,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref common.ReferenceC
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.Access"),
 									},
 								},
 							},
@@ -29336,14 +29336,14 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateSpec(ref common.ReferenceC
 					"spaceTemplateRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "DEPRECATED: SpaceTemplate to use to create the virtual cluster space if it does not exist",
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.Access", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.UserOrTeam", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateVersion"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.Access", "github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.UserOrTeam", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateSpaceTemplateRef", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateVersion"},
 	}
 }
 
@@ -29368,7 +29368,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateVersion(ref common.Referen
 						SchemaProps: spec.SchemaProps{
 							Description: "Template holds the space template",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
+							Ref:         ref("github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"),
 						},
 					},
 					"parameters": {
@@ -29379,7 +29379,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateVersion(ref common.Referen
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/storage/v1.AppParameter"),
 									},
 								},
 							},
@@ -29396,7 +29396,7 @@ func schema_pkg_apis_storage_v1_VirtualClusterTemplateVersion(ref common.Referen
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/storage/v1.AppParameter", "github.com/loft-sh/api/v4/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
+			"github.com/skevetter/api/pkg/apis/storage/v1.AppParameter", "github.com/skevetter/api/pkg/apis/storage/v1.VirtualClusterTemplateDefinition"},
 	}
 }
 
@@ -29527,20 +29527,20 @@ func schema_pkg_apis_ui_v1_UISettings(ref common.ReferenceCallback) common.OpenA
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettingsSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/ui/v1.UISettingsStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsSpec", "github.com/loft-sh/api/v4/pkg/apis/ui/v1.UISettingsStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/ui/v1.UISettingsSpec", "github.com/skevetter/api/pkg/apis/ui/v1.UISettingsStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -29637,7 +29637,7 @@ func schema_pkg_apis_ui_v1_UISettingsConfig(ref common.ReferenceCallback) common
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.NavBarButton"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/ui/v1.NavBarButton"),
 									},
 								},
 							},
@@ -29647,7 +29647,7 @@ func schema_pkg_apis_ui_v1_UISettingsConfig(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/ui/v1.NavBarButton"},
+			"github.com/skevetter/api/pkg/apis/ui/v1.NavBarButton"},
 	}
 }
 
@@ -29745,7 +29745,7 @@ func schema_pkg_apis_ui_v1_UISettingsSpec(ref common.ReferenceCallback) common.O
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/ui/v1.NavBarButton"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/ui/v1.NavBarButton"),
 									},
 								},
 							},
@@ -29790,7 +29790,7 @@ func schema_pkg_apis_ui_v1_UISettingsSpec(ref common.ReferenceCallback) common.O
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/ui/v1.NavBarButton"},
+			"github.com/skevetter/api/pkg/apis/ui/v1.NavBarButton"},
 	}
 }
 
@@ -29834,20 +29834,20 @@ func schema_pkg_apis_virtualcluster_v1_HelmRelease(ref common.ReferenceCallback)
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseSpec"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseStatus"),
+							Ref:     ref("github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseSpec", "github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmReleaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseSpec", "github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmReleaseStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -29884,7 +29884,7 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseList(ref common.ReferenceCallb
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmRelease"),
+										Ref:     ref("github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmRelease"),
 									},
 								},
 							},
@@ -29895,7 +29895,7 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseList(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1.HelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/skevetter/api/pkg/apis/virtualcluster/v1.HelmRelease", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -29909,7 +29909,7 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseSpec(ref common.ReferenceCallb
 						SchemaProps: spec.SchemaProps{
 							Description: "Chart holds information about a chart that should get deployed",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"),
 						},
 					},
 					"manifests": {
@@ -29922,7 +29922,7 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseSpec(ref common.ReferenceCallb
 					"bash": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Bash holds the bash script to execute in a container in the target",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash"),
 						},
 					},
 					"values": {
@@ -29959,7 +29959,7 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseSpec(ref common.ReferenceCallb
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Bash", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Chart"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Bash", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Chart"},
 	}
 }
 
@@ -29979,20 +29979,20 @@ func schema_pkg_apis_virtualcluster_v1_HelmReleaseStatus(ref common.ReferenceCal
 					"info": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Info provides information about a release",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Info"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Info"),
 						},
 					},
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Metadata provides information about a chart",
-							Ref:         ref("github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"),
+							Ref:         ref("github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Info", "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1.Metadata"},
+			"github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Info", "github.com/skevetter/agentapi/pkg/apis/devsy/cluster/v1.Metadata"},
 	}
 }
 

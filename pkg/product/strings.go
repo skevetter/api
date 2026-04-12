@@ -1,7 +1,7 @@
 package product
 
 import (
-	"github.com/loft-sh/admin-apis/pkg/licenseapi"
+	"github.com/skevetter/admin-apis/pkg/licenseapi"
 )
 
 // LoginCmd returns the login command for the product
@@ -11,9 +11,9 @@ func LoginCmd() string {
 	switch Name() {
 	case licenseapi.DevPodPro:
 		return "devpod login"
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		return "vcluster login"
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	return loginCmd
@@ -26,9 +26,9 @@ func StartCmd() string {
 	switch Name() {
 	case licenseapi.DevPodPro:
 		loginCmd = "devpod pro start"
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		loginCmd = "vcluster platform start"
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	return loginCmd
@@ -41,9 +41,9 @@ func Url() string {
 	switch Name() {
 	case licenseapi.DevPodPro:
 		loginCmd = "devpod-pro-url"
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		loginCmd = "vcluster-pro-url"
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	return loginCmd
@@ -56,9 +56,9 @@ func ResetPassword() string {
 	switch Name() {
 	case licenseapi.DevPodPro:
 		return "devpod pro reset password"
-	case licenseapi.VClusterPro:
+	case licenseapi.DevsyPro:
 		return "vcluster platform reset password"
-	case licenseapi.Loft:
+	case licenseapi.Devsy:
 	}
 
 	return resetPassword
