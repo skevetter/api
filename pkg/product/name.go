@@ -5,7 +5,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/loft-sh/admin-apis/pkg/licenseapi"
+	"github.com/skevetter/admin-apis/pkg/licenseapi"
 	"k8s.io/klog/v2"
 )
 

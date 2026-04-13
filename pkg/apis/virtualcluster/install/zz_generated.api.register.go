@@ -3,9 +3,9 @@
 package install
 
 import (
-	"github.com/loft-sh/api/v4/pkg/apis/virtualcluster"
-	"github.com/loft-sh/api/v4/pkg/apis/virtualcluster/v1"
-	"github.com/loft-sh/apiserver/pkg/builders"
+	"github.com/skevetter/api/pkg/apis/virtualcluster"
+	"github.com/skevetter/api/pkg/apis/virtualcluster/v1"
+	"github.com/skevetter/apiserver/pkg/builders"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 )

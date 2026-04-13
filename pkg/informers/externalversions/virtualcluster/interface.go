@@ -3,8 +3,8 @@
 package virtualcluster
 
 import (
-	internalinterfaces "github.com/loft-sh/api/v4/pkg/informers/externalversions/internalinterfaces"
-	v1 "github.com/loft-sh/api/v4/pkg/informers/externalversions/virtualcluster/v1"
+	internalinterfaces "github.com/skevetter/api/pkg/informers/externalversions/internalinterfaces"
+	v1 "github.com/skevetter/api/pkg/informers/externalversions/virtualcluster/v1"
 )
 
 // Interface provides access to each of this group's versions.

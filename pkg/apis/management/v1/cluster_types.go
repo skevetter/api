@@ -2,16 +2,16 @@ package v1
 
 import (
 	agentstoragev1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1"
-	storagev1 "github.com/loft-sh/api/v4/pkg/apis/storage/v1"
+	storagev1 "github.com/skevetter/api/pkg/apis/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // +genclient
 // +genclient:nonNamespaced
-// +genclient:method=ListAccess,verb=get,subresource=memberaccess,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMemberAccess
-// +genclient:method=ListMembers,verb=get,subresource=members,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterMembers
-// +genclient:method=GetAgentConfig,verb=get,subresource=agentconfig,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAgentConfig
-// +genclient:method=GetAccessKey,verb=get,subresource=accesskey,result=github.com/loft-sh/api/v4/pkg/apis/management/v1.ClusterAccessKey
+// +genclient:method=ListAccess,verb=get,subresource=memberaccess,result=github.com/skevetter/api/pkg/apis/management/v1.ClusterMemberAccess
+// +genclient:method=ListMembers,verb=get,subresource=members,result=github.com/skevetter/api/pkg/apis/management/v1.ClusterMembers
+// +genclient:method=GetAgentConfig,verb=get,subresource=agentconfig,result=github.com/skevetter/api/pkg/apis/management/v1.ClusterAgentConfig
+// +genclient:method=GetAccessKey,verb=get,subresource=accesskey,result=github.com/skevetter/api/pkg/apis/management/v1.ClusterAccessKey
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // Cluster holds the cluster information

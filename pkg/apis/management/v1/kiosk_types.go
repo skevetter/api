@@ -3,7 +3,7 @@ package v1
 import (
 	clusterv1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/cluster/v1"
 	agentstoragev1 "github.com/loft-sh/agentapi/v4/pkg/apis/loft/storage/v1"
-	uiv1 "github.com/loft-sh/api/v4/pkg/apis/ui/v1"
+	uiv1 "github.com/skevetter/api/pkg/apis/ui/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
